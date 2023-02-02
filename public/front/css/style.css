@@ -1,0 +1,1607 @@
+html, body {
+    width: 100% !important;
+    overflow-x: hidden !important;
+}
+@font-face {
+    font-family: 'OpenSans Bold';
+    src: url("fonts/OpenSans-Bold.ttf"); 
+    font-display: swap;
+}
+@font-face {
+    font-family: 'OpenSans ExtraBold';
+    src: url("fonts/OpenSans-ExtraBold.ttf"); 
+    font-display: swap;
+}
+@font-face {
+    font-family: 'OpenSans SemiBold';
+    src: url("fonts/OpenSans-SemiBold.ttf"); 
+    font-display: swap;
+}
+@font-face {
+    font-family: 'OpenSans Light';
+    src: url("fonts/OpenSans-Light.ttf"); 
+    font-display: swap;
+}
+@font-face {
+    font-family: 'OpenSans Medium';
+    src: url("fonts/OpenSans-Medium.ttf"); 
+    font-display: swap;
+}
+@font-face {
+    font-family: 'OpenSans Regular';
+    src: url("fonts/OpenSans-Regular.ttf"); 
+    font-display: swap;
+}
+.bold{
+    font-family: 'OpenSans Bold' !important;
+}
+.extraBold{
+    font-family: 'OpenSans ExtraBold' !important;
+}
+.semiBold{
+    font-family: 'OpenSans SemiBold';
+}
+.light{
+    font-family: 'OpenSans Light' !important;
+}
+.medium{
+    font-family: 'OpenSans Medium' !important;
+}
+.regular{
+    font-family: 'OpenSans Regular' !important;
+}
+input, label, textarea{
+    font-family: 'OpenSans Regular' !important;
+}
+.txt-azul{
+    color: #56D4E3;
+}
+.txt-azul-oscuro{
+    color: #38678E;
+}
+.txt-color-tit{
+    color: #464646;
+}
+.txt-color-parrafo{
+    color: #6A6A6A;
+}
+.txt-verde{
+    color: #65B96E;
+}
+.a_none_style{
+    text-decoration: none;
+}
+/******************
+ICONOS 
+******************/
+.icono-menu{
+    width: 13px;
+    margin-right: 1rem;
+}
+.bg-menu i{
+    font-size: 16px !important;
+}
+.icono-bolsa{
+    width: 18px;
+}
+.bolsa{
+    position: relative;
+}
+.icono-beneficios{
+    width: 45px;
+    margin-right: 1rem;
+    margin-top: .5rem;
+}
+.navbar-light .navbar-toggler-icon{
+    background-image: none;
+}
+.fa-bars{
+    font-size: 50px;
+}
+/****************
+BACKGROUNDS
+***************/
+body{
+    background-image: url('https://res.cloudinary.com/dra1bsh4u/image/upload/v1674061897/AMTI%20Ecommerce/bg-mundo_ep37o4.png');
+    background-attachment: fixed;
+}
+.bg-menu{
+    background: rgb(23,60,91);
+    background: linear-gradient(180deg, rgba(23,60,91,1) 0%, rgba(54,86,113,1) 42%, rgba(23,60,91,1) 100%);
+    color: #fff;
+    font-family: 'OpenSans Regular';
+}
+.bg-index{
+    background-image: url('https://res.cloudinary.com/dra1bsh4u/image/upload/v1674061496/AMTI%20Ecommerce/bg-index_otpv2v.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    color: #fff;
+}
+.bg-azul{
+    background: rgb(56,103,142);
+    background: linear-gradient(160deg, rgba(56,103,142,1) 27%, rgba(32,74,105,1) 100%);
+    color: #fff;
+    border-radius: 50px;
+}
+.bg-blanco{
+    background-color: #fff;
+}
+.bg-azul-2{
+    background: rgb(64,115,157);
+    background: radial-gradient(circle, rgba(64,115,157,1) 15%, rgba(32,74,105,1) 100%);
+    color: #fff;
+}
+.bg-continente{
+    background-image: url('https://res.cloudinary.com/dra1bsh4u/image/upload/v1674069263/AMTI%20Ecommerce/bg-continente_izlsr7.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-comoFunciona{
+    background-image: url('https://res.cloudinary.com/dra1bsh4u/image/upload/v1674144230/AMTI%20Ecommerce/bg-como-funciona_h2wia9.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 50vh;
+    color: #fff;
+}
+.bg-continenteB{
+    background-image: url('https://res.cloudinary.com/dra1bsh4u/image/upload/v1674509994/AMTI%20Ecommerce/bg-mundo_nb3u7q.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-vigencias{
+    background-image: url('https://res.cloudinary.com/dra1bsh4u/image/upload/v1674151948/AMTI%20Ecommerce/bg-vigencias_enyhq6.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 50vh;
+    color: #fff;
+}
+.bg-azul-3{
+    background: rgb(56,103,142);
+    background: linear-gradient(160deg, rgba(56,103,142,1) 27%, rgba(32,74,105,1) 100%);
+}
+.bg-contacto{
+    background-image: url('https://res.cloudinary.com/dra1bsh4u/image/upload/v1674510996/AMTI%20Ecommerce/bg-contacto_cizw9i.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 40vh;
+    color: #fff;
+    text-align: center;
+}
+/**************
+TEXTOS
+**************/
+.bg-menu a{
+    font-size: 13px;
+}
+.items h6{
+    font-size: 13px;
+    margin-top: 4px;
+}
+.txt-index{
+    margin-top: 19rem;
+}
+.txt-que-es{
+    margin-top: 2.5rem;
+}
+.txt-que-es p{
+    line-height: 70%;
+}
+.txt-avalado p{
+    line-height: 80%;
+}
+.txt-idp p{
+    line-height: 70%;
+}
+.bg-contacto h1{
+    margin-top: 10rem;
+}
+/**************
+TAMAÑO TEXTOS
+**************/
+.parrafos{
+    font-size: 14px !important;
+}
+.titulos{
+    font-size: 25px !important;
+}
+.top-menu{
+    font-size: 13px !important;
+}
+.tags{
+    font-size: 12px !important;
+}
+.big{
+    font-size: 30px !important;
+}
+.extra{
+    font-size: 40px !important;
+}
+/**************
+BOTONES
+**************/
+.btn-bordes-azul{
+    border: 1px solid #56D4E3;
+    background: transparent;
+    width: 200px;
+}
+.btn-bordes-azul:hover{
+    border: 1px solid #56D4E3;
+    background: transparent;
+    width: 200px;
+}
+.btn-bordes-azul:focus{
+    border: 1px solid #56D4E3;
+    background: transparent;
+    width: 200px;
+}
+.btn-bordes-azul i{
+    font-size: 18px;
+    font-weight: 600;
+}
+.items{
+    position: absolute;
+    bottom: 0;
+    width: 23px;
+    height: 23px;
+    right: -80%;
+    border-radius: 100%;
+    background-color: #173C5B;
+    font-size: 10px;
+    text-align: center;
+}
+.btn-lista{
+    background: rgb(80,152,178);
+    background: linear-gradient(150deg, rgba(80,152,178,1) 15%, rgba(56,103,142,1) 53%);
+    color: #fff;
+    border: none;
+    width: 200px;
+    border-radius: 10px;
+    font-family: 'OpenSans Regular';
+}
+.btn-lista:hover{
+    background: rgb(80,152,178);
+    background: linear-gradient(150deg, rgba(80,152,178,1) 15%, rgba(56,103,142,1) 53%);
+    color: #fff;
+    border: none;
+    width: 200px;
+    border-radius: 10px;
+    font-family: 'OpenSans Regular';
+}
+.btn-lista:focus{
+    background: rgb(80,152,178);
+    background: linear-gradient(150deg, rgba(80,152,178,1) 15%, rgba(56,103,142,1) 53%);
+    color: #fff;
+    border: none;
+    width: 200px;
+    border-radius: 10px;
+    font-family: 'OpenSans Regular';
+}
+.btn-tramitar{
+    background: rgb(80,152,178);
+    background: linear-gradient(150deg, rgba(80,152,178,1) 15%, rgba(56,103,142,1) 53%);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-family: 'OpenSans Regular';
+    width: 250px;
+}
+.btn-tramitar:hover{
+    background: rgb(80,152,178);
+    background: linear-gradient(150deg, rgba(80,152,178,1) 15%, rgba(56,103,142,1) 53%);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-family: 'OpenSans Regular';
+    width: 250px;
+}
+.btn-tramitar:focus{
+    background: rgb(80,152,178);
+    background: linear-gradient(150deg, rgba(80,152,178,1) 15%, rgba(56,103,142,1) 53%);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-family: 'OpenSans Regular';
+    width: 250px;
+}
+.btn-enviar{
+    border: 1px solid #56D4E3;
+    background: transparent;
+    width: 140px;
+}
+.btn-enviar:hover{
+    border: 1px solid #56D4E3;
+    background: transparent;
+    width: 140px;
+}
+.btn-enviar:focus{
+    border: 1px solid #56D4E3;
+    background: transparent;
+    width: 140px;
+}
+.btn-generar-ficha{
+    background: rgb(54,101,139);
+    background: linear-gradient(150deg, rgba(54,101,139,1) 15%, rgba(34,76,108,1)   61%);
+    color: #fff;
+    border: none;
+    width: 100%;
+}
+.btn-generar-ficha:hover{
+    background: rgb(54,101,139);
+    background: linear-gradient(150deg, rgba(54,101,139,1) 15%, rgba(34,76,108,1)   61%);
+    color: #fff;
+    border: none;
+    width: 100%;
+}
+.btn-generar-ficha:focus{
+    background: rgb(54,101,139);
+    background: linear-gradient(150deg, rgba(54,101,139,1) 15%, rgba(34,76,108,1)   61%);
+    color: #fff;
+    border: none;
+    width: 100%;
+}
+.navbar-light .navbar-toggler{
+    color: #fff;
+    border-color: #fff;
+}
+/*****************
+IMÁGENES
+*****************/
+.logo-amti{
+    width: 200px;
+}
+.logo-menu{
+    width: 120px;
+}
+.video-modal{
+    position: relative;
+}
+.btn-play{
+    position: absolute;
+    top: 35%;
+    left: 40%;
+    width: 80px;
+    cursor: pointer;
+}
+.video-bg_video{
+    width: 100%;
+}
+/*****************
+CUADROS AVALADOS
+*****************/
+.cuadro-avalado{
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    position: relative;
+    height: 400px;
+}
+.num-avalado{
+    position: absolute;
+    top: -3%;
+    right: 10px;
+    width: 55px;
+}
+.cuadro-avalado p{
+    line-height: 70%;
+}
+.logo-unctad{
+    width: 170px;
+}
+.logo-cicr{
+    margin-top: 2rem;
+    width: 120px;
+}
+.logo-gob-mexico{
+    margin-top: 2rem;
+    width: 120px;
+}
+/************************
+CUADROS CÓMO COMPRAR
+************************/
+.cuadro-como-comprar{
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    position: relative;
+    height: 320px;
+}
+.cuad-lic{
+    position: relative;
+}
+.cuadro-como-comprar p{
+    line-height: 80%;
+}
+.flechita{
+    position: absolute;
+    top: 40%;
+    right: -10%;
+    width: 60px;
+    z-index: 10;
+}
+.margen-cuadros{
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+/************************
+FORMULARIO
+************************/
+.form-message{
+    font-family: 'OpenSans Regular';
+}
+.form-message input{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    border-radius: 0;
+}
+.form-message textarea{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    border-radius: 0;
+    height: 90px;
+}
+/*****************************
+CUADROS NUESTRAS SUCURSALES
+*****************************/
+.cuadro-sucursales{
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    position: relative;
+    height: 280px;
+}
+.icono-suc{
+    position: absolute;
+    top: -6%;
+    right: 10px;
+    width: 55px;
+}
+.icon-suc{
+    width: 13px;
+    margin-right: 1rem;
+}
+/************************
+FOOTER
+*************************/
+footer i{
+    font-size: 18px;
+}
+.icono-footer{
+    width: 16px;
+    margin-right: 1rem;
+}
+.icono-fb{
+    width: 10px;
+}
+.icono-ig{
+    width: 20px;
+    margin-left: 1rem;
+}
+.secure-trust{
+    width: 50px;
+}
+.ssl{
+    width: 50px;
+}
+.icono-pagos{
+    width: 40px;
+    margin-right: 0.5rem;
+}
+.bb-logo{
+    width: 220px;
+}
+.check-img{
+    width: 90px;
+}
+/************************
+CÓMO FUNCIONA
+*************************/
+.txt-como{
+    text-align: center;
+    margin-top: 10rem;
+}
+.txt-licencia-digital{
+    margin-top: 10rem;
+}
+.txt-licencia-digital p{
+    line-height: 70%;
+}
+.txt-ilustracion-lib p{
+    line-height: 50%;
+}
+/************************
+CUADROS CÓMO FUNCIONA
+*************************/
+.cuadro-como-funciona{
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    position: relative;
+    height: 350px;
+}
+.cuadro-como-funciona img{
+    width: 45px;
+    margin-bottom: 1.5rem;
+}
+.cuadro-como-funciona p{
+    line-height: 60%;
+}
+/************************
+BUEN USO
+*************************/
+.txt-buen-uso img{
+    width: 50px;
+}
+.txt-buen-uso p{
+    line-height: 70%;
+}
+.border-left{
+    border-right: 1px solid #fff;
+}
+/************************
+CUADROS VIGENCIAS
+*************************/
+.cuadro-vigencias{
+    background-color: #fff;
+    border-radius: 0 0 15px 15px;
+    height: 440px;
+}
+.header-cuadro{
+    background: rgb(107,195,199);
+    background: linear-gradient(150deg, rgba(107,195,199,1) 15%, rgba(44,119,153,1) 58%);
+    color: #fff;
+    text-align: center;
+}
+.cuadro-vigencias-2{
+    background-color: #fff;
+    border-radius: 0 0 15px 15px;
+    height: 470px;
+    position: relative;
+}
+.header-cuadro-2{
+    background: rgb(121,199,107);
+    background: linear-gradient(150deg, rgba(121,199,107,1) 15%, rgba(69,153,44,1) 58%);
+    color: #fff;
+    text-align: center;
+}
+.licencia-vigencia{
+    width: 200px;
+}
+.secure-trust-vigencia{
+    width: 70px;
+}
+.ssl-vigencia{
+    width: 40px;
+}
+.tachado{
+    text-decoration:line-through;
+    color: red;
+}
+.etiqueta-recom{
+    background: rgb(121,199,107);
+    background: linear-gradient(150deg, rgba(121,199,107,1) 15%, rgba(69,153,44,1) 58%);
+    color: #fff;
+    width: 180px;
+    position: absolute;
+    right: 0;
+    top: 38%;
+}
+.etiqueta-recom img{
+    width: 15px;
+}
+/************************
+CUADROS ENVÍOS
+*************************/
+.cuadro-envios{
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    position: relative;
+    height: 280px;
+}
+.cuadro-envios p{
+    line-height: 60%;
+}
+/************************
+PASOS DE LA COMPRA
+*************************/
+.signup-step-container{
+    font-family: 'OpenSans Regular';
+}
+.signup-step-container i {
+	margin-right: 10px;
+}
+
+/*------------------------*/
+.login-box input:focus,
+.login-box button:focus,
+.form-control:focus{
+	outline: none;
+	box-shadow: none;
+}
+.form-control:disabled, .form-control[readonly]{
+	background-color: #fff;
+}
+/*----------step-wizard------------*/
+.d-flex{
+	display: flex;
+}
+.justify-content-center{
+	justify-content: center;
+}
+.align-items-center{
+	align-items: center;
+}
+
+/*---------signup-step-------------*/
+.bg-color{
+	background-color: #333;
+}
+.signup-step-container{
+	padding: 90px 0px;
+	padding-bottom: 60px;
+}
+.wizard .nav-tabs {
+    position: relative;
+    margin-bottom: 0;
+    border-bottom-color: transparent;
+}
+.wizard > div.wizard-inner {
+    position: relative;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.connecting-line {
+    position: absolute;
+    width: 87.5%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 20px;
+    z-index: 1;
+    border-color: #9B9A98;
+    border-bottom-style: dashed;
+    border-width: 2px;
+}
+
+.wizard .nav-tabs > li.active > a, .wizard .nav-tabs > li.active > a:hover, .wizard .nav-tabs > li.active > a:focus {
+    color: #555555;
+    cursor: default;
+    border: 0;
+    border-bottom-color: transparent;
+}
+
+span.round-tab {
+    width: 40px;
+    height: 40px;
+    line-height: 30px;
+    display: inline-block;
+    border-radius: 50%;
+    background: #E3E3E3;
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    text-align: center;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 500;
+    border: 1px solid #ddd;
+    font-family: 'OpenSans Bold';
+}
+span.round-tab i{
+    color:#555555;
+}
+span.round-tab h6{
+    font-size: 18px;
+}
+.wizard li.active span.round-tab {
+    background: rgb(59,118,167);
+    background: linear-gradient(150deg, rgba(59,118,167,1) 15%, rgba(32,74,105,1) 58%);
+    color: #fff;
+    border-color: #204A69;
+    font-family: 'OpenSans Bold';
+}
+.wizard li.active span.round-tab i{
+    color: #5bc0de;
+}
+.wizard .nav-tabs > li.active > a i{
+	color: #224C6C;
+    font-weight: 800 !important;
+}
+
+.wizard .nav-tabs > li {
+    width: 14.2%;
+}
+
+.wizard li:after {
+    content: " ";
+    position: absolute;
+    left: 46%;
+    opacity: 0;
+    margin: 0 auto;
+    bottom: 0px;
+    border: 5px solid transparent;
+    border-bottom-color: red;
+    transition: 0.1s ease-in-out;
+}
+.wizard .nav-tabs > li a {
+    width: 30px;
+    height: 30px;
+    margin: 20px auto;
+    border-radius: 100%;
+    padding: 0;
+    background-color: transparent;
+    position: relative;
+    top: 0;
+}
+.wizard .nav-tabs > li a i{
+	position: absolute;
+    top: 60px;
+    font-style: normal;
+    font-weight: 400;
+    white-space: nowrap;
+    left: 80%;
+    transform: translate(-20%, -50%);
+    font-size: 15px;
+    font-weight: 700;
+    color: #000;
+}
+.wizard .nav-tabs > li a:hover {
+    background: transparent;
+}
+.wizard .tab-pane {
+    position: relative;
+    padding-top: 20px;
+}
+.wizard h3 {
+    margin-top: 0;
+}
+.prev-step,
+.next-step{
+    font-size: 18px;
+    padding: 8px 24px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 30px;
+    width: 200px;
+}
+.next-step{
+	background: rgb(54,101,139);
+    background: linear-gradient(150deg, rgba(54,101,139,1) 15%, rgba(34,76,108,1) 58%);
+    color: #fff;
+}
+.prev-step{
+    background-color: transparent;
+    border: 1px solid #2A5779;
+}
+.step-head{
+    font-size: 20px;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.term-check{
+	font-size: 14px;
+	font-weight: 400;
+}
+.custom-file {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 0;
+}
+.custom-file-input {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 40px;
+    margin: 0;
+    opacity: 0;
+}
+.custom-file-label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    height: 40px;
+    padding: .375rem .75rem;
+    font-weight: 400;
+    line-height: 2;
+    color: #495057;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+.custom-file-label::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    display: block;
+    height: 38px;
+    padding: .375rem .75rem;
+    line-height: 2;
+    color: #495057;
+    content: "Browse";
+    background-color: #e9ecef;
+    border-left: inherit;
+    border-radius: 0 .25rem .25rem 0;
+}
+.footer-link{
+	margin-top: 30px;
+}
+.all-info-container{
+    font-family: 'OpenSans Regular';
+}
+.list-content{
+	margin-bottom: 10px;
+}
+.list-content a{
+	padding: 10px 15px;
+    width: 100%;
+    display: inline-block;
+    background-color: #f5f5f5;
+    position: relative;
+    color: #565656;
+    font-weight: 400;
+    border-radius: 4px;
+}
+.list-content a[aria-expanded="true"] i{
+	transform: rotate(180deg);
+}
+.list-content a i{
+	text-align: right;
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    transition: 0.5s;
+}
+.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
+    background-color: #fdfdfd;
+}
+.list-box{
+	padding: 10px;
+}
+.signup-logo-header .logo_area{
+	width: 200px;
+}
+.signup-logo-header .nav > li{
+	padding: 0;
+}
+.signup-logo-header .header-flex{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.list-inline li{
+    display: inline-block;
+}
+.pull-right{
+    float: right;
+}
+/*-----------custom-checkbox-----------*/
+/*----------Custom-Checkbox---------*/
+.login-box input[type="checkbox"]{
+    position: relative;
+    display: inline-block;
+    margin-right: 5px;
+}
+.login-box input[type="checkbox"]::before,
+.login-box input[type="checkbox"]::after {
+    position: absolute;
+    content: "";
+    display: inline-block;   
+}
+.login-box input[type="checkbox"]::before{
+    height: 16px;
+    width: 16px;
+    border: 1px solid #999;
+    left: 0px;
+    top: 0px;
+    background-color: #fff;
+    border-radius: 2px;
+}
+.login-box input[type="checkbox"]::after{
+    height: 5px;
+    width: 9px;
+    left: 4px;
+    top: 4px;
+}
+.login-box input[type="checkbox"]:checked::after{
+    content: "";
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    transform: rotate(-45deg);
+}
+.login-box input[type="checkbox"]:checked::before{
+    background: rgb(59,118,167);
+    background: linear-gradient(150deg, rgba(59,118,167,1) 15%, rgba(32,74,105,1) 58%);
+    border-color: #18ba60;
+}
+
+@media (max-width: 767px){
+	.sign-content h3{
+		font-size: 40px;
+	}
+	.wizard .nav-tabs > li a i{
+		display: none;
+	}
+	.signup-logo-header .navbar-toggle{
+		margin: 0;
+		margin-top: 8px;
+	}
+	.signup-logo-header .logo_area{
+		margin-top: 0;
+	}
+	.signup-logo-header .header-flex{
+		display: block;
+	}
+    .sellos{
+        margin-top: 4.5rem !important;
+    }
+}
+
+/************************
+FORMULARIO BIENVENIDA
+*************************/
+.form-bienvenida{
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    /*height: 340px; */
+}
+.form-bienvenida label, input{
+    color: #525252;
+    font-family: 'OpenSans Regular';
+    font-size: 14px;
+}
+.form-bienvenida input{
+    border-color: #C4C4C4;
+}
+.num-paso{
+    background: rgb(59,118,167);
+    background: linear-gradient(150deg, rgba(59,118,167,1) 15%, rgba(32,74,105,1) 58%);
+    color: #fff;
+    border-color: #204A69;
+    font-family: 'OpenSans Bold';
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin: auto;
+}
+/************************
+VIDEO TUTORIALES
+*************************/
+.videoTutorial{
+    position: relative;
+}
+.etiquetaVerde{
+    background: rgb(121,199,107);
+    background: linear-gradient(150deg, rgba(121,199,107,1) 15%, rgba(107,173,87,1) 43%);
+    color: #fff;
+    width: 200px;
+    position: absolute;
+    text-align: center;
+    border-radius: 5px;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    z-index: 1000;
+}
+.etiquetaVerde img{
+    width: 22px;
+    margin-left: 1rem;
+}
+.btn-close{
+    background-image: none;
+    color: #fff;
+}
+.btn-close i{
+    font-size: 25px;
+}
+.modal-tuto{
+    border-radius: 35px;
+}
+/****************************
+CUADROS DE PROCESO DE COMPRA
+*****************************/
+.cuadro-compra{
+    background-color: #fff;
+    border-radius: 0 0 15px 15px;
+    /*height: 400px;*/
+    position: relative;
+}
+.licencia-proceso{
+    width: 200px;
+}
+.btn-seleccionar{
+    background: rgb(80,152,178);
+    background: linear-gradient(150deg, rgba(80,152,178,1) 15%, rgba(56,103,142,1) 53%);
+    width: 180px;
+    color: #fff;
+    border-radius: 5px;
+}
+.form-check-input:checked{
+    background-color: transparent;
+    border-color: #BEBEBE;
+}
+.form-check-input{
+    background: transparent;
+    border: transparent;
+}
+.login-box input[type="checkbox"]{
+    margin-right: 15px;
+    margin-left: 2px;
+}
+/****************************
+CUADROS SUBE TUS DOCUMENTOS
+*****************************/
+.cuadro-documentos{
+    background-color: #fff;
+    border-radius: 25px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    position: relative;
+    /*height: 400px;*/
+}
+.cuadro-documentos p{
+    line-height: 50%;
+}
+.btn-ejemplo{
+    background: rgb(54,101,139);
+    background: linear-gradient(150deg, rgba(54,101,139,1) 15%, rgba(34,76,108,1) 43%);
+    color: #fff;
+    border: none;
+    font-size: 14px;
+    width: 120px;
+    border-radius: 7px;
+    font-family: 'OpenSans Regular';
+}
+.txt-evitar h6{
+    line-height: 70%;
+}
+.icono-lentes{
+    width: 45px;
+}
+.icono-proh{
+    width: 15px;
+}
+.icono-acce{
+    width: 35px;
+}
+/****************************
+CUADRO TU FIRMA
+*****************************/
+.txt-firma p{
+    line-height: 70%;
+}
+/**********************************
+CUADRO INFORMACIÓN COMPLEMENTARIA
+*********************************/
+.form-info-compl{
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.form-info-compl label, input{
+    color: #525252;
+    font-family: 'OpenSans Regular';
+    font-size: 14px;
+}
+.form-info-compl input{
+    border-color: #C4C4C4;
+}
+.centimentros{
+    background: rgb(54,101,139);
+    background: linear-gradient(150deg, rgba(54,101,139,1) 15%, rgba(34,76,108,1) 43%);
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 1.9rem;
+}
+/**********************************
+CUADRO CONFIRMA INFORMACIÓN 
+*********************************/
+.form-confirmacion{
+    background-color: #F2F2F1;
+    border-radius: 0 0 10px 10px;
+}
+.header-lic{
+    background-color: #646A8C;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+}
+
+/**********************************
+CUADRO ENVÍO
+*********************************/
+.check-envio{
+    background: transparent;
+    border: 1px solid #BEBEBE;
+}
+.form-info-envio{
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.form-info-envio label, input{
+    color: #525252;
+    font-family: 'OpenSans Regular';
+    font-size: 14px;
+}
+.form-info-envio input{
+    border-color: #C4C4C4;
+}
+.accordion-button{
+    padding: 1rem 0.5rem;
+}
+.form-check{
+    padding-left: 1rem;
+    min-height: 1rem;
+    margin-right: 0.5rem;
+}
+.accordion-item{
+    margin-bottom: 20px;
+    border-radius: 0px !important;
+    background: transparent;
+    border: none;
+    font-family: 'OpenSans Regular';
+}
+.accordion-button[aria-expanded="true"]{
+    background-color: transparent;
+    color:#404040;
+    box-shadow: none;
+    font-family: 'OpenSans Regular';
+}
+.accordion-button:after{
+    color:#404040;
+    background-color: transparent;
+    background-image: none;
+    font-family: 'OpenSans Regular';
+}
+.accordion-fact{
+    border: 1px solid #bfbfbf !important;
+}
+.accordion-button:not(.collapsed)::after{
+    background-image: none;
+}
+.accordion-fact{
+    border: none;
+}
+/**********************************
+SELECT CON IMÁGENES
+*********************************/
+.drop-image {
+    width: 24em;
+    color: #464646;
+    text-transform: uppercase;
+    position: relative;
+}
+.drop-image .option-image {
+    padding: 1em;
+    cursor: pointer;
+    background-color: transparent;
+}
+.drop-image .option-image:not(.active) {
+    display: none;
+}
+.drop-image.visible:before, .drop-image.visible:after {
+    border-color: #fff;
+}
+.drop-image.visible:before {
+    opacity: 0;
+}
+.drop-image.visible:after {
+    opacity: 1;
+}
+.drop-image.visible .option-image {
+    color: #464646;
+    display: block;
+}
+.drop-image.opacity .option-image {
+    opacity: 1;
+}
+.drop-image.withBG .option-image {
+    transition: background-color 0.1s;
+}
+.drop-image.withBG .option-image:not(.placeholder):hover {
+    background: rgb(80,152,178);
+    background: linear-gradient(150deg, rgba(80,152,178,1) 15%, rgba(56,103,142,1) 53%);
+    color: #fff;
+}
+.drop-image.withBG .option-image:not(.placeholder).active {
+    background: rgb(80,152,178);
+    background: linear-gradient(150deg, rgba(80,152,178,1) 15%, rgba(56,103,142,1) 53%);
+    color: #fff;
+}
+.drop-image:after, .drop-image:before {
+    content: "";
+    position: absolute;
+    top: 1.5em;
+    right: 1em;
+    width: 0.75em;
+    height: 0.75em;
+    border: 0.2em solid #86919a;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    transition: opacity 0.2s;
+}
+.drop-image:before {
+    border-left: none;
+    border-top: none;
+    top: 1.2em;
+}
+.drop-image:after {
+    border-right: none;
+    border-bottom: none;
+    opacity: 0;
+    border: 0.2em solid #fff;
+}
+/**********************************
+SELECT CON FONDO DEGRADADO
+*******************************
+.form-select{
+    background: rgb(80,152,178) !important;
+    background: linear-gradient(150deg, rgba(80,152,178,1) 15%, rgba(56,103,142,1) 53%) !important;
+    background-image: url('https://res.cloudinary.com/dra1bsh4u/image/upload/v1674498276/AMTI%20Ecommerce/arrow-down_cuzld6.png') !important;
+    background-repeat: no-repeat !important;
+    background-position: right 0.75rem center;
+    background-size: 16px 12px;
+}
+**/
+/**********************************
+CUADRO DEL CHECKOUT 
+*********************************/
+.cuadro-compra-2{
+    background-color: #fff;
+    border-radius: 0 0 15px 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.form-chekout{
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.icono-visa{
+    width: 30px;
+    margin-left: 1rem;
+}
+.icono-master{
+    width: 30px;
+}
+.icono-mestro{
+    width: 30px;
+}
+.icono-american{
+    width: 30px;
+}
+.icono-oxxo{
+    width: 30px;
+    margin-left: 1rem;
+}
+.form-efectivo input{
+    border-radius: 10px;
+}
+.pago-rechazado{
+    background-color: #FFEBEB;
+    color: #BA3D3D;
+    text-align: center;
+}
+/*****************
+FAQ'S
+*****************/
+.accordionFaqs .content {
+    padding: 0.5em 1.5em 0.5em;
+}  
+.content1 {
+    padding: 0.5em 5em 0.5em;
+} 
+/* accordionFaqs Styles */
+.accordionFaqs {
+    width: 85%;
+    margin: 0 auto;
+}
+/* Button Styles */
+.accordionFaqs-btn {
+    background-color: #fff;
+    font-size: 18px;
+    color: #464646;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    border: none ;
+    transition: 0.5s;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-family: 'OpenSans SemiBold';
+}
+.accordionFaqs-btn span {
+    padding-left: 0.5em;
+    padding-top: 1rem;
+}
+.accordionFaqs-btn:after {
+    content: "+";
+    font-size: 1.3em;
+    color: #4F84AC;
+    float: left;
+    margin-left: 1rem;
+    margin-right: 5px;
+}
+/* Active and Hover Button Styles */
+.accordionFaqs-btn.active,
+.accordionFaqs-btn:hover {
+    background-color: #ffffff;
+    color: #204A69;
+}
+.accordionFaqs-btn.active:after {
+    content: "-";
+}
+/* Panel Styles */
+.panel {
+    background-color: #ffffff;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+    opacity: 0;
+    font-family: 'OpenSans Regular';
+}
+.panel p {
+    font-size: 1.2em;
+    padding: 0 2em;
+} 
+/* Show Panel onclick */
+.panel.show {
+    display: block;
+    opacity: 1;
+    max-height: 500px;
+}
+/* Inner accordionFaqs Style */
+.inner-accord {
+    background-color: #5b80a4;
+    font-size: 1.2em;
+    margin-left: 1.25em;
+} 
+.inner-accord.active,
+.inner-accord:hover {
+    background-color: #7b99b7;
+}
+/**********************************
+CAROUSEL DE OPINIONES
+*********************************/
+.controls {
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #2D5A7D;
+    color: #fff;
+}
+.fa-arrow-left, .fa-arrow-right {
+    font-size: 1rem;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.carrousel {
+    margin: auto;
+    margin-top: 120px;
+    overflow:hidden;
+}
+.controls:hover {
+    background-color: #2D5A7D;
+}
+.item {
+    width: 650px;
+    height: 400px;
+    float: left;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-top: 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 1s all;
+}
+.cont {
+    position: absolute;
+    width: 100%;
+    margin-top: 120px;
+}
+.tapa {
+    width: 12000px;/* 	change if the size is >     12000  :) */
+    transition: .9s all;
+}
+.card{
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-color: none;
+    border: none;
+}
+.image-review{
+    margin-top: 1rem;
+}
+/**********************************
+RESPONSIVO
+*********************************/
+@media only screen and (min-width:320px) and (max-width: 479px) {
+    .item {
+        width: 320px;
+    }
+    .cuadro-avalado p{
+        line-height: 110%;
+    }
+    .cont {
+        width: 100%;
+    }
+    .txt-que-es p{
+        line-height: 115%;
+    }
+    .txt-avalado p{
+        line-height: 115%;
+    }
+    .cuadro-como-funciona p{
+        line-height: 115%;
+    }
+    .txt-buen-uso p{
+        line-height: 115%;
+    }
+    .cuadro-envios p{
+        line-height: 115%;
+    }
+    .form-bienvenida p{
+        line-height: 115%;
+    }
+    .cuadro-documentos p{
+        line-height: 115%;
+    }
+    .txt-firma p{
+        font-size: 12px !important;
+    }
+    .drop-image {
+        width: 15em;
+    }
+}
+@media only screen and (min-width:480px) and (max-width: 767px){
+    .item {
+        width: 450px;
+    }
+    .cuadro-avalado p{
+        line-height: 110%;
+    }
+    .cont {
+        width: 100%;
+    }
+    .txt-que-es p{
+        line-height: 115%;
+    }
+    .txt-avalado p{
+        line-height: 115%;
+    }
+    .cuadro-como-funciona p{
+        line-height: 115%;
+    }
+    .txt-buen-uso p{
+        line-height: 115%;
+    }
+    .cuadro-envios p{
+        line-height: 115%;
+    }
+    .form-bienvenida p{
+        line-height: 115%;
+    }
+    .cuadro-documentos p{
+        line-height: 115%;
+    }
+    .txt-firma p{
+        font-size: 12px !important;
+    }
+
+}
+@media only screen and (min-width:768px) and (max-width: 1023px){
+    .item {
+        width: 750px;
+    }
+    .cuadro-avalado p{
+        line-height: 110%;
+    }
+    .cont {
+        width: 100%;
+    }
+    .txt-que-es p{
+        line-height: 115%;
+    }
+    .txt-avalado p{
+        line-height: 115%;
+    }
+    .cuadro-como-funciona p{
+        line-height: 115%;
+    }
+    .txt-buen-uso p{
+        line-height: 115%;
+    }
+    .cuadro-envios p{
+        line-height: 115%;
+    }
+    .flechita{
+        visibility: hidden;
+    }
+    .form-bienvenida p{
+        line-height: 115%;
+    }
+    .cuadro-documentos p{
+        line-height: 115%;
+    }
+    .txt-firma p{
+        font-size: 12px !important;
+    }
+}
+@media only screen and (min-width:1024px) and (max-width: 1200px){
+    .cont {
+        width: 100%;
+    }
+    .cuadro-avalado p{
+        font-size: 8px !important;
+        line-height: 50% !important;
+    }
+    .txt-que-es p{
+        font-size: 12px;
+        line-height: 115%;
+    }
+    .txt-avalado p{
+        font-size: 11px;
+        line-height: 115%;
+    }
+    .cuadro-como-comprar p{
+        font-size: 9px;
+    }
+    .cuadro-como-funciona p{
+        font-size: 9px !important;
+        line-height: 65%;
+    }
+    .txt-buen-uso p{
+        font-size: 9px !important;
+        line-height: 65%;
+    }
+    .precio{
+        font-size: 16px !important;
+    }
+    .cuadro-envios p{
+        font-size: 9px !important;
+        line-height: 65%;
+    }
+    .flechita{
+        visibility: hidden;
+    }
+    .sellos{
+        margin-top: 0 !important;
+    }
+    .cuadro-documentos p{
+        font-size: 7px !important;
+    }
+    .form-bienvenida p{
+        font-size: 12px !important;
+    }
+
+}
+@media only screen and (min-width: 1600px) and (max-width: 2200px) {
+
+}
