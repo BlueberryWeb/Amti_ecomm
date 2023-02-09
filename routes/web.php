@@ -9,6 +9,9 @@ use App\Http\Controllers\contactoController;
 use App\Http\Controllers\mailController;
 use App\Http\Controllers\avisoController;
 use App\Http\Controllers\cookiesController;
+use App\Http\Controllers\FacturacionController;
+use App\Http\Controllers\PedidosController;
+use App\Http\Controllers\ProspectosController;
 use App\Http\Controllers\terminosController;
 
 
@@ -35,7 +38,18 @@ Route::post('contactoMail', [mailController::class, 'store'])->name('mail');
 Route::get('cookies', cookiesController::class, 'index')->name('cookies');
 Route::get('aviso', avisoController::class, 'index')->name('aviso');
 Route::get('terminos', terminosController::class, 'index')->name('terminos');
+Route::post('licencia/prospecto', [ProspectosController::class, 'index'])->name('licencia.prospecto');
+Route::post('licencia/pedido', [ProspectosController::class, 'index'])->name('licencia.pedido');
+Route::post('licencia/factura', [ProspectosController::class, 'index'])->name('licencia.pedido');
 
 //PROCESO COMPRA
 Route::get('procesoCompra', procesoCompraController::class, 'index')->name('procesoCompra');
 Route::get('checkout', checkoutController::class, 'index')->name('checkout');
+
+
+// Agregar //
+
+// USER //
+Route::post('licencia/prospecto/add', [ProspectosController::class, 'agregarProspecto'])->name('licencia.prospecto.add');
+Route::post('licencia/pedido/add', [PedidosController::class, 'agregarPedido'])->name('licencia.pedido.add');
+Route::post('licencia/factura/add', [FacturacionController::class, 'agregarFactura'])->name('licencia.factura.add');

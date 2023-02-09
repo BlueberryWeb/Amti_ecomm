@@ -6,7 +6,6 @@ AOS.init();
 // Ejemplo de JavaScript inicial para deshabilitar el envío de formularios si hay campos no válidos
 (function () {
     'use strict'
-  
     // Obtener todos los formularios a los que queremos aplicar estilos de validación de Bootstrap personalizados
     var forms = document.querySelectorAll('.needs-validation')
   
@@ -32,7 +31,7 @@ $(document).ready(function () {
   
   //Wizard
   $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
-
+      
       var target = $(e.target);
   
       if (target.parent().hasClass('disabled')) {
@@ -41,14 +40,16 @@ $(document).ready(function () {
   });
 
   $(".next-step").click(function (e) {
-
+    
+    // if( !$('#register_form').valid() ) return false
+    
       var active = $('.wizard .nav-tabs li.active');
       active.next().removeClass('disabled');
       nextTab(active);
 
   });
+  
   $(".prev-step").click(function (e) {
-
       var active = $('.wizard .nav-tabs li.active');
       prevTab(active);
 
@@ -58,6 +59,7 @@ $(document).ready(function () {
 function nextTab(elem) {
   $(elem).next().find('a[data-toggle="tab"]').click();
 }
+
 function prevTab(elem) {
   $(elem).prev().find('a[data-toggle="tab"]').click();
 }
@@ -81,7 +83,7 @@ $(document).ready(function() {
       $drop.removeClass("withBG");
       $(this).css("top");
       $drop.toggleClass("opacity");
-
+      
       if ($drop.hasClass("visible")) {
         setTimeout(function() {
           $drop.addClass("withBG");
@@ -126,3 +128,5 @@ document.getElementById("r").addEventListener("click", function(){
     if (x < confr){x = 350}else{
     document.getElementById("move").style.marginLeft = x + "px";}
 });
+
+// Obtener el valor del checkbox de la factura //

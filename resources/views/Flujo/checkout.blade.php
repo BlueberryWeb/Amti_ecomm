@@ -296,7 +296,6 @@
             </div>
         </div>
     </div>
-
     @include('components.scripts')
 </body>
 </html>
