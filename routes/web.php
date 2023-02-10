@@ -38,9 +38,9 @@ Route::post('contactoMail', [mailController::class, 'store'])->name('mail');
 Route::get('cookies', cookiesController::class, 'index')->name('cookies');
 Route::get('aviso', avisoController::class, 'index')->name('aviso');
 Route::get('terminos', terminosController::class, 'index')->name('terminos');
-Route::post('licencia/prospecto', [ProspectosController::class, 'index'])->name('licencia.prospecto');
-Route::post('licencia/pedido', [ProspectosController::class, 'index'])->name('licencia.pedido');
-Route::post('licencia/factura', [ProspectosController::class, 'index'])->name('licencia.pedido');
+// Route::get('prospecto', ProspectosController::class, 'index')->name('licencia.prospecto');
+// Route::get('pedido', PedidosController::class, 'index')->name('licencia.pedido');
+Route::get('factura', FacturacionController::class, 'index')->name('licencia.pedido');
 
 //PROCESO COMPRA
 Route::get('procesoCompra', procesoCompraController::class, 'index')->name('procesoCompra');

@@ -79,7 +79,6 @@ let imgFirma = document.getElementById('imgFirma');
 let previewFirma = document.getElementById('previewImgFirma');
 
 imgFirma.addEventListener('change', () => {
-console.log('object');
     if( imgFirma.files && imgFirma.files[0] ){
         let reader = new FileReader();
 

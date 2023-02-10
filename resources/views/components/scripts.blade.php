@@ -16,6 +16,7 @@
 <script src="{{ asset('front/js/preview.js') }}"></script>
 <script src="{{ asset('front/js/getColorEyes.js') }}"></script>
 <script src="{{ asset('front/js/factura.js') }}"></script>
+<script src="{{ asset('front/js/validarFlujo.js') }}"></script>
 <script src="{{ asset('front/js/enviosAJAX/prospectos.js') }}"></script>
 <script src="{{ asset('front/js/enviosAJAX/pedidos.js') }}"></script>
 

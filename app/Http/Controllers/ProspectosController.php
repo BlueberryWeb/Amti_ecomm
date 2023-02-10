@@ -14,7 +14,7 @@ class ProspectosController extends Controller
 
     public function __invoke()
     {
-      return redirect()->back();
+      dd('dentro');
     }
 
     public function agregarProspecto(Request $request){

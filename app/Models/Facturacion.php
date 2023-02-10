@@ -32,10 +32,6 @@ class Facturacion extends Model
     protected $table = 'facturacion';
 
     public function pedido(){
-        return ;
-    }
-
-    public function prospecto(){
-        return ; 
+        return $this->belongsTo(Pedidos::class, 'id_factura', 'id');
     }
 }

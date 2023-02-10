@@ -1,5 +1,4 @@
 const getEyes = (color) => {
-    console.log(color);
     let color_ojos = color.textContent;
     let ojosHidden =  document.getElementById('color_ojos');
 

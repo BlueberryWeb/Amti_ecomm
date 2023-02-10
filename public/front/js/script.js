@@ -11,17 +11,17 @@ AOS.init();
   
     // Bucle sobre ellos y evitar el envío
     Array.prototype.slice.call(forms)
-      .forEach(function (form) {
-        form.addEventListener('submit', function (event) {
-          if (!form.checkValidity()) {
-            event.preventDefault()
-            event.stopPropagation()
-          }
-  
-          form.classList.add('was-validated')
-        }, false)
-      })
-  })()
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+
+        form.classList.add('was-validated')
+      }, false)
+    })
+})()
 
 // FLUJO DE COMPRA
 
@@ -40,12 +40,17 @@ $(document).ready(function () {
   });
 
   $(".next-step").click(function (e) {
-    
-    // if( !$('#register_form').valid() ) return false
-    
-      var active = $('.wizard .nav-tabs li.active');
-      active.next().removeClass('disabled');
-      nextTab(active);
+      let validacion = $('#register_form').valid({
+        message: {
+          'fullName' : "Campo Obligatorio"
+        }
+      })   
+
+      if( validacion ){
+        var active = $('.wizard .nav-tabs li.active');
+        active.next().removeClass('disabled');
+        nextTab(active);
+      }
 
   });
   
@@ -129,4 +134,3 @@ document.getElementById("r").addEventListener("click", function(){
     document.getElementById("move").style.marginLeft = x + "px";}
 });
 
-// Obtener el valor del checkbox de la factura //

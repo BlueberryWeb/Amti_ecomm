@@ -15,8 +15,7 @@ return new class extends Migration
     {
         Schema::create('facturacion', function (Blueprint $table) {
             $table->id();
-            $table->integer('id_pedido');
-            $table->integer('id_prospecto');
+            $table->integer('id_pedido')->unsigned();
             $table->string("razon_social");
             $table->string("rfc");
             $table->string("calle");
@@ -33,6 +32,8 @@ return new class extends Migration
             $table->string("regimen_fiscal");
             $table->string("constancia_fiscal");
             $table->timestamps();
+
+            $table->foreign('id_pedido')->references('id')->on('pedidos');
         });
     }
 

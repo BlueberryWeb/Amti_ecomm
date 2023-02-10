@@ -54,6 +54,9 @@ return new class extends Migration
             $table->double('pago'); //Sugerencia: Borrar (productos ya cuenta con esta información).
             $table->double('total');
 
+            //Datos Facturación
+            $table->integer('id_factura')->unsigned();
+
             $table->timestamps();
 
             //Llaves foraneas
@@ -70,6 +73,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('pedidos2');
+        Schema::dropIfExists('pedidos');
     }
 };

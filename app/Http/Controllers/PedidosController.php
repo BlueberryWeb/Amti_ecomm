@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Validator;
 class PedidosController extends Controller
 {
     public function _invoke() {
-        //
+        dd('dentro');
     }
 
 
@@ -68,20 +68,20 @@ class PedidosController extends Controller
             $urlIdentificacionFrente = Storage::url($imagen);
             $imagen = $request->file('identeificacionVuelta')->store('public/imagenes');
             $urlIdentificacionVuelta = Storage::url($imagen);
-
+            
             $imagen = $request->file('licenciaFrente')->store('public/imagenes');
             $urlLicenciaFrente = Storage::url($imagen);
             $imagen = $request->file('licenciaVuelta')->store('public/imagenes');
             $urlLicenciaVulta = Storage::url($imagen);
-
+            
             $imagen = $request->file('imgPersonalFrente')->store('public/imagenes');
             $urlPersonalFrente = Storage::url($imagen);
             $imagen = $request->file('imgPersonalVuelta')->store('public/imagenes');
             $urlPersonalVuelta = Storage::url($imagen);
-
+            
             $imagen = $request->file('imgFirma')->store('public/imagenes');
             $urlFirma= Storage::url($imagen);
-
+            
             $pedidos = new Pedidos();
             $pedidos->estatus = 'Exitoso';
             $pedidos->factura = $request->factura;
@@ -116,25 +116,25 @@ class PedidosController extends Controller
             $pedidos->tarjeta_name = "";
             $pedidos->pago = 0;
             $pedidos->total = 0;
+            $pedidos->id_factura = 0;
             $pedidos->save();
 
-            // return redirect()->route('checkout');
+            if( $request->factura == 'No') return redirect()->route('checkout');
         }
         catch(\Exception $e){
+            // dd($e);
             return redirect()->back()->with('error', 'Error en la alta del pedido.');
         }
 
         if($request->factura == 'Si'){
             try{
                 // dd('dentro');
-                $imagen = $request->file('constancia_fiscal')->store('public/imagenes');
-                $url = Storage::url($imagen);
+                $documento = $request->file('constancia_fiscal')->store('public/imagenes');
+                $url = Storage::url($documento);
     
                 $factura = new Facturacion();
                 $ultimoPedido = Pedidos::latest('id')->first();
                 $factura->id_pedido = $ultimoPedido->id;
-                $ultimoProspecto = Prospectos::latest('id')->first();
-                $factura->id_prospecto = $ultimoProspecto->id;
                 $factura->razon_social = $request->razonSocial;
                 $factura->rfc = $request->rfc;
                 $factura->calle = $request->calleFactura;
@@ -151,7 +151,10 @@ class PedidosController extends Controller
                 $factura->regimen_fiscal = $request->regimen_fiscal;
                 $factura->constancia_fiscal = $url;
                 $factura->save();
-    
+                
+                $ultimaFactura = Facturacion::latest('id')->first();
+                Pedidos::select('id_factura')->where('id', $ultimoPedido->id)->update(['id_factura' => $ultimaFactura->id]);
+
                 return redirect()->route('checkout');
             }
             catch(\Exception $e){

@@ -1,5 +1,8 @@
 const agregarPedido = () => {
-    // if( !$('#register_form').valid() ) return false
-    
-    document.getElementById("register_form").submit();
+
+    let validate = $('#register_form').valid();
+
+    if( validate ){
+        document.getElementById("register_form").submit();
+    }
 }

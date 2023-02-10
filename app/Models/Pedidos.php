@@ -13,6 +13,7 @@ class Pedidos extends Model
        'factura',
 
        'id_prospecto',
+       'id_factura',
        'direccion',
        'pais',
        'sexo',
@@ -56,7 +57,6 @@ class Pedidos extends Model
     }
 
     public function scopeNoAsignados($query){
-        
             return $query->leftjoin("pedidos_vendedores","pedidos_vendedores.id_pedido", "=", "pedidos.id")
             ->whereNull('pedidos_vendedores.id_pedido');
     }
@@ -66,5 +66,7 @@ class Pedidos extends Model
         return $query->where('created_at', '>=', $inicio)->where('created_at', '<=' , $fin);
     }
 
- 
+    public function pedidoFactura(){
+        return $this->hasOne(Facturacion::class, 'id_pedido', 'id');
+    }
 }

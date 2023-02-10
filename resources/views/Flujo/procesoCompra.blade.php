@@ -51,27 +51,30 @@
                                 <div class="wizard">
                                     <div class="wizard-inner">
                                         <div class="connecting-line"></div>
-                                        <ul class="nav nav-tabs" role="tablist">
+                                        <ul class="nav nav-tabs" role="tablist" id="steps">
                                             <li role="presentation" class="active">
-                                                <a href="#step1" data-toggle="tab" aria-controls="step1" role="tab" aria-expanded="true"><span class="round-tab"><h6 class="pt-2">1</h6> </span> <i> Datos iniciales</i></a>
+                                                <a href="#step1" name="_steps" onclick="validateFlujo(this)" data-toggle="tab" aria-controls="step1" role="tab" aria-expanded="true"><span class="round-tab"><h6 class="pt-2">1</h6> </span> <i> Datos iniciales</i></a>
                                             </li>
                                             <li role="presentation" class="disabled">
-                                                <a href="#step2" data-toggle="tab" aria-controls="step2" role="tab" aria-expanded="false"><span class="round-tab"><h6 class="pt-2">2</h6></span> <i> Vigencia</i></a>
+                                                <a href="#step2" target="_blank" name="_steps" onclick="validateFlujo(this)" data-toggle="tab" aria-controls="step2" role="tab" aria-expanded="false"><span class="round-tab"><h6 class="pt-2">2</h6></span> <i> Vigencia</i></a>
                                             </li>
                                             <li role="presentation" class="disabled">
-                                                <a href="#step3" data-toggle="tab" aria-controls="step3" role="tab"><span class="round-tab"><h6 class="pt-2">3</h6></span> <i>Documentos</i></a>
+                                                <a href="#step3" name="_steps" onclick="validateFlujo(this)" data-toggle="tab" aria-controls="step3" role="tab"><span class="round-tab"><h6 class="pt-2">3</h6></span> <i>Documentos</i></a>
                                             </li>
                                             <li role="presentation" class="disabled">
-                                                <a href="#step4" data-toggle="tab" aria-controls="step4" role="tab"><span class="round-tab"><h6 class="pt-2">4</h6></span> <i>Firma </i></a>
+                                                <a href="#step4" name="_steps" onclick="validateFlujo(this)" data-toggle="tab" aria-controls="step4" role="tab"><span class="round-tab"><h6 class="pt-2">4</h6></span> <i>Firma </i></a>
                                             </li>
                                             <li role="presentation" class="disabled">
-                                                <a href="#step5" data-toggle="tab" aria-controls="step5" role="tab"><span class="round-tab"><h6 class="pt-2">5</h6></span> <i> Información</i></a>
+                                                <a href="#step5" name="_steps" onclick="validateFlujo(this)" data-toggle="tab" aria-controls="step5" role="tab"><span class="round-tab"><h6 class="pt-2">5</h6></span> <i> Información</i></a>
                                             </li>
-                                            <li role="presentation" class="disabled">
-                                                <a href="#step6" onclick="previewAddres();" data-toggle="tab" aria-controls="step6" role="tab"><span class="round-tab"><h6 class="pt-2">6</h6> </span> <i>Confirmar </i></a>
+                                            <li role="presentation" class="disabled" onclick="validateFlujo();">
+                                                <a href="#step6" name="_steps" onclick="validateFlujo(this)" data-toggle="tab" aria-controls="step6" role="tab"><span class="round-tab"><h6 class="pt-2">6</h6> </span> <i>Confirmar </i></a>
                                             </li>
+                                            {{-- <li role="presentation" class="disabled">
+                                                <a href="#step6" name="_steps" onclick="validateFlujo(this)" onclick="previewAddres();" data-toggle="tab" aria-controls="step6" role="tab"><span class="round-tab"><h6 class="pt-2">6</h6> </span> <i>Confirmar </i></a>
+                                            </li> --}}
                                             <li role="presentation" class="disabled">
-                                                <a href="#step7" data-toggle="tab" aria-controls="step7" role="tab"><span class="round-tab"><h6 class="pt-2">7</h6></span> <i>Envío </i></a>
+                                                <a href="#step7" name="_steps" onclick="validateFlujo(this)" data-toggle="tab" aria-controls="step7" role="tab"><span class="round-tab"><h6 class="pt-2">7</h6></span> <i>Envío </i></a>
                                             </li>
                                         </ul>
                                     </div>
@@ -80,7 +83,7 @@
                             
                         </div>
                         <div class="wizard">
-                            <form role="form" action="{{ route('licencia.pedido.add')}}" enctype="multipart/form-data" method="POST" id="register_form" name="register_form" class="login-box needs-validation" >
+                            <form class="login-box needs-validation" role="form" action="{{ route('licencia.pedido.add')}}" enctype="multipart/form-data" method="POST" id="register_form" name="register_form">
                                 <div class="tab-content" id="main_form">
                                     @csrf
                                     {{-- <input type="hidden" name="_token" id="_token" value="{{ csrf_token() }}"> --}}
@@ -110,6 +113,7 @@
                                                                 <div class="mb-3">
                                                                     <label for="exampleInputEmail1" class="form-label">Nombre completo del solicitante*</label>
                                                                     <input type="text" class="form-control text" id="fullName" name="fullName" aria-describedby="" required>
+                                                                    <span class="_error">Error</span>
                                                                 </div>
                                                                 <div class="">
                                                                     <label for="exampleInputEmail1" class="form-label">Teléfono*</label>
@@ -487,7 +491,7 @@
                                                                     <hr/>
                                                                     <div class="mb-3">
                                                                         <label for="formFileSm" class="form-label">Tu firma*</label>
-                                                                        <input class="form-control form-control-sm"  id="imgFirma" name="imgFirma" type="file" type="file" accept="image/png,image/jpeg">
+                                                                        <input class="form-control form-control-sm"  id="imgFirma" name="imgFirma" type="file" type="file" accept="image/png,image/jpeg" required>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -546,8 +550,8 @@
                                                                 <div class="row">
                                                                     <div class="col-12 col-md-12 col-sm-12 col-lg-6 mb-4">
                                                                         <label for="exampleInputEmail1" class="form-label">País de nacimiento*</label>
-                                                                        <select class="form-select" id="pais" name="pais" aria-label=".form-select-lg example">
-                                                                            <option selected>País</option>
+                                                                        <select class="form-select" id="pais" name="pais" aria-label=".form-select-lg example" required>
+                                                                            <option selected value="">País</option>
                                                                             <option value="Afganistán">Afganistán</option>
                                                                             <option value="Albania">Albania</option>
                                                                             <option value="Alemania">Alemania</option>
@@ -807,7 +811,7 @@
                                                                     </div>
                                                                     <div class="col-12 col-md-12 col-sm-12 col-lg-6 mb-4">
                                                                         <label for="exampleInputEmail1" class="form-label">Sexo*</label>
-                                                                        <select class="form-select" id="sexo" name="sexo" aria-label=".form-select-lg example">
+                                                                        <select class="form-select" id="sexo" name="sexo" aria-label=".form-select-lg example" required>
                                                                             <option value="" selected>Seleccione un opción</option>
                                                                             <option value="Femenino">Femenino</option>
                                                                             <option value="Masculino">Masculino</option>
@@ -815,7 +819,7 @@
                                                                     </div>
                                                                     <div class="col-12 col-md-12 col-sm-12 col-lg-6 mb-4">
                                                                         <label for="exampleInputEmail1" class="form-label">Color de cabello natural*</label>
-                                                                        <select class="form-select" id="colorCabello" name="colorCabello" aria-label=".form-select-lg example">
+                                                                        <select class="form-select" id="colorCabello" name="colorCabello" aria-label=".form-select-lg example" required>
                                                                             <option value="" selected>Seleccione un opción</option>
                                                                             <option value="Negro">Negro</option>
                                                                             <option value="Oscuro">Oscuro</option>
@@ -884,7 +888,7 @@
                                                                         <div class="col-12 col-sm-12 col-md-12 col-lg-6 mb-4">
                                                                             <div class="">
                                                                                 <label for="exampleInputEmail1" class="form-label">Número interior</label>
-                                                                                <input type="text" class="form-control number" id="numInterior" name="numInterior" aria-describedby="" required>
+                                                                                <input type="text" class="form-control number" id="numInterior" name="numInterior" aria-describedby="">
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-12 col-sm-12 col-md-12 col-lg-6 mb-4">
@@ -1092,7 +1096,7 @@
                                                                     <div class="col-12 col-sm-12 col-md-12 col-lg-6">
                                                                         <div class="mb-4">
                                                                             <label for="numeroIntEnvio" class="form-label">Número interior</label>
-                                                                            <input type="text" class="form-control number" id="numeroIntEnvio" name="numeroIntEnvio" aria-describedby="" required>
+                                                                            <input type="text" class="form-control number" id="numeroIntEnvio" name="numeroIntEnvio" aria-describedby="">
                                                                         </div>
                                                                     </div>
                                                                     <div class="col-12 col-sm-12 col-md-12 col-lg-6">
@@ -1116,7 +1120,7 @@
                                                                     <label for="exampleInputEmail1" class="form-label">Selecciona tu tipo de envío*</label>
                                                                     <div class="col-12 col-sm-12 col-md-12 col-lg-4">
                                                                         <div class="form-check">
-                                                                            <input class="form-check-input check-envio" type="radio" name="tipoEnvio" id="tipoEnvio1" checked value="Estandar">
+                                                                            <input class="form-check-input check-envio" type="radio" name="tipoEnvio" id="tipoEnvio1" checked value="Estandar" required>
                                                                             <label class="form-check-label txt-color-tit bold" for="tipoEnvio1">Envío<b class="txt-azul-oscuro"> estándar</b> <br/>
                                                                                 <i class="fa-solid fa-check txt-verde"></i> <b class="txt-verde">Gratuito</b> <br/>
                                                                                 <b class="top-menu regular">5 - 7 días hábiles</b>
@@ -1125,7 +1129,7 @@
                                                                     </div>
                                                                     <div class="col-12 col-sm-12 col-md-12 col-lg-4">
                                                                         <div class="form-check ">
-                                                                            <input class="form-check-input check-envio" type="radio" name="tipoEnvio" id="tipoEnvio2" value="Express">
+                                                                            <input class="form-check-input check-envio" type="radio" name="tipoEnvio" id="tipoEnvio2" value="Express" required>
                                                                             <label class="form-check-label" for="tipoEnvio2">Envío<b class="txt-azul-oscuro"> express</b> <br/>
                                                                                 <b class="regular">$199</b> <br/>
                                                                                 <b class="top-menu regular">1 a 3 días hábiles</b>
@@ -1134,7 +1138,7 @@
                                                                     </div>
                                                                     <div class="col-12 col-sm-12 col-md-12 col-lg-4">
                                                                         <div class="form-check">
-                                                                            <input class="form-check-input check-envio" type="radio" name="tipoEnvio" id="tipoEnvio3" value="Recogerla">
+                                                                            <input class="form-check-input check-envio" type="radio" name="tipoEnvio" id="tipoEnvio3" value="Recogerla" required>
                                                                             <label class="form-check-label" for="tipoEnvio3">Recoger en<b class="txt-azul-oscuro"> sucursal</b> <br/>
                                                                                 <i class="fa-solid fa-check txt-verde"></i> <b class="txt-verde">Gratuito</b> <br/>
                                                                                 <b class="top-menu regular">2 a 3 días hábiles.</b>
@@ -1148,15 +1152,12 @@
 
                                                                 <div class="accordion" id="accordionPanelsStayOpenExample">
                                                                     <div class="accordion-item">
-                                                                      <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-                                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                                                                          <div class="form-check mt-1">
-                                                                            <input class="form-check-input chkAll" type="checkbox" value="" id="chkFactura" name="chkFactura" onclick="getFactura(this)">
-                                                                            <input type="hidden" id="factura" name="factura" value="No">
-                                                                          </div>
-                                                                          Requiero factura
-                                                                        </button>
-                                                                      </h2>
+                                                                        <div class="form-check">
+                                                                            <input class="form-check-input chkAll" type="checkbox" value="" id="chkFactura" name="chkFactura" data-bs-target="#panelsStayOpen-collapseTwo" data-bs-toggle="collapse" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                                                            <label class="form-check-label pb-2" for="chkFactura" id="btnFactura" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                                                                Requiero factura
+                                                                            </label>
+                                                                        </div>
                                                                       <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
                                                                         <div class="accordion-body ms-3">
                                                                             <div class="row">
@@ -1192,8 +1193,8 @@
                                                                                 </div>
                                                                                 <div class="col-12 col-sm-12 col-md-12 col-lg-6">
                                                                                     <div class="mb-4">
-                                                                                        <label for="numInteriorFactura" class="form-label">Numero interior</label>
-                                                                                        <input type="text" class="form-control number" id="numInteriorFactura" name="numInteriorFactura" aria-describedby="" required>
+                                                                                        <label for="numInteriorFactura" class="form-label">Número interior</label>
+                                                                                        <input type="text" class="form-control number" id="numInteriorFactura" name="numInteriorFactura" aria-describedby="">
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="col-12 col-sm-12 col-md-12 col-lg-6">
@@ -1236,8 +1237,7 @@
                                                                                     <div class="mb-4">
                                                                                         <label for="exampleInputEmail1" class="form-label">Uso del CFDI*</label>
                                                                                         <select required class="form-select f-italic bg-obscuro txt-blanco t-s"
-                                                                                        aria-label="Default select example" name="cfdi" id="cfdi"
-                                                                                        value="{{ old('cfdi') }}">
+                                                                                        aria-label="Default select example" name="cfdi" id="cfdi">
                                                                                         <option value="">Selecciona una opción</option>
                                                                                         <option value="G01">Adquisición de mercancías.</option>
                                                                                         <option value="G02">Devoluciones, descuentos o bonificaciones.</option>
@@ -1273,8 +1273,7 @@
                                                                                     <div class="mb-4">
                                                                                         <label for="exampleInputEmail1" class="form-label">Regimen Fiscal*</label>
                                                                                         <select required class="form-select f-italic bg-obscuro txt-blanco t-s"
-                                                                                        aria-label="Default select example" name="regimen_fiscal" id="regimen_fiscal"
-                                                                                        value="{{ old('regimen_fiscal') }}">
+                                                                                        aria-label="Default select example" name="regimen_fiscal" id="regimen_fiscal">
                                                                                         <option value="">Selecciona una opción</option>
                                                                                         <option value="601">General de Ley Personas Morales</option>
                                                                                         <option value="603">Personas Morales con Fines no Lucrativos</option>
@@ -1305,10 +1304,8 @@
                                                                                 </div>
                                                                                 <div class="col-12 col-sm-12 col-md-12 col-lg-6">
                                                                                     <div class="mb-4">
-                                                                                        <label class="txt-obscuro f-semibold" for="constancia">Sube tu constancia fiscal
-                                                                                        </label>
-                                                                                        <input type="file" id="constancia_fiscal" name="constancia_fiscal" class="form-control addimg mb-2" accept=".pdf"
-                                                                                            value="{{ old('cons') }}" />
+                                                                                        <label class="txt-obscuro f-semibold" for="constancia">Sube tu constancia fiscal*</label>
+                                                                                        <input required type="file" id="constancia_fiscal" name="constancia_fiscal" class="form-control addimg mb-2"  accept="application/pdf"/>
                                                                                     </div>
                                                                                 </div>
                                                                             </div>

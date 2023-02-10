@@ -2,15 +2,18 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Facturacion;
+use App\Models\Pedidos;
 use Illuminate\Http\Request;
 
 class FacturacionController extends Controller
 {
-    public function _invoke(){
-        //
-    }
+    public function __invoke(){
+        $pedido = Pedidos::where('id', 2)->first();
+        // dd($pedido);
 
-    public function agregarFactura(Request $request){
-        dd('dentro');
+        $factura = $pedido->pedidoFactura()->first();
+        dd($factura);
+        
     }
 }
