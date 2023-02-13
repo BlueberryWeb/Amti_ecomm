@@ -2,10 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Comentarios;
 use App\Models\Envios;
 use App\Models\Pedidos;
 use App\Models\Productos;
 use App\Models\Prospectos;
+use App\Models\User;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Http\Request;
 
@@ -14,7 +16,12 @@ class ProspectosController extends Controller
 
     public function __invoke()
     {
-      dd('dentro');
+        $prospectos = Prospectos::orderBy('id', 'DESC')->get();
+        $usuarios = User::all();
+        $comentarios = Comentarios::where('concepto', 'prospectos')->orderBy('id', 'DESC')->get();
+        $countcoments = $comentarios->count();
+
+        return view('Portal.Prospectos.prospectos', compact('prospectos', 'usuarios','comentarios', 'countcoments'));
     }
 
     public function agregarProspecto(Request $request){

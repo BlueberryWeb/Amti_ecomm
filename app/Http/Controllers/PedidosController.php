@@ -150,6 +150,7 @@ class PedidosController extends Controller
                 $factura->cfdi = $request->cfdi;
                 $factura->regimen_fiscal = $request->regimen_fiscal;
                 $factura->constancia_fiscal = $url;
+                $factura->estatus = 'Pendiente';
                 $factura->save();
                 
                 $ultimaFactura = Facturacion::latest('id')->first();

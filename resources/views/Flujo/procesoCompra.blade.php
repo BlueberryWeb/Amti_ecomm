@@ -113,7 +113,7 @@
                                                                 <div class="mb-3">
                                                                     <label for="exampleInputEmail1" class="form-label">Nombre completo del solicitante*</label>
                                                                     <input type="text" class="form-control text" id="fullName" name="fullName" aria-describedby="" required>
-                                                                    <span class="_error">Error</span>
+                                                                    
                                                                 </div>
                                                                 <div class="">
                                                                     <label for="exampleInputEmail1" class="form-label">Teléfono*</label>
@@ -1157,6 +1157,7 @@
                                                                             <label class="form-check-label pb-2" for="chkFactura" id="btnFactura" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
                                                                                 Requiero factura
                                                                             </label>
+                                                                            <input type="hidden" name="factura" id="factura" value="No">
                                                                         </div>
                                                                       <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
                                                                         <div class="accordion-body ms-3">
