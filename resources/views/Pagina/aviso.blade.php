@@ -10,7 +10,7 @@
 <body>
     @include('components.menu')
 
-    <div class="container regular txt-color-parrafo pt-5">
+    <div class="container regular txt-color-parrafo">
         <div class="row pt-5">
             <div class="col-12 col-lg-2 col-sm-12 col-md-12"></div>
             <div class="col-12 col-lg-8 col-sm-12 col-md-12 pt-5">

@@ -41,10 +41,10 @@
                                     <h6 class="regular mb-3 txt-color-parrafo">¿Cómo funciona?</h6>
                                 </a>
                                 <a href="{{ route('vigencias') }}" class="a_none_style txt-color-parrafo">
-                                    <h6 class="regular txt-color-parrafo">Vigencias y precios</h6>
+                                    <h6 class="regular mb-3 txt-color-parrafo">Vigencias y precios</h6>
                                 </a>
                                 <a href="{{ route('contacto') }}" class="a_none_style txt-color-parrafo">
-                                    <h6 class="regular txt-color-parrafo">Contacto</h6>
+                                    <h6 class="regular mb-3 txt-color-parrafo">Contacto</h6>
                                 </a>
                                 <a href="{{ route('faq') }}" class="a_none_style txt-color-parrafo">
                                     <h6 class="regular txt-color-parrafo">FAQ’s</h6>
@@ -61,7 +61,7 @@
                                     <h6 class="regular mb-3 txt-color-parrafo">Aviso de Privacidad</h6>
                                 </a>
                                 <a href="{{ route('cookies') }}" class="a_none_style txt-color-parrafo">
-                                    <h6 class="regular txt-color-parrafo">Políica de Cookies</h6>
+                                    <h6 class="regular txt-color-parrafo">Política de Cookies</h6>
                                 </a>
                             </div>
                         </div>
