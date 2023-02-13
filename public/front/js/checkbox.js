@@ -1,5 +1,5 @@
 const resetCheckBox = () => {
-    let checkbox = this.document.getElementsByName('vigencia');
+    let checkbox = this.document.getElementsByClassName('checks');
     let Checked = null;
     
     for (let CheckBox of checkbox){

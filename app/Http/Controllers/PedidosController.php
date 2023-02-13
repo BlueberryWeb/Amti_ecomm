@@ -122,13 +122,11 @@ class PedidosController extends Controller
             if( $request->factura == 'No') return redirect()->route('checkout');
         }
         catch(\Exception $e){
-            // dd($e);
             return redirect()->back()->with('error', 'Error en la alta del pedido.');
         }
 
         if($request->factura == 'Si'){
             try{
-                // dd('dentro');
                 $documento = $request->file('constancia_fiscal')->store('public/imagenes');
                 $url = Storage::url($documento);
     
@@ -158,7 +156,7 @@ class PedidosController extends Controller
                 return redirect()->route('checkout');
             }
             catch(\Exception $e){
-                dd($e);
+                
                 return redirect()->back()->with('error', 'Error en la alta del pedido.');
             }
         }
