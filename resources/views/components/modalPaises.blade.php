@@ -7,7 +7,7 @@
                 <div class="row">
                     <div class="col-12 col-sm-12 col-md-12 col-lg-6 py-5">
                         <div class="">
-                            <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674070253/AMTI%20Ecommerce/logo-amti-gde_tasxta.png" alt="Logo AMTI" class="img-fluid logo-menu"/>
+                            <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310985/amtiEcommerce/logo-amti-gde_ff8yg0.png" alt="Logo AMTI" class="img-fluid logo-menu"/>
                         </div>
                     </div>
                     <div class="col-12 col-sm-12 col-md-12 col-lg-6">

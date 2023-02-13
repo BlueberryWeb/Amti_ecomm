@@ -6,7 +6,7 @@
                 <div class="row">
                     <div class="col-12 col-sm-12 col-md-12 col-lg-6">
                         <div class="text-start mx-3">
-                            <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674070253/AMTI%20Ecommerce/logo-amti-gde_tasxta.png" alt="Logo AMTI" class="img-fluid logo-menu "/>
+                            <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310985/amtiEcommerce/logo-amti-gde_ff8yg0.png" alt="Logo AMTI" class="img-fluid logo-menu "/>
                         </div>
                     </div>
                     <div class="col-12 col-sm-12 col-md-12 col-lg-6">
@@ -21,7 +21,7 @@
                 <div class="container my-5">
                     <div class="row">
                         <div class="text-center mb-4">
-                            <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674504117/AMTI%20Ecommerce/check_uqz7rt.png" alt="Ilustración de Check" class="img-fluid check-img"/>
+                            <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310960/amtiEcommerce/check_q2ila7.png" alt="Ilustración de Check" class="img-fluid check-img"/>
                         </div>
                         <div class="text-center mb-4">
                             <h1 class="regular titulos text-white mb-3">¡Enhorabuena!</h1>

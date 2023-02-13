@@ -15,7 +15,7 @@
 <div class="container-fluid p-0">
     <div class="">
         <video autoplay loop muted class="video-bg_video">
-            <source src="https://res.cloudinary.com/dra1bsh4u/video/upload/v1674079207/AMTI%20Ecommerce/mapa-paises_trscgp.mp4" type="video/mp4">
+            <source src="https://res.cloudinary.com/dhigl3clg/video/upload/v1676310991/amtiEcommerce/mapa-paises_bqt50u.mp4" type="video/mp4">
         </video>
     </div>
 </div>

@@ -15,7 +15,7 @@
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-2">
                     <a class="a_none_style" href="{{ url('/') }}">
-                        <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674070253/AMTI%20Ecommerce/logo-amti-gde_tasxta.png" alt="AMTI" class="img-fluid logo-menu"/>
+                        <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310985/amtiEcommerce/logo-amti-gde_ff8yg0.png" alt="AMTI" class="img-fluid logo-menu"/>
                     </a>
                 </div>
                 <div class="col-12 col-sm-12 col-md-12 col-lg-8"></div>
@@ -36,7 +36,7 @@
             <div class="row">
                 <div class="videoTutorial">
                     <div class="etiquetaVerde py-2">
-                        <h3 class="regular parrafos pt-1" data-bs-toggle="modal" data-bs-target="#Tutoriales">Video tutoriales <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674234032/AMTI%20Ecommerce/icono-video_dcfyd4.png" alt="Icono video" class="img-fluid"/></h3>
+                        <h3 class="regular parrafos pt-1" data-bs-toggle="modal" data-bs-target="#Tutoriales">Video tutoriales <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310975/amtiEcommerce/icono-video_pjp2xo.png" alt="Icono video" class="img-fluid"/></h3>
                     </div>
                     @include('Flujo.components.modalTutoriales')
                 </div>
@@ -106,7 +106,7 @@
                                                     <div class="form-bienvenida py-5">
                                                         <div class="mx-5">
                                                             <div class="text-center pb-4">
-                                                                <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674082739/AMTI%20Ecommerce/logo-azul-gde_uhagup.png" alt="AMTI" class="img-fluid logo-menu"/>
+                                                                <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310986/amtiEcommerce/logo-azul-gde_mffzut.png" alt="AMTI" class="img-fluid logo-menu"/>
                                                             </div>
                                                             <div class="">
                                                                 <h5 class="semiBold parrafos txt-color-parrafo mb-3">Introduce a continuación los datos requeridos:</h5>
@@ -166,7 +166,7 @@
                                                                                 <h3 class="semiBold h5">3 años</h3>
                                                                             </div>
                                                                             <div class="text-center pt-4 pb-2">
-                                                                                <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674237481/AMTI%20Ecommerce/licenciaAMTI_heavk9.png" alt="Ilustración de licencia y libro AMTI" class="img-fluid licencia-proceso"/>
+                                                                                <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310985/amtiEcommerce/licenciaAMTI_nibmnp.png" alt="Ilustración de licencia y libro AMTI" class="img-fluid licencia-proceso"/>
                                                                             </div>
                                                                             <div class="mx-4">
                                                                                 <hr/>
@@ -197,10 +197,10 @@
                                                                                 <h3 class="semiBold h5">5 años</h3>
                                                                             </div>
                                                                             <div class="text-center pt-4 pb-2">
-                                                                                <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674237481/AMTI%20Ecommerce/licenciaAMTI_heavk9.png" alt="Ilustración de licencia y libro AMTI" class="img-fluid licencia-proceso"/>
+                                                                                <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310985/amtiEcommerce/licenciaAMTI_nibmnp.png" alt="Ilustración de licencia y libro AMTI" class="img-fluid licencia-proceso"/>
                                                                                <div class="etiqueta-recom py-1">
                                                                                     <h6 class="regular top-menu pt-1">
-                                                                                        <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674166879/AMTI%20Ecommerce/icono-recomendada_mvl3og.png" alt="" class="img-fluid"/>
+                                                                                        <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310973/amtiEcommerce/icono-recomendada_qlwq7s.png" alt="" class="img-fluid"/>
                                                                                         Recomendada
                                                                                     </h6>
                                                                                </div>
@@ -241,7 +241,7 @@
                                                                                 <h3 class="semiBold h5">1 años</h3>
                                                                             </div>
                                                                             <div class="text-center pt-4 pb-2">
-                                                                                <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674237481/AMTI%20Ecommerce/licenciaAMTI_heavk9.png" alt="Ilustración de licencia y libro AMTI" class="img-fluid licencia-proceso"/>
+                                                                                <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310985/amtiEcommerce/licenciaAMTI_nibmnp.png" alt="Ilustración de licencia y libro AMTI" class="img-fluid licencia-proceso"/>
                                                                             </div>
                                                                             <div class="mx-4">
                                                                                 <hr/>
@@ -310,7 +310,7 @@
                                                         <div class="mx-5">
                                                             <div class="row">
                                                                 <div class="col-12 col-sm-12 col-md-12 col-lg-3">
-                                                                    <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674243009/AMTI%20Ecommerce/identificacion-of_gx8kkt.png" alt="Ilustración de identificacion oficial" class="img-fluid"/>
+                                                                    <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310974/amtiEcommerce/identificacion-of_ppgcid.png" alt="Ilustración de identificacion oficial" class="img-fluid"/>
                                                                 </div>
                                                                 <div class="col-12 col-sm-12 col-md-12 col-lg-9">
                                                                     <h1 class="txt-azul-oscuro h5 bold mb-2">Identificación oficial</h1>
@@ -353,7 +353,7 @@
                                                         <div class="mx-5">
                                                             <div class="row">
                                                                 <div class="col-12 col-sm-12 col-md-12 col-lg-3">
-                                                                    <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674243009/AMTI%20Ecommerce/licencia-cond_f6ib3d.png" alt="Ilustración de licencia de conducir" class="img-fluid"/>
+                                                                    <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310981/amtiEcommerce/licencia-cond_heqoa5.png" alt="Ilustración de licencia de conducir" class="img-fluid"/>
                                                                 </div>
                                                                 <div class="col-12 col-sm-12 col-md-12 col-lg-9">
                                                                     <h1 class="txt-azul-oscuro h5 bold mb-2">Licencia de conducir</h1>
@@ -393,7 +393,7 @@
                                                         <div class="mx-5">
                                                             <div class="row">
                                                                 <div class="col-12 col-sm-12 col-md-12 col-lg-3">
-                                                                    <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674243009/AMTI%20Ecommerce/foto-per_eys0mr.png" alt="Ilustración de fotografía personal" class="img-fluid"/>
+                                                                    <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310965/amtiEcommerce/foto-per_hy6un8.png" alt="Ilustración de fotografía personal" class="img-fluid"/>
                                                                 </div>
                                                                 <div class="col-12 col-sm-12 col-md-12 col-lg-9">
                                                                     <h1 class="txt-azul-oscuro h5 bold mb-2">Fotografía personal</h1>
@@ -467,7 +467,7 @@
                                                         <div class="mx-5">
                                                             <div class="row py-4 txt-firma">
                                                                 <div class="col-12 col-sm-12 col-md-12 col-lg-3">
-                                                                    <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674252270/AMTI%20Ecommerce/icono-firma_nib6gz.png" alt="Ilustración de firma" class="img-fluid"/>
+                                                                    <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310970/amtiEcommerce/icono-firma_i2pgbv.png" alt="Ilustración de firma" class="img-fluid"/>
                                                                 </div>
                                                                 <div class="col-12 col-sm-12 col-md-12 col-lg-9">
                                                                     <h1 class="txt-azul-oscuro h5 bold mb-2">Tu firma</h1>
@@ -839,25 +839,25 @@
                                                                         <div class="col-12 col-sm-12 col-md-12 col-lg-5">
                                                                             <div class="drop-image mb-4" id="drop-image">
                                                                                 <div class="option-image active placeholder" data-value="placeholder">
-                                                                                    <img  src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674496571/AMTI%20Ecommerce/ojo-cafe_vkklmb.png" alt="Ilustración de color de ojos" class="me-3"/>Selecciona un color de ojos
+                                                                                    <img  src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310995/amtiEcommerce/ojo-cafe_gmhmit.png" alt="Ilustración de color de ojos" class="me-3"/>Selecciona un color de ojos
                                                                                 </div>
                                                                                 <div class="option-image" id="prueba" data-value="wow" onclick="getEyes(this)">
-                                                                                    <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674496571/AMTI%20Ecommerce/ojo-ambar_d1yi7v.png" alt="Ilustración de color de ojos" class="me-3"/> Ambar
+                                                                                    <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310992/amtiEcommerce/ojo-ambar_rwib9n.png" alt="Ilustración de color de ojos" class="me-3"/> Ambar
                                                                                 </div>
                                                                                 <div class="option-image" data-value="wow" onclick="getEyes(this)">
-                                                                                    <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674496571/AMTI%20Ecommerce/ojo-castano_g8zhwc.png" alt="Ilustración de color de ojos" class="me-3"/> Castaño
+                                                                                    <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310996/amtiEcommerce/ojo-castano_agasng.png" alt="Ilustración de color de ojos" class="me-3"/> Castaño
                                                                                 </div>
                                                                                 <div class="option-image" data-value="drop-image" onclick="getEyes(this)">
-                                                                                    <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674496571/AMTI%20Ecommerce/ojo-gris_ks0w5a.png" alt="Ilustración de color de ojos" class="me-3"/> Gris
+                                                                                    <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310994/amtiEcommerce/ojo-gris_wkyoyl.png" alt="Ilustración de color de ojos" class="me-3"/> Gris
                                                                                 </div>
                                                                                 <div class="option-image" data-value="select" onclick="getEyes(this)">
-                                                                                    <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674496571/AMTI%20Ecommerce/ojo-avellana_b4mz4x.png" alt="Ilustración de color de ojos" class="me-3"/> Avellana
+                                                                                    <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310993/amtiEcommerce/ojo-avellana_slml8k.png" alt="Ilustración de color de ojos" class="me-3"/> Avellana
                                                                                 </div>
                                                                                 <div class="option-image" data-value="custom" onclick="getEyes(this)">
-                                                                                    <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674496571/AMTI%20Ecommerce/ojo-verde_h0vwr7.png" alt="Ilustración de color de ojos" class="me-3"/> Verde
+                                                                                    <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310995/amtiEcommerce/ojo-verde_hmbkqc.png" alt="Ilustración de color de ojos" class="me-3"/> Verde
                                                                                 </div>
                                                                                 <div class="option-image" data-value="animation" onclick="getEyes(this)"> 
-                                                                                    <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674496571/AMTI%20Ecommerce/ojo-azul_g1yxz6.png" alt="Ilustración de color de ojos" class="me-3"/> Azul
+                                                                                    <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310992/amtiEcommerce/ojo-azul_hijizp.png" alt="Ilustración de color de ojos" class="me-3"/> Azul
                                                                                 </div>
                                                                               </div>
                                                                         </div>
@@ -959,11 +959,11 @@
                                                             <div class="row py-4 txt-firma">
                                                                 <div class="col-12 col-sm-12 col-md-12 col-lg-3">
                                                                     <div class="mb-3">
-                                                                        <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674245868/AMTI%20Ecommerce/foto-ejemp_pfcn3n.png" 
+                                                                        <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310962/amtiEcommerce/foto-ejemp_oddwge.png" 
                                                                         id="previewImgPersonal" alt="Ilustración de firma" class="img-fluid"/>
                                                                     </div>
                                                                     <div class="">
-                                                                        <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674253285/AMTI%20Ecommerce/ejemplo-firma_fnmd48.png"
+                                                                        <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310963/amtiEcommerce/ejemplo-firma_s0kjwn.png"
                                                                         id="previewImgFirma" alt="Ilustración de firma" class="img-fluid"/>
                                                                     </div>
                                                                 </div>
@@ -1360,18 +1360,18 @@
         <div class="row mb-3">
             <div class="col-12 col-sm-12 col-md-12 col-lg-3">
                 <h6 class="parrafos txt-color-parrafo bold">Pagos del checkout seguros</h6>
-                <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1673275337/Jeanswest/pagos/icono-secure_r1fnlg.png" alt="Certificado SecureTrust" class="img-fluid secure-trust"/>
-                <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1673275337/Jeanswest/pagos/icono-ssl_dnzh3m.png" alt="Certificado SSL" class="img-fluid ssl"/>
+                <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676313844/amtiEcommerce/icono-secure_yvj46c.png" alt="Certificado SecureTrust" class="img-fluid secure-trust"/>
+                <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676313844/amtiEcommerce/icono-ssl_doufze.png" alt="Certificado SSL" class="img-fluid ssl"/>
             </div>
             <div class="col-12 col-sm-12 col-md-12 col-lg-5"></div>
             <div class="col-12 col-sm-12 col-md-12 col-lg-4">
                 <div class="text-end">
                     <h6 class="parrafos txt-color-parrafo bold">Medios y soluciones de pago</h6>
-                    <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1673275337/Jeanswest/pagos/icono-visa_emqhjy.png" alt="Visa" class="img-fluid icono-pagos"/>
-                    <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1673275234/Jeanswest/footer/icono-master_nemers.png" alt="Mastercard" class="img-fluid icono-pagos"/>
+                    <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676313844/amtiEcommerce/icono-visa_z6ckyo.png" alt="Visa" class="img-fluid icono-pagos"/>
+                    <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676313866/amtiEcommerce/icono-master_wyj2k0.png" alt="Mastercard" class="img-fluid icono-pagos"/>
                     <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1673275234/Jeanswest/footer/icono-maestro_wbtgcr.png" alt="Maestro" class="img-fluid icono-pagos"/>
-                    <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1673275234/Jeanswest/footer/icono-american_na2mcs.png" alt="American Express" class="img-fluid icono-pagos"/>
-                    <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1673275235/Jeanswest/footer/icono-oxxo_ofuq4d.png" alt="Oxxo" class="img-fluid icono-pagos"/>
+                    <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676313844/amtiEcommerce/icono-america_jtnih0.png" alt="American Express" class="img-fluid icono-pagos"/>
+                    <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676313866/amtiEcommerce/icono-oxxo_ajvd37.png" alt="Oxxo" class="img-fluid icono-pagos"/>
                 </div>
                 
             </div>
@@ -1386,7 +1386,7 @@
             <div class="col-12 col-sm-12 col-md-12 col-lg-4">
                 <div class="text-end">
                     <a href="https://blueberry.mx/" class="a_none_style" target="_blank">
-                        <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674595263/Cosas%20generales/blueberry-tech_se5b3f.gif" alt="Materialized by Blueberry" class="img-fluid bb-logo"/>
+                        <img src="https://res.cloudinary.com/dej55trpk/image/upload/v1675785357/Blueberry%20animtion%20footer/blueberry-tech_smhi55.gif" alt="Materialized by Blueberry" class="img-fluid bb-logo"/>
                     </a>
                 </div>
                 

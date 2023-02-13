@@ -6,7 +6,7 @@
                 <div class="col-12 col-sm-12 col-md-12 col-lg-10">
                     <div class="text-center mb-4">
                         <a href="{{ url('/') }}" class="a_none_style">
-                            <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674082739/AMTI%20Ecommerce/logo-azul-gde_uhagup.png" alt="AMTI" class="img-fluid logo-amti"/>
+                            <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310986/amtiEcommerce/logo-azul-gde_mffzut.png" alt="AMTI" class="img-fluid logo-amti"/>
                         </a>
                     </div>
                     <div class="row mb-5">
@@ -14,13 +14,13 @@
                             <h6 class="semiBold txt-azul-oscuro titulos mb-4">Contáctanos</h6>
                             <a href="https://api.whatsapp.com/send?phone=5255403240423" class="a_none_style txt-color-parrafo" target="_blank">
                                     <h6 class="regular mb-3 txt-color-parrafo">
-                                        <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674082096/AMTI%20Ecommerce/icono-tel-azul_lfvzjs.png" alt="Teléfono" class="img-fluid icono-footer"/>
+                                        <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310973/amtiEcommerce/icono-tel-azul_gk6ccf.png" alt="Teléfono" class="img-fluid icono-footer"/>
                                         55 4032 4042
                                     </h6>
                             </a>
                             <a href="tel:+523327903393" class="a_none_style txt-color-parrafo" target="_blank">
                                 <h6 class="regular mb-3 txt-color-parrafo">
-                                    <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674082096/AMTI%20Ecommerce/icono-whats-azul_avcovi.png" alt="WhatsApp" class="img-fluid icono-footer"/>
+                                    <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310975/amtiEcommerce/icono-whats-azul_yyetea.png" alt="WhatsApp" class="img-fluid icono-footer"/>
                                     332 790 3393
                                 </h6>
                             </a>
@@ -69,10 +69,10 @@
                             <div class="redes">
                                 <h6 class="semiBold txt-azul-oscuro titulos mb-4">Síguenos</h6>
                                 <a href="https://www.facebook.com/Licencia-Internacional-para-Conducir-AMTI-102260725273632/" class="a_none_style txt-color-parrafo" target="_blank">
-                                    <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674140859/AMTI%20Ecommerce/icono-fb_uxh7dt.png" alt="FB: AMTI" class="img-fluid icono-fb"/>
+                                    <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310970/amtiEcommerce/icono-fb_obwbe8.png" alt="FB: AMTI" class="img-fluid icono-fb"/>
                                 </a>
                                 <a href="https://instagram.com/amti.licencias?igshid=YmMyMTA2M2Y=" class="a_none_style txt-color-parrafo" target="_blank">
-                                    <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674140859/AMTI%20Ecommerce/icono-ig_zlscnn.png" alt="IG: AMTI" class="img-fluid icono-ig"/>
+                                    <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310971/amtiEcommerce/icono-ig_qmhegc.png" alt="IG: AMTI" class="img-fluid icono-ig"/>
                                 </a>
                             </div>
                         </div>
@@ -80,17 +80,17 @@
                     <div class="row mb-5">
                         <div class="col-12 col-sm-12 col-md-12 col-lg-3">
                             <h6 class="parrafos txt-color-parrafo bold">Pagos del checkout seguros</h6>
-                            <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1673275337/Jeanswest/pagos/icono-secure_r1fnlg.png" alt="Certificado SecureTrust" class="img-fluid secure-trust"/>
-                            <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1673275337/Jeanswest/pagos/icono-ssl_dnzh3m.png" alt="Certificado SSL" class="img-fluid ssl"/>
+                            <img src="https://res.cloudinary.com/dndruzsgc/image/upload/v1675780814/footer/secure-trush_xuumds.png" alt="Certificado SecureTrust" class="img-fluid secure-trust"/>
+                            <img src="https://res.cloudinary.com/dndruzsgc/image/upload/v1675780814/footer/ssl-certificate_ivo38a.png" alt="Certificado SSL" class="img-fluid ssl"/>
                         </div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-5"></div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-4">
                             <h6 class="parrafos txt-color-parrafo bold">Medios y soluciones de pago</h6>
-                            <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1673275337/Jeanswest/pagos/icono-visa_emqhjy.png" alt="Visa" class="img-fluid icono-pagos"/>
-                            <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1673275234/Jeanswest/footer/icono-master_nemers.png" alt="Mastercard" class="img-fluid icono-pagos"/>
-                            <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1673275234/Jeanswest/footer/icono-maestro_wbtgcr.png" alt="Maestro" class="img-fluid icono-pagos"/>
-                            <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1673275234/Jeanswest/footer/icono-american_na2mcs.png" alt="American Express" class="img-fluid icono-pagos"/>
-                            <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1673275235/Jeanswest/footer/icono-oxxo_ofuq4d.png" alt="Oxxo" class="img-fluid icono-pagos"/>
+                            <img src="https://res.cloudinary.com/dndruzsgc/image/upload/v1675780804/pagos/icono-visa_vxgwjj.png" alt="Visa" class="img-fluid icono-pagos"/>
+                            <img src="https://res.cloudinary.com/dndruzsgc/image/upload/v1675780814/footer/icono-master_wlrzqv.png" alt="Mastercard" class="img-fluid icono-pagos"/>
+                            <img src="https://res.cloudinary.com/dndruzsgc/image/upload/v1675780814/footer/icono-maestro_zflbwf.png" alt="Maestro" class="img-fluid icono-pagos"/>
+                            <img src="https://res.cloudinary.com/dndruzsgc/image/upload/v1675780814/footer/icono-american_wutzxr.png" alt="American Express" class="img-fluid icono-pagos"/>
+                            <img src="https://res.cloudinary.com/dndruzsgc/image/upload/v1675780814/footer/icono-oxxo_m6ze0k.png" alt="Oxxo" class="img-fluid icono-pagos"/>
                         </div>
                     </div>
                     <div class="row mb-5">
@@ -100,7 +100,7 @@
                         <div class="col-12 col-sm-12 col-md-12 col-lg-4"></div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-4">
                             <a href="https://blueberry.mx/" class="a_none_style" target="_blank">
-                                <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674595263/Cosas%20generales/blueberry-tech_se5b3f.gif" alt="Materialized by Blueberry" class="img-fluid bb-logo"/>
+                                <img src="https://res.cloudinary.com/dej55trpk/image/upload/v1675785357/Blueberry%20animtion%20footer/blueberry-tech_smhi55.gif" alt="Materialized by Blueberry" class="img-fluid bb-logo"/>
                             </a>
                         </div>
                     </div>

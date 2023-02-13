@@ -17,7 +17,7 @@
                     <div class="row">
                         <div class="col-12 col-sm-12 col-md-12 col-lg-8">
                             <div class="text-center">
-                                <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674253285/AMTI%20Ecommerce/ejemplo-firma_fnmd48.png" alt="Ilustración de firma de ejemplo" class="img-fluid"/>
+                                <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310963/amtiEcommerce/ejemplo-firma_s0kjwn.png" alt="Ilustración de firma de ejemplo" class="img-fluid"/>
                             </div>
                         </div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-4">

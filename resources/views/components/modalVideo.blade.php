@@ -11,7 +11,7 @@
                         </button>
                     </div>
                     <video controls class="video-bg_video">
-                        <source src="https://res.cloudinary.com/dra1bsh4u/video/upload/v1674512452/AMTI%20Ecommerce/videos/Amti_full_ssxkek.mp4" type="video/mp4">
+                        <source src="https://res.cloudinary.com/dhigl3clg/video/upload/v1676311073/amtiEcommerce/VIDEOS/Amti_full_wqrtlt.mp4" type="video/mp4">
                     </video>
                 </div>
             </div>

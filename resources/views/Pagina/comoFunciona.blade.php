@@ -49,7 +49,7 @@
                         <div class="col-12 col-sm-12 col-md-12 col-lg-1"></div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-5">
                             <div class="text-center">
-                                <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674061491/AMTI%20Ecommerce/licencia-libro_swjrdf.png" alt="Ilustración libro y licencia" class="img-fluid"/>
+                                <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310984/amtiEcommerce/licencia-libro_wcfj4e.png" alt="Ilustración libro y licencia" class="img-fluid"/>
                             </div>
                         </div>
                     </div>
@@ -64,12 +64,12 @@
         <div class="row">
             <div class="col-12 col-sm-12 col-md-12 col-lg-7">
                 <div class="p-0">
-                    <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674587139/AMTI%20Ecommerce/licencia-digital_ck6vfy.png" alt="Ilustración de licencia digital" class="img-fluid"/>
+                    <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310984/amtiEcommerce/licencia-digital_hwt4po.png" alt="Ilustración de licencia digital" class="img-fluid"/>
                 </div>
             </div>
             <div class="col-12 col-sm-12 col-md-12 col-lg-5">
                 <div class="txt-licencia-digital">
-                    <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674082739/AMTI%20Ecommerce/logo-azul-gde_uhagup.png" alt="AMTI" class="img-fluid logo-amti"/>
+                    <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310986/amtiEcommerce/logo-azul-gde_mffzut.png" alt="AMTI" class="img-fluid logo-amti"/>
                     <div class="mt-4">
                         <h1 class="txt-color-tit bold big">Tu licencia digital</h1>
                         <h1 class="txt-azul bold big mb-3">con tecnología QR</h1>
@@ -90,7 +90,7 @@
                     <div class="cuadro-como-funciona pt-4">
                         <div class="mx-5">
                             <div class="">
-                                <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674061490/AMTI%20Ecommerce/garantizando-seguridad_xctweg.png" alt="" class="img-fluid"/>
+                                <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676316089/amtiEcommerce/garantizando-seguridad_jigoim.png" alt="" class="img-fluid"/>
                                 <h1 class="txt-color-tit titulos bold">Garantizando</h1>
                                 <h1 class="txt-azul-oscuro titulos bold mb-4">tu seguridad</h1>
                                 <div class="d-none d-sm-none d-md-block">
@@ -116,7 +116,7 @@
                     <div class="cuadro-como-funciona pt-4">
                         <div class="mx-5">
                             <div class="">
-                                <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674061492/AMTI%20Ecommerce/rompiedo-barreras_rixmbm.png" alt="" class="img-fluid"/>
+                                <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310996/amtiEcommerce/rompiedo-barreras_waowif.png" alt="" class="img-fluid"/>
                                 <h1 class="txt-color-tit titulos bold">Rompiendo</h1>
                                 <h1 class="txt-azul-oscuro titulos bold mb-4">barreras</h1>
                                 <div class="d-none d-sm-none d-md-block">
@@ -140,7 +140,7 @@
                     <div class="cuadro-como-funciona pt-4">
                         <div class="mx-5">
                             <div class="">
-                                <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674061493/AMTI%20Ecommerce/seguridad-tranquilidad_kyikzx.png" alt="" class="img-fluid"/>
+                                <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310952/amtiEcommerce/seguridad-tranquilidad_broktz.png" alt="" class="img-fluid"/>
                                 <h1 class="txt-color-tit titulos bold">Seguridad y</h1>
                                 <h1 class="txt-azul-oscuro titulos bold mb-4">tranquilidad</h1>
                                 <div class="d-none d-sm-none d-md-block">
@@ -208,7 +208,7 @@
                                 </div>
                             </div>
                             <div class="col-12 col-sm-12 col-md-12 col-lg-5">
-                                <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674061491/AMTI%20Ecommerce/licencia-libro-2_nfb1us.png" alt="" class="img-fluid"/>
+                                <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310981/amtiEcommerce/licencia-libro-2_f96jr1.png" alt="" class="img-fluid"/>
                                 <h6 class="text-white regular parrafo text-center">Cubierta de cuero de alta calidad</h6>
                             </div>
                         </div>
@@ -224,7 +224,7 @@
             <div class="row txt-ilustracion-lib">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-4 mb-5">
                     <div class="text-center mx-5">
-                        <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674148581/AMTI%20Ecommerce/libro-sello_pfb0jt.png" alt="Ilustración página principal" class="img-fluid"/>
+                        <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310978/amtiEcommerce/libro-sello_ox2e4h.png" alt="Ilustración página principal" class="img-fluid"/>
                         <div class="my-4">
                             <p class="regular parrafos">Página principal con sello de la </p>
                             <p class="regular parrafos">autoridad emisora.</p>
@@ -233,7 +233,7 @@
                 </div>
                 <div class="col-12 col-sm-12 col-md-12 col-lg-4 mb-5">
                     <div class="text-center mx-5">
-                        <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674148581/AMTI%20Ecommerce/libro-clausulas_bioyka.png" alt="Ilustración de cláusulas" class="img-fluid"/>
+                        <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310976/amtiEcommerce/libro-clausulas_bbqe6e.png" alt="Ilustración de cláusulas" class="img-fluid"/>
                         <div class="my-4">
                             <p class="regular parrafos">Fragmento de cláusulas</p>
                             <p class="regular parrafos">de la convención.</p>
@@ -242,7 +242,7 @@
                 </div>
                 <div class="col-12 col-sm-12 col-md-12 col-lg-4 mb-5">
                     <div class="text-center mx-5">
-                        <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674148581/AMTI%20Ecommerce/libro-paises_hlgqon.png" alt="Ilustración de países" class="img-fluid"/>
+                        <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310977/amtiEcommerce/libro-paises_p0yseu.png" alt="Ilustración de países" class="img-fluid"/>
                         <div class="my-4">
                             <p class="regular parrafos">Listado de países</p>
                             <p class="regular parrafos">con cobertura.</p>
@@ -251,7 +251,7 @@
                 </div>
                 <div class="col-12 col-sm-12 col-md-12 col-lg-4 mb-5">
                     <div class="text-center mx-5">
-                        <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674148580/AMTI%20Ecommerce/libro-descripcion_c3jxe1.png" alt="Ilustración de descripción" class="img-fluid"/>
+                        <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310977/amtiEcommerce/libro-descripcion_v0kjhe.png" alt="Ilustración de descripción" class="img-fluid"/>
                         <div class="my-4">
                             <p class="regular parrafos">Descripción general de tipos </p>
                             <p class="regular parrafos">de vehículos (A, B, C, D, E).</p>
@@ -260,7 +260,7 @@
                 </div>
                 <div class="col-12 col-sm-12 col-md-12 col-lg-4 mb-5">
                     <div class="text-center mx-5">
-                        <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674148580/AMTI%20Ecommerce/libro-vehiculos_ssd5wc.png" alt="Ilustración de vehículos" class="img-fluid"/>
+                        <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310978/amtiEcommerce/libro-vehiculos_w8vocx.png" alt="Ilustración de vehículos" class="img-fluid"/>
                         <div class="my-4">
                             <p class="regular parrafos">Tipos de vehículos con</p>
                             <p class="regular parrafos">ilustraciones.</p>
@@ -269,7 +269,7 @@
                 </div>
                 <div class="col-12 col-sm-12 col-md-12 col-lg-4 mb-5">
                     <div class="text-center mx-5">
-                        <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674586933/AMTI%20Ecommerce/libro-datos-personales_f53qnm.png" alt="Ilustración de datos personales" class="img-fluid"/>
+                        <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310978/amtiEcommerce/libro-datos-personales_kc4vba.png" alt="Ilustración de datos personales" class="img-fluid"/>
                         <div class="my-4">
                             <p class="regular parrafos">Datos personales incluídos de </p>
                             <p class="regular parrafos">la persona (Foto, firma, QR).</p>
@@ -295,7 +295,7 @@
                         <div class="row my-5 txt-buen-uso">
                             <div class="col-12 col-sm-12 col-md-12 col-lg-5 ">
                                 <div class="text-center">
-                                    <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674061490/AMTI%20Ecommerce/icono-red_hgdbgt.png" alt="" class="img-fluid"/>
+                                    <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310973/amtiEcommerce/icono-red_bgqb6c.png" alt="" class="img-fluid"/>
                                 </div>
                                 <div class="d-none d-sm-none d-md-block">
                                     <div class="my-5 mx-5">
@@ -324,7 +324,7 @@
                             <div class="col-12 col-sm-12 col-md-12 col-lg-1 "></div>
                             <div class="col-12 col-sm-12 col-md-12 col-lg-5">
                                 <div class="text-center">
-                                    <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674061490/AMTI%20Ecommerce/icono-perfil_bcjg93.png" alt="" class="img-fluid"/>
+                                    <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310971/amtiEcommerce/icono-perfil_g40mtw.png" alt="" class="img-fluid"/>
                                 </div>
                                 <div class="d-none d-sm-none d-md-block">
                                     <div class="my-5 mx-5">

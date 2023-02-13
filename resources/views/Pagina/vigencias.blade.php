@@ -30,7 +30,7 @@
                                     <h3 class="semiBold h5">3 años</h3>
                                 </div>
                                 <div class="text-center pt-4 pb-2">
-                                    <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674061491/AMTI%20Ecommerce/licencia-libro_swjrdf.png" alt="Ilustración de licencia y libro AMTI" class="img-fluid licencia-vigencia"/>
+                                    <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310984/amtiEcommerce/licencia-libro_wcfj4e.png" alt="Ilustración de licencia y libro AMTI" class="img-fluid licencia-vigencia"/>
                                 </div>
                                 <div class="mx-4">
                                     <hr/>
@@ -46,10 +46,10 @@
                                         </div>
                                         <div class="col-3 col-sm-3 col-md-3 col-lg-6 mt-5 sellos">
                                             <div class="text-end">
-                                                <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1673275337/Jeanswest/pagos/icono-ssl_dnzh3m.png" alt="Certificado SSL" class="img-fluid ssl-vigencia"/>
+                                                <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676313844/amtiEcommerce/icono-ssl_doufze.png" alt="Certificado SSL" class="img-fluid ssl-vigencia"/>
                                             </div>
                                             <div class="text-end">
-                                                <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1673275337/Jeanswest/pagos/icono-secure_r1fnlg.png" alt="Certificado SecureTrust" class="img-fluid secure-trust-vigencia"/>
+                                                <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676313844/amtiEcommerce/icono-secure_yvj46c.png" alt="Certificado SecureTrust" class="img-fluid secure-trust-vigencia"/>
                                             </div>
                                             
                                         </div>
@@ -66,10 +66,10 @@
                                     <h3 class="semiBold h5">5 años</h3>
                                 </div>
                                 <div class="text-center pt-4 pb-2">
-                                    <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674061491/AMTI%20Ecommerce/licencia-libro_swjrdf.png" alt="Ilustración de licencia y libro AMTI" class="img-fluid licencia-vigencia"/>
+                                    <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310984/amtiEcommerce/licencia-libro_wcfj4e.png" alt="Ilustración de licencia y libro AMTI" class="img-fluid licencia-vigencia"/>
                                    <div class="etiqueta-recom py-1">
                                         <h6 class="regular top-menu pt-1">
-                                            <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674166879/AMTI%20Ecommerce/icono-recomendada_mvl3og.png" alt="" class="img-fluid"/>
+                                            <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310973/amtiEcommerce/icono-recomendada_qlwq7s.png" alt="" class="img-fluid"/>
                                             Recomendada
                                         </h6>
                                    </div>
@@ -89,10 +89,10 @@
                                         </div>
                                         <div class="col-3 col-sm-3 col-md-3 col-lg-6 mt-5 sellos">
                                             <div class="text-end">
-                                                <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1673275337/Jeanswest/pagos/icono-ssl_dnzh3m.png" alt="Certificado SSL" class="img-fluid ssl-vigencia"/>
+                                                <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676313844/amtiEcommerce/icono-ssl_doufze.png" alt="Certificado SSL" class="img-fluid ssl-vigencia"/>
                                             </div>
                                             <div class="text-end">
-                                                <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1673275337/Jeanswest/pagos/icono-secure_r1fnlg.png" alt="Certificado SecureTrust" class="img-fluid secure-trust-vigencia"/>
+                                                <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676313844/amtiEcommerce/icono-secure_yvj46c.png" alt="Certificado SecureTrust" class="img-fluid secure-trust-vigencia"/>
                                             </div>
                                             
                                         </div>
@@ -109,7 +109,7 @@
                                     <h3 class="semiBold h5">1 años</h3>
                                 </div>
                                 <div class="text-center pt-4 pb-2">
-                                    <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674061491/AMTI%20Ecommerce/licencia-libro_swjrdf.png" alt="Ilustración de licencia y libro AMTI" class="img-fluid licencia-vigencia"/>
+                                    <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310984/amtiEcommerce/licencia-libro_wcfj4e.png" alt="Ilustración de licencia y libro AMTI" class="img-fluid licencia-vigencia"/>
                                 </div>
                                 <div class="mx-4">
                                     <hr/>
@@ -125,10 +125,10 @@
                                         </div>
                                         <div class="col-3 col-sm-3 col-md-3 col-lg-6 mt-5 sellos">
                                             <div class="text-end">
-                                                <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1673275337/Jeanswest/pagos/icono-ssl_dnzh3m.png" alt="Certificado SSL" class="img-fluid ssl-vigencia"/>
+                                                <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676313844/amtiEcommerce/icono-ssl_doufze.png" alt="Certificado SSL" class="img-fluid ssl-vigencia"/>
                                             </div>
                                             <div class="text-end">
-                                                <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1673275337/Jeanswest/pagos/icono-secure_r1fnlg.png" alt="Certificado SecureTrust" class="img-fluid secure-trust-vigencia"/>
+                                                <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676313844/amtiEcommerce/icono-secure_yvj46c.png" alt="Certificado SecureTrust" class="img-fluid secure-trust-vigencia"/>
                                             </div>
                                             
                                         </div>

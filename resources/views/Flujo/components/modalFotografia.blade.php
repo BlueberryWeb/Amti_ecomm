@@ -17,7 +17,7 @@
                     <div class="row">
                         <div class="col-12 col-sm-12 col-md-12 col-lg-8">
                             <div class="text-center">
-                                <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674245868/AMTI%20Ecommerce/foto-ejemp_pfcn3n.png" alt="Ilustración de fotografía de ejemplo" class="img-fluid"/>
+                                <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310962/amtiEcommerce/foto-ejemp_oddwge.png" alt="Ilustración de fotografía de ejemplo" class="img-fluid"/>
                             </div>
                         </div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-4">
@@ -39,26 +39,26 @@
                         </div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-4">
                             <div class="text-center">
-                                <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674245927/AMTI%20Ecommerce/icono-lentes_ccf35s.png" alt="Ilustración de lentes" class="img-fluid icono-lentes m-2"/>
+                                <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310972/amtiEcommerce/icono-lentes_frm4bl.png" alt="Ilustración de lentes" class="img-fluid icono-lentes m-2"/>
                                 <h6 class="top-menu text-white regular">Lentes de </h6>
                                 <h6 class="top-menu text-white regular">cualquier tipo</h6>
-                                <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674245927/AMTI%20Ecommerce/icono-cancelar_r7z8j8.png" alt="Ilustración prohibido" class="img-fluid my-2 icono-proh"/>
+                                <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676312785/amtiEcommerce/icono-cancelar_an550h.png" alt="Ilustración prohibido" class="img-fluid my-2 icono-proh"/>
                             </div>
                         </div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-4">
                             <div class="text-center">
-                                <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674245927/AMTI%20Ecommerce/icono-sombrero_ast2fc.png" alt="Ilustración de lentes" class="img-fluid icono-lentes m-2"/>
+                                <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310973/amtiEcommerce/icono-sombrero_zttuio.png" alt="Ilustración de lentes" class="img-fluid icono-lentes m-2"/>
                                 <h6 class="top-menu text-white regular">Sombreros o gorras</h6>
                                 <h6 class="top-menu text-white regular">que tapen tu cabeza</h6>
-                                <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674245927/AMTI%20Ecommerce/icono-cancelar_r7z8j8.png" alt="Ilustración prohibido" class="img-fluid my-2 icono-proh"/>
+                                <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676312785/amtiEcommerce/icono-cancelar_an550h.png" alt="Ilustración prohibido" class="img-fluid my-2 icono-proh"/>
                             </div>
                         </div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-4">
                             <div class="text-center">
-                                <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674245927/AMTI%20Ecommerce/icono-accesorio_hey3qe.png" alt="Ilustración de lentes" class="img-fluid icono-acce m-2"/>
+                                <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310964/amtiEcommerce/icono-accesorio_qyptz1.png" alt="Ilustración de lentes" class="img-fluid icono-acce m-2"/>
                                 <h6 class="top-menu text-white regular">Cualquier accesorio </h6>
                                 <h6 class="top-menu text-white regular">que tape tu cabeza</h6>
-                                <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674245927/AMTI%20Ecommerce/icono-cancelar_r7z8j8.png" alt="Ilustración prohibido" class="img-fluid my-2 icono-proh"/>
+                                <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676312785/amtiEcommerce/icono-cancelar_an550h.png" alt="Ilustración prohibido" class="img-fluid my-2 icono-proh"/>
                             </div>
                         </div>
                     </div>
