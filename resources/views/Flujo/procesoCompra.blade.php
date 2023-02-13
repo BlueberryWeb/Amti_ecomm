@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {{-- <meta name="csrf-token" content="{{ csrf_token() }}"> --}}
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
@@ -50,27 +51,30 @@
                                 <div class="wizard">
                                     <div class="wizard-inner">
                                         <div class="connecting-line"></div>
-                                        <ul class="nav nav-tabs" role="tablist">
+                                        <ul class="nav nav-tabs" role="tablist" id="steps">
                                             <li role="presentation" class="active">
-                                                <a href="#step1" data-toggle="tab" aria-controls="step1" role="tab" aria-expanded="true"><span class="round-tab"><h6 class="pt-2">1</h6> </span> <i> Datos iniciales</i></a>
+                                                <a href="#step1" name="_steps" onclick="validateFlujo(this)" data-toggle="tab" aria-controls="step1" role="tab" aria-expanded="true"><span class="round-tab"><h6 class="pt-2">1</h6> </span> <i> Datos iniciales</i></a>
                                             </li>
                                             <li role="presentation" class="disabled">
-                                                <a href="#step2" data-toggle="tab" aria-controls="step2" role="tab" aria-expanded="false"><span class="round-tab"><h6 class="pt-2">2</h6></span> <i> Vigencia</i></a>
+                                                <a href="#step2" target="_blank" name="_steps" onclick="validateFlujo(this)" data-toggle="tab" aria-controls="step2" role="tab" aria-expanded="false"><span class="round-tab"><h6 class="pt-2">2</h6></span> <i> Vigencia</i></a>
                                             </li>
                                             <li role="presentation" class="disabled">
-                                                <a href="#step3" data-toggle="tab" aria-controls="step3" role="tab"><span class="round-tab"><h6 class="pt-2">3</h6></span> <i>Documentos</i></a>
+                                                <a href="#step3" name="_steps" onclick="validateFlujo(this)" data-toggle="tab" aria-controls="step3" role="tab"><span class="round-tab"><h6 class="pt-2">3</h6></span> <i>Documentos</i></a>
                                             </li>
                                             <li role="presentation" class="disabled">
-                                                <a href="#step4" data-toggle="tab" aria-controls="step4" role="tab"><span class="round-tab"><h6 class="pt-2">4</h6></span> <i>Firma </i></a>
+                                                <a href="#step4" name="_steps" onclick="validateFlujo(this)" data-toggle="tab" aria-controls="step4" role="tab"><span class="round-tab"><h6 class="pt-2">4</h6></span> <i>Firma </i></a>
                                             </li>
                                             <li role="presentation" class="disabled">
-                                                <a href="#step5" data-toggle="tab" aria-controls="step5" role="tab"><span class="round-tab"><h6 class="pt-2">5</h6></span> <i> Información</i></a>
+                                                <a href="#step5" name="_steps" onclick="validateFlujo(this)" data-toggle="tab" aria-controls="step5" role="tab"><span class="round-tab"><h6 class="pt-2">5</h6></span> <i> Información</i></a>
                                             </li>
-                                            <li role="presentation" class="disabled">
-                                                <a href="#step6" data-toggle="tab" aria-controls="step6" role="tab"><span class="round-tab"><h6 class="pt-2">6</h6> </span> <i>Confirmar </i></a>
+                                            <li role="presentation" class="disabled" onclick="validateFlujo();">
+                                                <a href="#step6" name="_steps" onclick="validateFlujo(this)" data-toggle="tab" aria-controls="step6" role="tab"><span class="round-tab"><h6 class="pt-2">6</h6> </span> <i>Confirmar </i></a>
                                             </li>
+                                            {{-- <li role="presentation" class="disabled">
+                                                <a href="#step6" name="_steps" onclick="validateFlujo(this)" onclick="previewAddres();" data-toggle="tab" aria-controls="step6" role="tab"><span class="round-tab"><h6 class="pt-2">6</h6> </span> <i>Confirmar </i></a>
+                                            </li> --}}
                                             <li role="presentation" class="disabled">
-                                                <a href="#step7" data-toggle="tab" aria-controls="step7" role="tab"><span class="round-tab"><h6 class="pt-2">7</h6></span> <i>Envío </i></a>
+                                                <a href="#step7" name="_steps" onclick="validateFlujo(this)" data-toggle="tab" aria-controls="step7" role="tab"><span class="round-tab"><h6 class="pt-2">7</h6></span> <i>Envío </i></a>
                                             </li>
                                         </ul>
                                     </div>
@@ -79,8 +83,10 @@
                             
                         </div>
                         <div class="wizard">
-                            <form role="form" action="index.html" class="login-box">
+                            <form class="login-box needs-validation" role="form" action="{{ route('licencia.pedido.add')}}" enctype="multipart/form-data" method="POST" id="register_form" name="register_form">
                                 <div class="tab-content" id="main_form">
+                                    @csrf
+                                    {{-- <input type="hidden" name="_token" id="_token" value="{{ csrf_token() }}"> --}}
                                     <!-- NOMBRE Y TELÉFONO -->
                                     <div class="tab-pane active" role="tabpanel" id="step1">
                                         <div class="d-block d-sm-block d-md-none">
@@ -106,29 +112,28 @@
                                                                 <h5 class="semiBold parrafos txt-color-parrafo mb-3">Introduce a continuación los datos requeridos:</h5>
                                                                 <div class="mb-3">
                                                                     <label for="exampleInputEmail1" class="form-label">Nombre completo del solicitante*</label>
-                                                                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                                                                    <input type="text" class="form-control text" id="fullName" name="fullName" aria-describedby="" required>
+                                                                    <span class="_error">Error</span>
                                                                 </div>
                                                                 <div class="">
                                                                     <label for="exampleInputEmail1" class="form-label">Teléfono*</label>
-                                                                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                                                                    <input type="text" class="form-control number" id="phone" name="phone" aria-describedby="" maxlength="10" required>
                                                                 </div>
                                                                 
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                
                                             </div>
-                                            <div class="col-12 col-sm-12 col-md-12 col-lg-3"></div>
-                                            
-                                            
+                                            <div class="col-12 col-sm-12 col-md-12 col-lg-3"></div>  
                                         </div>
+                                        
                                         <div class="container">
                                             <div class="row">
                                                 <div class="col-12 col-sm-12 col-md-12 col-lg-8"></div>
                                                 <div class="col-12 col-sm-12 col-md-12 col-lg-4">
                                                     <ul class="list-inline pull-right">
-                                                        <li><button type="button" class="default-btn next-step">Siguiente <i class="fa-solid fa-arrow-right"></i></button></li>
+                                                        <li><button type="submit" onclick="enviarProspecto()" id="btnProspectos" name="btnProspectos" class="default-btn next-step">Siguiente <i class="fa-solid fa-arrow-right"></i></button></li>
                                                     </ul>
                                                 </div>
                                                 
@@ -172,8 +177,8 @@
                                                                                             <p class="semibold txt-color-tit titulos">$2,700 MXN.</p>
                                                                                         </div>
                                                                                         <div class="form-check btn-seleccionar py-2">
-                                                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                                                            <label class="form-check-label" for="flexCheckDefault">
+                                                                                            <input class="form-check-input" required type="checkbox" value="3" id="vigencia" name="vigencia" >
+                                                                                            <label class="form-check-label" for="vigencia">
                                                                                               Seleccionar
                                                                                             </label>
                                                                                         </div>
@@ -216,8 +221,8 @@
                                                                                             </div>
                                                                                         </div>
                                                                                         <div class="form-check btn-seleccionar py-2">
-                                                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                                                            <label class="form-check-label" for="flexCheckDefault">
+                                                                                            <input class="form-check-input" required type="checkbox" value="5" id="vigencia2" name="vigencia">
+                                                                                            <label class="form-check-label" for="vigencia2">
                                                                                               Seleccionar
                                                                                             </label>
                                                                                         </div>
@@ -247,8 +252,8 @@
                                                                                             <p class="semibold txt-color-tit titulos">$1,450 MXN..</p>
                                                                                         </div>
                                                                                         <div class="form-check btn-seleccionar py-2">
-                                                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                                                            <label class="form-check-label" for="flexCheckDefault">
+                                                                                            <input class="form-check-input" required type="checkbox" value="1" id="vigencia3" name="vigencia">
+                                                                                            <label class="form-check-label" for="vigencia3">
                                                                                               Seleccionar
                                                                                             </label>
                                                                                         </div>
@@ -329,12 +334,13 @@
                                                             
                                                             <div class=" parrafos txt-color-parrafo">
                                                                 <div class="mb-3">
-                                                                    <label for="formFileSm" class="form-label">Frente*</label>
-                                                                    <input class="form-control form-control-sm" id="formFileSm" type="file">
+                                                                    <label for="identificacionFrente" class="form-label">Frente*</label>
+                                                                    <input class="form-control form-control-sm" type="file" id="identificacionFrente" name="identificacionFrente" 
+                                                                    required accept="image/png, image/jpeg">
                                                                 </div>
                                                                 <div class="mb-3">
-                                                                    <label for="formFileSm" class="form-label">Vuelta*</label>
-                                                                    <input class="form-control form-control-sm" id="formFileSm" type="file">
+                                                                    <label for="identeificacionVuelta" class="form-label">Vuelta*</label>
+                                                                    <input class="form-control form-control-sm" type="file" id="identeificacionVuelta" name="identeificacionVuelta" required accept="image/png,image/jpeg">
                                                                 </div>
                                                                 
                                                             </div>
@@ -369,12 +375,12 @@
                                                             
                                                             <div class=" parrafos txt-color-parrafo">
                                                                 <div class="mb-3">
-                                                                    <label for="formFileSm" class="form-label">Frente*</label>
-                                                                    <input class="form-control form-control-sm" id="formFileSm" type="file">
+                                                                    <label for="licenciaFrente" class="form-label">Frente*</label>
+                                                                    <input class="form-control form-control-sm" id="licenciaFrente" name="licenciaFrente" type="file" required accept="image/png,image/jpeg">
                                                                 </div>
                                                                 <div class="mb-3">
-                                                                    <label for="formFileSm" class="form-label">Vuelta*</label>
-                                                                    <input class="form-control form-control-sm" id="formFileSm" type="file">
+                                                                    <label for="licenciaVuelta" class="form-label">Vuelta*</label>
+                                                                    <input class="form-control form-control-sm" id="licenciaVuelta" name="licenciaVuelta" type="file" required accept="image/png,image/jpeg">
                                                                 </div>
                                                                 
                                                             </div>
@@ -409,12 +415,12 @@
                                                             
                                                             <div class=" parrafos txt-color-parrafo">
                                                                 <div class="mb-3">
-                                                                    <label for="formFileSm" class="form-label">Frente*</label>
-                                                                    <input class="form-control form-control-sm" id="formFileSm" type="file">
+                                                                    <label for="imgPersonalFrente" class="form-label">Frente*</label>
+                                                                    <input class="form-control form-control-sm" id="imgPersonalFrente" name="imgPersonalFrente" type="file" required  accept="image/png,image/jpeg">
                                                                 </div>
                                                                 <div class="mb-3">
-                                                                    <label for="formFileSm" class="form-label">Vuelta*</label>
-                                                                    <input class="form-control form-control-sm" id="formFileSm" type="file">
+                                                                    <label for="imgPersonalVuelta" class="form-label">Vuelta*</label>
+                                                                    <input class="form-control form-control-sm" id="imgPersonalVuelta" name="imgPersonalVuelta" type="file" required accept="image/png,image/jpeg">
                                                                 </div>
                                                                 
                                                             </div>
@@ -485,7 +491,7 @@
                                                                     <hr/>
                                                                     <div class="mb-3">
                                                                         <label for="formFileSm" class="form-label">Tu firma*</label>
-                                                                        <input class="form-control form-control-sm" id="formFileSm" type="file">
+                                                                        <input class="form-control form-control-sm"  id="imgFirma" name="imgFirma" type="file" type="file" accept="image/png,image/jpeg" required>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -544,8 +550,8 @@
                                                                 <div class="row">
                                                                     <div class="col-12 col-md-12 col-sm-12 col-lg-6 mb-4">
                                                                         <label for="exampleInputEmail1" class="form-label">País de nacimiento*</label>
-                                                                        <select class="form-select " aria-label=".form-select-lg example">
-                                                                            <option selected>País</option>
+                                                                        <select class="form-select" id="pais" name="pais" aria-label=".form-select-lg example" required>
+                                                                            <option selected value="">País</option>
                                                                             <option value="Afganistán">Afganistán</option>
                                                                             <option value="Albania">Albania</option>
                                                                             <option value="Alemania">Alemania</option>
@@ -787,12 +793,12 @@
                                                                             <div class="col-12 col-sm-12 col-md-12 col-lg-6">
                                                                                 <div class="mb-3">
                                                                                     <label for="exampleInputEmail1" class="form-label">Estatura*</label>
-                                                                                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required name="estatura">
+                                                                                    <input type="text" class="form-control number" id="estatura" name="estatura" aria-describedby="" required>
                                                                                 </div>
                                                                             </div>
                                                                             <div class="col-12 col-sm-12 col-md-12 col-lg-6 pt-4">
                                                                                 <div class="pt-2">
-                                                                                    <select class="form-select" aria-label="Default select example">
+                                                                                    <select class="form-select" id="medida" name="medida" aria-label="Default select example">
                                                                                         <option selected>Selecciona</option>
                                                                                         <option value="centimetros">Centímetros</option>
                                                                                         <option value="pulgadas">Pulgadas</option>
@@ -805,50 +811,57 @@
                                                                     </div>
                                                                     <div class="col-12 col-md-12 col-sm-12 col-lg-6 mb-4">
                                                                         <label for="exampleInputEmail1" class="form-label">Sexo*</label>
-                                                                        <select class="form-select " aria-label=".form-select-lg example">
-                                                                            <option selected>Femenino</option>
-                                                                            <option value="1">Masculino</option>
+                                                                        <select class="form-select" id="sexo" name="sexo" aria-label=".form-select-lg example" required>
+                                                                            <option value="" selected>Seleccione un opción</option>
+                                                                            <option value="Femenino">Femenino</option>
+                                                                            <option value="Masculino">Masculino</option>
                                                                         </select>
                                                                     </div>
                                                                     <div class="col-12 col-md-12 col-sm-12 col-lg-6 mb-4">
                                                                         <label for="exampleInputEmail1" class="form-label">Color de cabello natural*</label>
-                                                                        <select class="form-select" aria-label=".form-select-lg example">
-                                                                            <option selected>México</option>
-                                                                            <option value="1">One</option>
-                                                                            <option value="2">Two</option>
-                                                                            <option value="3">Three</option>
+                                                                        <select class="form-select" id="colorCabello" name="colorCabello" aria-label=".form-select-lg example" required>
+                                                                            <option value="" selected>Seleccione un opción</option>
+                                                                            <option value="Negro">Negro</option>
+                                                                            <option value="Oscuro">Oscuro</option>
+                                                                            <option value="Castaño">Castaño</option>
+                                                                            <option value="Castaño Oscuro">Castaño Oscuro</option>
+                                                                            <option value="Castaño Claro">Castaño Claro</option>
+                                                                            <option value="Rubio">Rubio</option>
+                                                                            <option value="Rubio Osucuro">Rubio Osucuro</option>
+                                                                            <option value="Rubio Claro">Rubio Claro</option>
+                                                                            <option value="Platino">Platino</option>
                                                                         </select>
                                                                     </div>
                                                                     <div class="row">
-                                                                        
                                                                         <div class="col-12 col-sm-12 col-md-12 col-lg-3">
                                                                             <label for="exampleInputEmail1" class="form-label">Color de ojos*</label>
                                                                         </div>
                                                                         <div class="col-12 col-sm-12 col-md-12 col-lg-5">
-                                                                            <div class="drop-image mb-4">
+                                                                            <div class="drop-image mb-4" id="drop-image">
                                                                                 <div class="option-image active placeholder" data-value="placeholder">
-                                                                                    <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674496571/AMTI%20Ecommerce/ojo-cafe_vkklmb.png" alt="Ilustración de color de ojos" class="me-3"/>Selecciona un color de ojos
+                                                                                    <img  src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674496571/AMTI%20Ecommerce/ojo-cafe_vkklmb.png" alt="Ilustración de color de ojos" class="me-3"/>Selecciona un color de ojos
                                                                                 </div>
-                                                                                <div class="option-image" data-value="wow">
+                                                                                <div class="option-image" id="prueba" data-value="wow" onclick="getEyes(this)">
                                                                                     <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674496571/AMTI%20Ecommerce/ojo-ambar_d1yi7v.png" alt="Ilustración de color de ojos" class="me-3"/> Ambar
                                                                                 </div>
-                                                                                <div class="option-image" data-value="wow">
+                                                                                <div class="option-image" data-value="wow" onclick="getEyes(this)">
                                                                                     <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674496571/AMTI%20Ecommerce/ojo-castano_g8zhwc.png" alt="Ilustración de color de ojos" class="me-3"/> Castaño
                                                                                 </div>
-                                                                                <div class="option-image" data-value="drop-image">
+                                                                                <div class="option-image" data-value="drop-image" onclick="getEyes(this)">
                                                                                     <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674496571/AMTI%20Ecommerce/ojo-gris_ks0w5a.png" alt="Ilustración de color de ojos" class="me-3"/> Gris
                                                                                 </div>
-                                                                                <div class="option-image" data-value="select">
+                                                                                <div class="option-image" data-value="select" onclick="getEyes(this)">
                                                                                     <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674496571/AMTI%20Ecommerce/ojo-avellana_b4mz4x.png" alt="Ilustración de color de ojos" class="me-3"/> Avellana
                                                                                 </div>
-                                                                                <div class="option-image" data-value="custom">
+                                                                                <div class="option-image" data-value="custom" onclick="getEyes(this)">
                                                                                     <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674496571/AMTI%20Ecommerce/ojo-verde_h0vwr7.png" alt="Ilustración de color de ojos" class="me-3"/> Verde
                                                                                 </div>
-                                                                                <div class="option-image" data-value="animation"> 
+                                                                                <div class="option-image" data-value="animation" onclick="getEyes(this)"> 
                                                                                     <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674496571/AMTI%20Ecommerce/ojo-azul_g1yxz6.png" alt="Ilustración de color de ojos" class="me-3"/> Azul
                                                                                 </div>
                                                                               </div>
                                                                         </div>
+                                                                        <input type="hidden" name="color_ojos" id="color_ojos" value="">
                                                                         <div class="col-12 col-sm-12 col-md-12 col-lg-4"></div>
                                                                     </div>
                                                                     <hr/>
@@ -857,37 +870,37 @@
                                                                         <div class="col-12 col-sm-12 col-md-12 col-lg-6 mb-4">
                                                                             <div class="">
                                                                                 <label for="exampleInputEmail1" class="form-label">Calle*</label>
-                                                                                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required name="calle">
+                                                                                <input type="text" class="form-control" id="calle" name="calle" aria-describedby="" required >
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-12 col-sm-12 col-md-12 col-lg-6 mb-4">
                                                                             <div class="">
                                                                                 <label for="exampleInputEmail1" class="form-label">Colonia*</label>
-                                                                                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required name="colonia">
+                                                                                <input type="text" class="form-control" id="colonia" name="colonia" aria-describedby="" required >
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-12 col-sm-12 col-md-12 col-lg-6 mb-4">
                                                                             <div class="">
                                                                                 <label for="exampleInputEmail1" class="form-label">Número exterior*</label>
-                                                                                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required name="NumExterior">
+                                                                                <input type="text" class="form-control number" id="numExterior" name="numExterior" aria-describedby="" required >
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-12 col-sm-12 col-md-12 col-lg-6 mb-4">
                                                                             <div class="">
                                                                                 <label for="exampleInputEmail1" class="form-label">Número interior</label>
-                                                                                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required name="numInterior">
+                                                                                <input type="text" class="form-control number" id="numInterior" name="numInterior" aria-describedby="">
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-12 col-sm-12 col-md-12 col-lg-6 mb-4">
                                                                             <div class="">
                                                                                 <label for="exampleInputEmail1" class="form-label">Ciudad*</label>
-                                                                                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required name="ciudad">
+                                                                                <input type="text" class="form-control text" id="ciudad" name="ciudad" aria-describedby="" required >
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-12 col-sm-12 col-md-12 col-lg-6 mb-4">
                                                                             <div class="">
                                                                                 <label for="exampleInputEmail1" class="form-label">Estado*</label>
-                                                                                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required name="estado">
+                                                                                <input type="text" class="form-control text" id="estado" name="estado" aria-describedby="" required >
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -911,7 +924,7 @@
                                                         <div class="col-12 col-sm-12 col-md-12 col-lg-4"></div>
                                                         <div class="col-12 col-sm-12 col-md-12 col-lg-3">
                                                             <ul class="list-inline pull-right">
-                                                                <li><button type="button" class="default-btn next-step">Siguiente <i class="fa-solid fa-arrow-right"></i></button></li>
+                                                                <li><button type="button" onclick="previewAddres();" class="default-btn next-step">Siguiente <i class="fa-solid fa-arrow-right"></i></button></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -946,45 +959,49 @@
                                                             <div class="row py-4 txt-firma">
                                                                 <div class="col-12 col-sm-12 col-md-12 col-lg-3">
                                                                     <div class="mb-3">
-                                                                        <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674245868/AMTI%20Ecommerce/foto-ejemp_pfcn3n.png" alt="Ilustración de firma" class="img-fluid"/>
+                                                                        <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674245868/AMTI%20Ecommerce/foto-ejemp_pfcn3n.png" 
+                                                                        id="previewImgPersonal" alt="Ilustración de firma" class="img-fluid"/>
                                                                     </div>
                                                                     <div class="">
-                                                                        <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674253285/AMTI%20Ecommerce/ejemplo-firma_fnmd48.png" alt="Ilustración de firma" class="img-fluid"/>
+                                                                        <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674253285/AMTI%20Ecommerce/ejemplo-firma_fnmd48.png"
+                                                                        id="previewImgFirma" alt="Ilustración de firma" class="img-fluid"/>
                                                                     </div>
                                                                 </div>
                                                                 <div class="col-12 col-sm-12 col-md-12 col-lg-9">
                                                                     <div class="d-none d-sm-none d-md-block">
-                                                                        <p class="txt-color-parrafo h6 regular mb-4"><b class="txt-azul-oscuro">FULL NAME:</b> "PRUEBAS"</p>
+                                                                        <p class="txt-color-parrafo h6 regular mb-4"><b class="txt-azul-oscuro">FULL NAME:</b>
+                                                                        <span id="previewName"></span></p>
                                                                     </div>
                                                                     <div class="d-block d-sm-block d-md-none">
                                                                         <p class="regular h6 txt-color-parrafo"><b class="txt-azul-oscuro">FULL NAME:</b></p>
-                                                                        <p class="regular h6 txt-color-parrafo mb-4">"ALDO MARTINEZ"</p>
+                                                                        <p class="regular h6 txt-color-parrafo mb-4" id="previewName2"></p>
                                                                     </div>
                                                                     <div class="d-none d-sm-none d-md-block">
-                                                                        <p class="regular h6  txt-color-parrafo mb-4"><b class="txt-azul-oscuro">ADDRESS:</b> "AV. RÚBEN DARÍO #586"</p>
+                                                                        <p class="regular h6  txt-color-parrafo mb-4"><b class="txt-azul-oscuro">ADDRESS:</b>
+                                                                        <span id="previewDireccion"></span></p>
                                                                     </div>
                                                                     <div class="d-block d-sm-block d-md-none">
                                                                         <p class="regular h6 txt-color-parrafo"><b class="txt-azul-oscuro">ADDRESS:</b></p>
-                                                                        <p class="regular h6 txt-color-parrafo mb-4">"AV. RÚBEN DARÍO #586"</p>
+                                                                        <p class="regular h6 txt-color-parrafo mb-4" id="previewDireccion2"></p>
                                                                     </div>
                                                                     <p class="regular h6 txt-color-parrafo"><b class="txt-azul-oscuro">PLACE OF BIRTH:</b></p>
-                                                                    <p class="regular h6 txt-color-parrafo mb-4">"MÉXICO"</p>
+                                                                    <p class="regular h6 txt-color-parrafo mb-4" id="previewPais"></p>
                                                                     <div class="row">
                                                                         <div class="col-6 col-sm-6 col-md-6 col-lg-3 mb-4">
                                                                             <p class="regular h6 txt-color-parrafo"><b class="txt-azul-oscuro">SEX:</b></p>
-                                                                            <p class="regular h6 txt-color-parrafo">"M"</p>
+                                                                            <p class="regular h6 txt-color-parrafo" id="previewSexo"></p>
                                                                         </div>
                                                                         <div class="col-6 col-sm-6 col-md-6 col-lg-3 mb-4">
                                                                             <p class="regular h6 txt-color-parrafo"><b class="txt-azul-oscuro">EYES:</b></p>
-                                                                            <p class="regular h6 txt-color-parrafo">"EFF"</p>
+                                                                            <p class="regular h6 txt-color-parrafo" id="previewOjos"></p>
                                                                         </div>
                                                                         <div class="col-6 col-sm-6 col-md-6 col-lg-3 mb-4">
                                                                             <p class="regular h6 txt-color-parrafo"><b class="txt-azul-oscuro">HT:</b></p>
-                                                                            <p class="regular h6 txt-color-parrafo">"150"</p>
+                                                                            <p class="regular h6 txt-color-parrafo" id="previewEstatura"></p>
                                                                         </div>
                                                                         <div class="col-6 col-sm-6 col-md-6 col-lg-3 mb-4">
                                                                             <p class="regular h6 txt-color-parrafo"><b class="txt-azul-oscuro">HAIR:</b></p>
-                                                                            <p class="regular h6 txt-color-parrafo">"VFVF"</p>
+                                                                            <p class="regular h6 txt-color-parrafo" id="previewCabello"></p>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -1042,70 +1059,69 @@
                                                         <div class="mx-5">
                                                             <div class="row py-5 txt-firma">
                                                                 <div class="mb-4">
-                                                                    <label for="exampleInputEmail1" class="form-label">Nombre Completo*</label>
-                                                                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required name="calle">
+                                                                    <label for="nombreEnvio" class="form-label">Nombre Completo*</label>
+                                                                    <input type="text" class="form-control text" id="nombreEnvio" name="nombreEnvio" aria-describedby="" required>
                                                                 </div>
                                                                 <div class="row">
                                                                     <div class="col-12 col-sm-12 col-md-12 col-lg-6">
                                                                         <div class="mb-4">
-                                                                            <label for="exampleInputEmail1" class="form-label">Teléfono*</label>
-                                                                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required name="calle">
+                                                                            <label for="telefonoEnvio" class="form-label">Teléfono*</label>
+                                                                            <input type="text" class="form-control number" id="telefonoEnvio" name="telefonoEnvio" maxlength="10" aria-describedby="" required>
                                                                         </div>
                                                                     </div>
                                                                     <div class="col-12 col-sm-12 col-md-12 col-lg-6">
                                                                         <div class="mb-4">
-                                                                            <label for="exampleInputEmail1" class="form-label">Correo electrónico*</label>
-                                                                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required name="calle">
+                                                                            <label for="correoEnvio" class="form-label">Correo electrónico*</label>
+                                                                            <input type="email" class="form-control" id="correoEnvio" name="correoEnvio" aria-describedby="" required>
                                                                         </div>
                                                                     </div>
                                                                     <div class="col-12 col-sm-12 col-md-12 col-lg-6">
                                                                         <div class="mb-4">
-                                                                            <label for="exampleInputEmail1" class="form-label">Calle*</label>
-                                                                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required name="calle">
+                                                                            <label for="calleEnvio" class="form-label">Calle*</label>
+                                                                            <input type="text" class="form-control" id="calleEnvio" name="calleEnvio" aria-describedby="" required>
                                                                         </div>
                                                                     </div>
                                                                     <div class="col-12 col-sm-12 col-md-12 col-lg-6">
                                                                         <div class="mb-4">
-                                                                            <label for="exampleInputEmail1" class="form-label">Colonia*</label>
-                                                                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required name="calle">
+                                                                            <label for="coloniaEnvio" class="form-label">Colonia*</label>
+                                                                            <input type="text" class="form-control" id="coloniaEnvio" name="coloniaEnvio" aria-describedby="" required>
                                                                         </div>
                                                                     </div>
                                                                     <div class="col-12 col-sm-12 col-md-12 col-lg-6">
                                                                         <div class="mb-4">
-                                                                            <label for="exampleInputEmail1" class="form-label">Número exterior*</label>
-                                                                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required name="calle">
+                                                                            <label for="numeroExtEnvio" class="form-label">Número exterior*</label>
+                                                                            <input type="text" class="form-control number" id="numeroExtEnvio" name="numeroExtEnvio" aria-describedby="" required>
                                                                         </div>
                                                                     </div>
                                                                     <div class="col-12 col-sm-12 col-md-12 col-lg-6">
                                                                         <div class="mb-4">
-                                                                            <label for="exampleInputEmail1" class="form-label">Número interior</label>
-                                                                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required name="calle">
+                                                                            <label for="numeroIntEnvio" class="form-label">Número interior</label>
+                                                                            <input type="text" class="form-control number" id="numeroIntEnvio" name="numeroIntEnvio" aria-describedby="">
                                                                         </div>
                                                                     </div>
                                                                     <div class="col-12 col-sm-12 col-md-12 col-lg-6">
                                                                         <div class="mb-4">
-                                                                            <label for="exampleInputEmail1" class="form-label">Ciudad*</label>
-                                                                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required name="calle">
+                                                                            <label for="ciudadEnvio" class="form-label">Ciudad*</label>
+                                                                            <input type="text" class="form-control text" id="ciudadEnvio" name="ciudadEnvio" aria-describedby="" required>
                                                                         </div>
                                                                     </div>
                                                                     <div class="col-12 col-sm-12 col-md-12 col-lg-6">
                                                                         <div class="mb-4">
-                                                                            <label for="exampleInputEmail1" class="form-label">Estado*</label>
-                                                                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required name="calle">
+                                                                            <label for="estadoEnvio" class="form-label">Estado*</label>
+                                                                            <input type="text" class="form-control text" id="estadoEnvio" name="estadoEnvio" aria-describedby="" required>
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="mb-4">
-                                                                    <label for="exampleInputEmail1" class="form-label">Instrucciones adicionales para acceder al domicilio*</label>
-                                                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required name="calle">
+                                                                    <label for="instrucciones" class="form-label">Instrucciones adicionales para acceder al domicilio*</label>
+                                                                    <input type="text" class="form-control" id="instrucciones" name="instrucciones" aria-describedby="" required >
                                                                 </div>
                                                                 <div class="row mb-5">
                                                                     <label for="exampleInputEmail1" class="form-label">Selecciona tu tipo de envío*</label>
                                                                     <div class="col-12 col-sm-12 col-md-12 col-lg-4">
                                                                         <div class="form-check">
-                                                                            <input class="form-check-input check-envio" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                                                            <label class="form-check-label txt-color-tit bold" for="flexRadioDefault1">
-                                                                                Envío<b class="txt-azul-oscuro"> estándar</b> <br/>
+                                                                            <input class="form-check-input check-envio" type="radio" name="tipoEnvio" id="tipoEnvio1" checked value="Estandar" required>
+                                                                            <label class="form-check-label txt-color-tit bold" for="tipoEnvio1">Envío<b class="txt-azul-oscuro"> estándar</b> <br/>
                                                                                 <i class="fa-solid fa-check txt-verde"></i> <b class="txt-verde">Gratuito</b> <br/>
                                                                                 <b class="top-menu regular">5 - 7 días hábiles</b>
                                                                             </label>
@@ -1113,9 +1129,8 @@
                                                                     </div>
                                                                     <div class="col-12 col-sm-12 col-md-12 col-lg-4">
                                                                         <div class="form-check ">
-                                                                            <input class="form-check-input check-envio" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                                                            <label class="form-check-label" for="flexRadioDefault1">
-                                                                                Envío<b class="txt-azul-oscuro"> express</b> <br/>
+                                                                            <input class="form-check-input check-envio" type="radio" name="tipoEnvio" id="tipoEnvio2" value="Express" required>
+                                                                            <label class="form-check-label" for="tipoEnvio2">Envío<b class="txt-azul-oscuro"> express</b> <br/>
                                                                                 <b class="regular">$199</b> <br/>
                                                                                 <b class="top-menu regular">1 a 3 días hábiles</b>
                                                                             </label>
@@ -1123,9 +1138,8 @@
                                                                     </div>
                                                                     <div class="col-12 col-sm-12 col-md-12 col-lg-4">
                                                                         <div class="form-check">
-                                                                            <input class="form-check-input check-envio" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                                                            <label class="form-check-label" for="flexRadioDefault1">
-                                                                                Recoger en<b class="txt-azul-oscuro"> sucursal</b> <br/>
+                                                                            <input class="form-check-input check-envio" type="radio" name="tipoEnvio" id="tipoEnvio3" value="Recogerla" required>
+                                                                            <label class="form-check-label" for="tipoEnvio3">Recoger en<b class="txt-azul-oscuro"> sucursal</b> <br/>
                                                                                 <i class="fa-solid fa-check txt-verde"></i> <b class="txt-verde">Gratuito</b> <br/>
                                                                                 <b class="top-menu regular">2 a 3 días hábiles.</b>
                                                                             </label>
@@ -1138,96 +1152,160 @@
 
                                                                 <div class="accordion" id="accordionPanelsStayOpenExample">
                                                                     <div class="accordion-item">
-                                                                      <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-                                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                                                                          <div class="form-check mt-1">
-                                                                            <input class="form-check-input chkAll" type="checkbox" value="" id="chkAccordion2All">
-                                                                          </div>
-                                                                          Requiero factura
-                                                                        </button>
-                                                                      </h2>
+                                                                        <div class="form-check">
+                                                                            <input class="form-check-input chkAll" type="checkbox" value="" id="chkFactura" name="chkFactura" data-bs-target="#panelsStayOpen-collapseTwo" data-bs-toggle="collapse" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                                                            <label class="form-check-label pb-2" for="chkFactura" id="btnFactura" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                                                                Requiero factura
+                                                                            </label>
+                                                                        </div>
                                                                       <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
                                                                         <div class="accordion-body ms-3">
                                                                             <div class="row">
                                                                                 <div class="col-12 col-sm-12 col-md-12 col-lg-6">
                                                                                     <div class="mb-4">
-                                                                                        <label for="exampleInputEmail1" class="form-label">Nombre o Razón Social</label>
-                                                                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required name="calle">
+                                                                                        <label for="razonSocial" class="form-label">Nombre o Razón Social</label>
+                                                                                        <input type="text" class="form-control text" id="razonSocial" name="razonSocial" aria-describedby="" required >
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="col-12 col-sm-12 col-md-12 col-lg-6">
                                                                                     <div class="mb-4">
-                                                                                        <label for="exampleInputEmail1" class="form-label">RFC*</label>
-                                                                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required name="calle">
+                                                                                        <label for="rfc" class="form-label">RFC*</label>
+                                                                                        <input type="text" class="form-control" id="rfc" name="rfc" aria-describedby="" required>
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="col-12 col-sm-12 col-md-12 col-lg-6">
                                                                                     <div class="mb-4">
-                                                                                        <label for="exampleInputEmail1" class="form-label">Calle*</label>
-                                                                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required name="calle">
+                                                                                        <label for="calleFactura" class="form-label">Calle*</label>
+                                                                                        <input type="text" class="form-control" id="calleFactura" name="calleFactura" aria-describedby="" required>
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="col-12 col-sm-12 col-md-12 col-lg-6">
                                                                                     <div class="mb-4">
-                                                                                        <label for="exampleInputEmail1" class="form-label">Colonia*</label>
-                                                                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required name="calle">
+                                                                                        <label for="coloniaFactua" class="form-label">Colonia*</label>
+                                                                                        <input type="text" class="form-control" id="coloniaFactua" name="coloniaFactura" aria-describedby="" required >
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="col-12 col-sm-12 col-md-12 col-lg-6">
                                                                                     <div class="mb-4">
-                                                                                        <label for="exampleInputEmail1" class="form-label">Número exterior*</label>
-                                                                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required name="calle">
+                                                                                        <label for="numExteriorFactura" class="form-label">Número exterior*</label>
+                                                                                        <input type="text" class="form-control number" id="numExteriorFactura" name="numExteriorFactura" aria-describedby="" required>
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="col-12 col-sm-12 col-md-12 col-lg-6">
                                                                                     <div class="mb-4">
-                                                                                        <label for="exampleInputEmail1" class="form-label">Numero interior</label>
-                                                                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required name="calle">
+                                                                                        <label for="numInteriorFactura" class="form-label">Número interior</label>
+                                                                                        <input type="text" class="form-control number" id="numInteriorFactura" name="numInteriorFactura" aria-describedby="">
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="col-12 col-sm-12 col-md-12 col-lg-6">
                                                                                     <div class="mb-4">
-                                                                                        <label for="exampleInputEmail1" class="form-label">Código Postal*</label>
-                                                                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required name="calle">
+                                                                                        <label for="cpFactutra" class="form-label">Código Postal*</label>
+                                                                                        <input type="text" class="form-control number" id="cpFactutra" name="cpFactutra" aria-describedby="" maxlength="5" required >
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="col-12 col-sm-12 col-md-12 col-lg-6">
                                                                                     <div class="mb-4">
-                                                                                        <label for="exampleInputEmail1" class="form-label">Ciudad*</label>
-                                                                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required name="calle">
+                                                                                        <label for="ciudadFactura" class="form-label">Ciudad*</label>
+                                                                                        <input type="text" class="form-control text" id="ciudadFactura" name="ciudadFactura" aria-describedby="" required>
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="col-12 col-sm-12 col-md-12 col-lg-6">
                                                                                     <div class="mb-4">
-                                                                                        <label for="exampleInputEmail1" class="form-label">Estado*</label>
-                                                                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required name="calle">
+                                                                                        <label for="estadoFactura" class="form-label">Estado*</label>
+                                                                                        <input type="text" class="form-control text" id="estadoFactura" name="estadoFactura" aria-describedby="" required>
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="col-12 col-sm-12 col-md-12 col-lg-6">
                                                                                     <div class="mb-4">
-                                                                                        <label for="exampleInputEmail1" class="form-label">País*</label>
-                                                                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required name="calle">
+                                                                                        <label for="paisFactura" class="form-label">País*</label>
+                                                                                        <input type="text" class="form-control text" id="paisFactura" name="paisFactura" aria-describedby="" required>
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="col-12 col-sm-12 col-md-12 col-lg-6">
                                                                                     <div class="mb-4">
-                                                                                        <label for="exampleInputEmail1" class="form-label">Correo electrónico*</label>
-                                                                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required name="calle">
+                                                                                        <label for="emailFactura" class="form-label">Correo electrónico*</label>
+                                                                                        <input type="email" class="form-control" id="emailFactura" name="emailFactura" aria-describedby="" required>
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="col-12 col-sm-12 col-md-12 col-lg-6">
                                                                                     <div class="mb-4">
-                                                                                        <label for="exampleInputEmail1" class="form-label">Teléfono*</label>
-                                                                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required name="calle">
+                                                                                        <label for="telefonoFactura" class="form-label">Teléfono*</label>
+                                                                                        <input type="text" class="form-control number" id="telefonoFactura" maxlength="10" name="telefonoFactura" aria-describedby="" required>
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="col-12 col-sm-12 col-md-12 col-lg-6">
                                                                                     <div class="mb-4">
                                                                                         <label for="exampleInputEmail1" class="form-label">Uso del CFDI*</label>
-                                                                                        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
-                                                                                            <option selected>Femenino</option>
-                                                                                            <option value="1">Masculino</option>
-                                                                                        </select>
+                                                                                        <select required class="form-select f-italic bg-obscuro txt-blanco t-s"
+                                                                                        aria-label="Default select example" name="cfdi" id="cfdi">
+                                                                                        <option value="">Selecciona una opción</option>
+                                                                                        <option value="G01">Adquisición de mercancías.</option>
+                                                                                        <option value="G02">Devoluciones, descuentos o bonificaciones.</option>
+                                                                                        <option value="G03">Gastos en general.</option>
+                                                                                        <option value="I01">Construcciones.</option>
+                                                                                        <option value="I02">Mobiliario y equipo de oficina por inversiones.</option>
+                                                                                        <option value="I03">Equipo de transporte.</option>
+                                                                                        <option value="I04">Equipo de computo y accesorios.</option>
+                                                                                        <option value="I05">Dados, troqueles, moldes, matrices y herramental.</option>
+                                                                                        <option value="I06">Comunicaciones telefónicas.</option>
+                                                                                        <option value="I07">Comunicaciones satelitales.</option>
+                                                                                        <option value="I08">Otra maquinaria y equipo.</option>
+                                                                                        <option value="D01">Honorarios médicos, dentales y gastos hospitalarios.
+                                                                                        </option>
+                                                                                        <option value="D02">Gastos médicos por incapacidad o discapacidad.</option>
+                                                                                        <option value="D03">Gastos funerales.</option>
+                                                                                        <option value="D04">Donativos.</option>
+                                                                                        <option value="D05">Intereses reales efectivamente pagados por créditos
+                                                                                            hipotecarios (casa habitación).</option>
+                                                                                        <option value="D06">Aportaciones voluntarias al SAR.</option>
+                                                                                        <option value="D07">Primas por seguros de gastos médicos.</option>
+                                                                                        <option value="D08">Gastos de transportación escolar obligatoria.</option>
+                                                                                        <option value="D09">Depósitos en cuentas para el ahorro, primas que tengan como
+                                                                                            base planes de pensiones.</option>
+                                                                                        <option value="D10">Pagos por servicios educativos (colegiaturas).</option>
+                                                                                        <option value="S01">Sin efectos fiscales.</option>
+                                                                                        <option value="CP01">Pagos.</option>
+                                                                                        <option value="CN01">Nómina.</option>
+                                                                                    </select>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                                                                    <div class="mb-4">
+                                                                                        <label for="exampleInputEmail1" class="form-label">Regimen Fiscal*</label>
+                                                                                        <select required class="form-select f-italic bg-obscuro txt-blanco t-s"
+                                                                                        aria-label="Default select example" name="regimen_fiscal" id="regimen_fiscal">
+                                                                                        <option value="">Selecciona una opción</option>
+                                                                                        <option value="601">General de Ley Personas Morales</option>
+                                                                                        <option value="603">Personas Morales con Fines no Lucrativos</option>
+                                                                                        <option value="605">Sueldos y Salarios e Ingresos Asimilados a Salarios</option>
+                                                                                        <option value="606">Arrendamiento</option>
+                                                                                        <option value="607">Régimen de Enajenación o Adquisición de Bienes</option>
+                                                                                        <option value="608">Demás ingresos</option>
+                                                                                        <option value="610">Residentes en el Extranjero sin Establecimiento Permanente
+                                                                                            en México</option>
+                                                                                        <option value="611">Ingresos por Dividendos (socios y accionistas)</option>
+                                                                                        <option value="612">Personas Físicas con Actividades Empresariales y
+                                                                                            Profesionales</option>
+                                                                                        <option value="614">Ingresos por intereses</option>
+                                                                                        <option value="615">Régimen de los ingresos por obtención de premios</option>
+                                                                                        <option value="616">Sin obligaciones fiscales</option>
+                                                                                        <option value="620">Sociedades Cooperativas de Producción que optan por diferir
+                                                                                            sus ingresos</option>
+                                                                                        <option value="621">Incorporación Fiscal</option>
+                                                                                        <option value="622">Actividades Agrícolas, Ganaderas, Silvícolas y Pesqueras
+                                                                                        </option>
+                                                                                        <option value="623">Opcional para Grupos de Sociedades</option>
+                                                                                        <option value="624">Coordinados</option>
+                                                                                        <option value="625">Régimen de las Actividades Empresariales con ingresos a
+                                                                                            través de Plataformas Tecnológicas</option>
+                                                                                        <option value="626">Régimen Simplificado de Confianza</option>
+                                                                                    </select>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                                                                    <div class="mb-4">
+                                                                                        <label class="txt-obscuro f-semibold" for="constancia">Sube tu constancia fiscal*</label>
+                                                                                        <input required type="file" id="constancia_fiscal" name="constancia_fiscal" class="form-control addimg mb-2"  accept="application/pdf"/>
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
@@ -1242,7 +1320,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>   
+                                        </div>
                                         <div class="container">
                                             <div class="row">
                                                 <div class="col-12 col-sm-12 col-md-12 col-lg-2"></div>
@@ -1256,30 +1334,23 @@
                                                         <div class="col-12 col-sm-12 col-md-12 col-lg-4"></div>
                                                         <div class="col-12 col-sm-12 col-md-12 col-lg-3">
                                                             <ul class="list-inline pull-right">
-                                                                <li><a type="button" class="default-btn next-step a_none_style text-white" href="{{route('checkout') }}">Siguiente <i class="fa-solid fa-arrow-right"></i></a></li>
+                                                                <li><a type="button" onclick="agregarPedido()" class="default-btn next-step a_none_style text-white">Siguiente <i class="fa-solid fa-arrow-right"></i></a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
                                                     
                                                 </div>
                                                 <div class="col-12 col-sm-12 col-md-12 col-lg-2"></div>
-                                                
                                             </div>
                                         </div> 
                                     </div>
-                                    
                                     <div class="clearfix"></div>
-                                       
                                 </div>
                             </form>     
                         </div>
-                                
-                            
                     </div><!-- row -->
                 </div><!-- col-md-12 -->
-                
             </div> <!-- row -->
-            
         </div><!--container-->
     </section>
 
@@ -1321,7 +1392,6 @@
             </div>
         </div>
     </div>
-
     @include('components.scripts')
 </body>
 </html>
