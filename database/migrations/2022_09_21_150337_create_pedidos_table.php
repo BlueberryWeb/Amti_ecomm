@@ -35,6 +35,7 @@ return new class extends Migration
             $table->string('correo');
             $table->string('calle');
             $table->string('ciudad');
+            $table->string('cp');
             $table->string('instrucciones')->nullable();
 
             //Archivos

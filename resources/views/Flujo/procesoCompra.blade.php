@@ -52,29 +52,26 @@
                                     <div class="wizard-inner">
                                         <div class="connecting-line"></div>
                                         <ul class="nav nav-tabs" role="tablist" id="steps">
-                                            <li role="presentation" class="active">
-                                                <a href="#step1" name="_steps" onclick="validateFlujo(this)" data-toggle="tab" aria-controls="step1" role="tab" aria-expanded="true"><span class="round-tab"><h6 class="pt-2">1</h6> </span> <i> Datos iniciales</i></a>
+                                            <li role="presentation" class="active" onclick="validateFlujo(this)">
+                                                <a href="#step1"  id="_steps" data-toggle="tab" aria-controls="step1" role="tab"  aria-expanded="true"><span class="round-tab"><h6 class="pt-2">1</h6> </span> <i> Datos iniciales</i></a>
                                             </li>
-                                            <li role="presentation" class="disabled">
-                                                <a href="#step2" target="_blank" name="_steps" onclick="validateFlujo(this)" data-toggle="tab" aria-controls="step2" role="tab" aria-expanded="false"><span class="round-tab"><h6 class="pt-2">2</h6></span> <i> Vigencia</i></a>
+                                            <li role="presentation" class="disabled" onclick="validateFlujo(this)">
+                                                <a href="#step2"  id="_steps" data-toggle="tab" aria-controls="step2" role="tab"  aria-expanded="false"><span class="round-tab"><h6 class="pt-2">2</h6></span> <i> Vigencia</i></a>
                                             </li>
-                                            <li role="presentation" class="disabled">
-                                                <a href="#step3" name="_steps" onclick="validateFlujo(this)" data-toggle="tab" aria-controls="step3" role="tab"><span class="round-tab"><h6 class="pt-2">3</h6></span> <i>Documentos</i></a>
+                                            <li role="presentation" class="disabled" onclick="validateFlujo(this)">
+                                                <a href="#step3" id="_steps" data-toggle="tab" aria-controls="step3" role="tab"><span class="round-tab"><h6 class="pt-2">3</h6></span> <i>Documentos</i></a>
                                             </li>
-                                            <li role="presentation" class="disabled">
-                                                <a href="#step4" name="_steps" onclick="validateFlujo(this)" data-toggle="tab" aria-controls="step4" role="tab"><span class="round-tab"><h6 class="pt-2">4</h6></span> <i>Firma </i></a>
+                                            <li role="presentation" class="disabled" onclick="validateFlujo(this)">
+                                                <a href="#step4" id="_steps" data-toggle="tab" aria-controls="step4" role="tab"><span class="round-tab"><h6 class="pt-2">4</h6></span> <i>Firma </i></a>
                                             </li>
-                                            <li role="presentation" class="disabled">
-                                                <a href="#step5" name="_steps" onclick="validateFlujo(this)" data-toggle="tab" aria-controls="step5" role="tab"><span class="round-tab"><h6 class="pt-2">5</h6></span> <i> Información</i></a>
+                                            <li role="presentation" class="disabled" onclick="validateFlujo(this)">
+                                                <a href="#step5" id="_steps" data-toggle="tab" aria-controls="step5" role="tab"><span class="round-tab"><h6 class="pt-2">5</h6></span> <i> Información</i></a>
                                             </li>
-                                            <li role="presentation" class="disabled" onclick="validateFlujo();">
-                                                <a href="#step6" name="_steps" onclick="validateFlujo(this)" data-toggle="tab" aria-controls="step6" role="tab"><span class="round-tab"><h6 class="pt-2">6</h6> </span> <i>Confirmar </i></a>
+                                            <li role="presentation" class="disabled" onclick="validateFlujo(this)">
+                                                <a href="#step6" id="_steps" data-toggle="tab" aria-controls="step6" role="tab"><span class="round-tab"><h6 class="pt-2">6</h6> </span> <i>Confirmar </i></a>
                                             </li>
-                                            {{-- <li role="presentation" class="disabled">
-                                                <a href="#step6" name="_steps" onclick="validateFlujo(this)" onclick="previewAddres();" data-toggle="tab" aria-controls="step6" role="tab"><span class="round-tab"><h6 class="pt-2">6</h6> </span> <i>Confirmar </i></a>
-                                            </li> --}}
-                                            <li role="presentation" class="disabled">
-                                                <a href="#step7" name="_steps" onclick="validateFlujo(this)" data-toggle="tab" aria-controls="step7" role="tab"><span class="round-tab"><h6 class="pt-2">7</h6></span> <i>Envío </i></a>
+                                            <li role="presentation" class="disabled" onclick="validateFlujo(this)">
+                                                <a href="#step7" id="_steps" data-toggle="tab" aria-controls="step7" role="tab"><span class="round-tab"><h6 class="pt-2">7</h6></span> <i>Envío </i></a>
                                             </li>
                                         </ul>
                                     </div>
@@ -177,7 +174,7 @@
                                                                                             <p class="semibold txt-color-tit titulos">$2,700 MXN.</p>
                                                                                         </div>
                                                                                         <div class="form-check btn-seleccionar py-2">
-                                                                                            <input class="form-check-input" required type="checkbox" value="3" id="vigencia" name="vigencia" >
+                                                                                            <input class="form-check-input checks" required type="checkbox" value="3" id="vigencia" name="vigencia" >
                                                                                             <label class="form-check-label" for="vigencia">
                                                                                               Seleccionar
                                                                                             </label>
@@ -221,15 +218,15 @@
                                                                                             </div>
                                                                                         </div>
                                                                                         <div class="form-check btn-seleccionar py-2">
-                                                                                            <input class="form-check-input" required type="checkbox" value="5" id="vigencia2" name="vigencia">
+                                                                                            <input class="form-check-input checks" required type="checkbox" value="5" id="vigencia2" name="vigencia">
                                                                                             <label class="form-check-label" for="vigencia2">
                                                                                               Seleccionar
                                                                                             </label>
                                                                                         </div>
                                                                                     </div>
-                                                                                    
                                                                                 </div>
                                                                             </div>
+                                                                            <input type="hidden" id="vigenciaSent" name="vigenciaSent" value="">
                                                                         </div>
                                                                     </div>
                                                                     
@@ -252,7 +249,7 @@
                                                                                             <p class="semibold txt-color-tit titulos">$1,450 MXN..</p>
                                                                                         </div>
                                                                                         <div class="form-check btn-seleccionar py-2">
-                                                                                            <input class="form-check-input" required type="checkbox" value="1" id="vigencia3" name="vigencia">
+                                                                                            <input class="form-check-input checks" required type="checkbox" value="1" id="vigencia3" name="vigencia">
                                                                                             <label class="form-check-label" for="vigencia3">
                                                                                               Seleccionar
                                                                                             </label>
@@ -268,7 +265,6 @@
                                                             </div>
                                                         </div>
                                                         <div class="col-12 col-sm-12 col-md-12 col-lg-1"></div>
-                                                        
                                                     </div>
                                                 </div>
                                             </div>
@@ -418,11 +414,6 @@
                                                                     <label for="imgPersonalFrente" class="form-label">Frente*</label>
                                                                     <input class="form-control form-control-sm" id="imgPersonalFrente" name="imgPersonalFrente" type="file" required  accept="image/png,image/jpeg">
                                                                 </div>
-                                                                <div class="mb-3">
-                                                                    <label for="imgPersonalVuelta" class="form-label">Vuelta*</label>
-                                                                    <input class="form-control form-control-sm" id="imgPersonalVuelta" name="imgPersonalVuelta" type="file" required accept="image/png,image/jpeg">
-                                                                </div>
-                                                                
                                                             </div>
                                                         </div>
                                                         @include('Flujo.components.modalFotografia')
@@ -861,7 +852,7 @@
                                                                                 </div>
                                                                               </div>
                                                                         </div>
-                                                                        <input type="hidden" name="color_ojos" id="color_ojos" value="">
+                                                                        <input type="text" class="form-control " name="color_ojos" id="color_ojos" value="" required>
                                                                         <div class="col-12 col-sm-12 col-md-12 col-lg-4"></div>
                                                                     </div>
                                                                     <hr/>
@@ -924,7 +915,7 @@
                                                         <div class="col-12 col-sm-12 col-md-12 col-lg-4"></div>
                                                         <div class="col-12 col-sm-12 col-md-12 col-lg-3">
                                                             <ul class="list-inline pull-right">
-                                                                <li><button type="button" onclick="previewAddres();" class="default-btn next-step">Siguiente <i class="fa-solid fa-arrow-right"></i></button></li>
+                                                                <li><button type="button" id="btnInformacion" onclick="previewAddres();" class="default-btn next-step">Siguiente <i class="fa-solid fa-arrow-right"></i></button></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -1087,16 +1078,22 @@
                                                                             <input type="text" class="form-control" id="coloniaEnvio" name="coloniaEnvio" aria-describedby="" required>
                                                                         </div>
                                                                     </div>
-                                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-4">
                                                                         <div class="mb-4">
                                                                             <label for="numeroExtEnvio" class="form-label">Número exterior*</label>
                                                                             <input type="text" class="form-control number" id="numeroExtEnvio" name="numeroExtEnvio" aria-describedby="" required>
                                                                         </div>
                                                                     </div>
-                                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-4">
                                                                         <div class="mb-4">
                                                                             <label for="numeroIntEnvio" class="form-label">Número interior</label>
                                                                             <input type="text" class="form-control number" id="numeroIntEnvio" name="numeroIntEnvio" aria-describedby="">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-4">
+                                                                        <div class="mb-4">
+                                                                            <label for="cp" class="form-label">Código Postal*</label>
+                                                                            <input type="text" class="form-control number" id="cpEnvio" name="cpEnvio" aria-describedby="" maxlength="5" required>
                                                                         </div>
                                                                     </div>
                                                                     <div class="col-12 col-sm-12 col-md-12 col-lg-6">
@@ -1120,7 +1117,7 @@
                                                                     <label for="exampleInputEmail1" class="form-label">Selecciona tu tipo de envío*</label>
                                                                     <div class="col-12 col-sm-12 col-md-12 col-lg-4">
                                                                         <div class="form-check">
-                                                                            <input class="form-check-input check-envio" type="radio" name="tipoEnvio" id="tipoEnvio1" checked value="Estandar" required>
+                                                                            <input class="form-check-input checks" type="checkbox" name="tipoEnvio" id="tipoEnvio1" value="Estandar" required>
                                                                             <label class="form-check-label txt-color-tit bold" for="tipoEnvio1">Envío<b class="txt-azul-oscuro"> estándar</b> <br/>
                                                                                 <i class="fa-solid fa-check txt-verde"></i> <b class="txt-verde">Gratuito</b> <br/>
                                                                                 <b class="top-menu regular">5 - 7 días hábiles</b>
@@ -1129,7 +1126,7 @@
                                                                     </div>
                                                                     <div class="col-12 col-sm-12 col-md-12 col-lg-4">
                                                                         <div class="form-check ">
-                                                                            <input class="form-check-input check-envio" type="radio" name="tipoEnvio" id="tipoEnvio2" value="Express" required>
+                                                                            <input class="form-check-input checks" type="checkbox" name="tipoEnvio" id="tipoEnvio2" value="Express" required>
                                                                             <label class="form-check-label" for="tipoEnvio2">Envío<b class="txt-azul-oscuro"> express</b> <br/>
                                                                                 <b class="regular">$199</b> <br/>
                                                                                 <b class="top-menu regular">1 a 3 días hábiles</b>
@@ -1138,7 +1135,7 @@
                                                                     </div>
                                                                     <div class="col-12 col-sm-12 col-md-12 col-lg-4">
                                                                         <div class="form-check">
-                                                                            <input class="form-check-input check-envio" type="radio" name="tipoEnvio" id="tipoEnvio3" value="Recogerla" required>
+                                                                            <input class="form-check-input checks" type="checkbox" name="tipoEnvio" id="tipoEnvio3" value="Recogerla" required>
                                                                             <label class="form-check-label" for="tipoEnvio3">Recoger en<b class="txt-azul-oscuro"> sucursal</b> <br/>
                                                                                 <i class="fa-solid fa-check txt-verde"></i> <b class="txt-verde">Gratuito</b> <br/>
                                                                                 <b class="top-menu regular">2 a 3 días hábiles.</b>

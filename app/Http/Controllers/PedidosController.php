@@ -14,12 +14,11 @@ use Illuminate\Support\Facades\Validator;
 class PedidosController extends Controller
 {
     public function _invoke() {
-        dd('dentro');
+        //
     }
 
 
     public function agregarPedido(Request $request){
-        // dd($request);
         // $validator = Validator::make($request->all(), [
         //     "vigencia" => 'required | string',
         //     "pais" => 'required | string',
@@ -76,8 +75,6 @@ class PedidosController extends Controller
             
             $imagen = $request->file('imgPersonalFrente')->store('public/imagenes');
             $urlPersonalFrente = Storage::url($imagen);
-            $imagen = $request->file('imgPersonalVuelta')->store('public/imagenes');
-            $urlPersonalVuelta = Storage::url($imagen);
             
             $imagen = $request->file('imgFirma')->store('public/imagenes');
             $urlFirma= Storage::url($imagen);
@@ -87,7 +84,7 @@ class PedidosController extends Controller
             $pedidos->factura = $request->factura;
             $ultimoProspecto = Prospectos::latest('id')->first();
             $pedidos->id_prospecto = $ultimoProspecto->id;
-            $pedidos->direccion = $request->calle .  ' #' . $request->numExterior . ' ' . $request->colonia;
+            $pedidos->direccion = $request->calle .  ' #' . $request->numExterior . ' ' . $request->colonia . $request->numInterior != '' ? ' Int. ' . $request->numInterior : '';
             $pedidos->pais = $request->pais;
             $pedidos->sexo = $request->sexo;
             $pedidos->estatura = $request->estatura;
@@ -99,17 +96,17 @@ class PedidosController extends Controller
             $pedidos->nombre = $request->nombreEnvio;
             $pedidos->telefono = $request->telefonoEnvio;
             $pedidos->correo = $request->correoEnvio;
-            $pedidos->calle = $request->calleEnvio;
+            $pedidos->calle = $request->calleEnvio .  ' #' . $request->numExteriorEnvio . ' ' . $request->coloniaEnvio . $request->numInteriorEnvio != '' ? ' Int. ' . $request->numInteriorEnvio : '';
             $pedidos->ciudad = $request->ciudadEnvio;
+            $pedidos->cp = $request->cpEnvio;
             $pedidos->instrucciones = $request->instrucciones;
             $pedidos->frente_ine = $urlIdentificacionFrente;
             $pedidos->vuelta_ine = $urlIdentificacionVuelta;
             $pedidos->frente_licencia = $urlLicenciaFrente;
             $pedidos->vuelta_licencia = $urlLicenciaVulta;
             $pedidos->personal_frente = $urlPersonalFrente;
-            $pedidos->personal_vuelta = $urlPersonalVuelta;
             $pedidos->fotografia_firma = $urlFirma;
-            $id_producto = Productos::where('vigencia', $request->vigencia)->first();
+            $id_producto = Productos::where('vigencia', $request->vigenciaSent)->first();
             $pedidos->id_producto = $id_producto->id;
             $pedidos->description = "";
             $pedidos->tarjeta = "";
@@ -122,13 +119,11 @@ class PedidosController extends Controller
             if( $request->factura == 'No') return redirect()->route('checkout');
         }
         catch(\Exception $e){
-            // dd($e);
             return redirect()->back()->with('error', 'Error en la alta del pedido.');
         }
 
         if($request->factura == 'Si'){
             try{
-                // dd('dentro');
                 $documento = $request->file('constancia_fiscal')->store('public/imagenes');
                 $url = Storage::url($documento);
     
@@ -159,7 +154,6 @@ class PedidosController extends Controller
                 return redirect()->route('checkout');
             }
             catch(\Exception $e){
-                dd($e);
                 return redirect()->back()->with('error', 'Error en la alta del pedido.');
             }
         }

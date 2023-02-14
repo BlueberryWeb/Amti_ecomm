@@ -40,18 +40,13 @@ $(document).ready(function () {
   });
 
   $(".next-step").click(function (e) {
-      let validacion = $('#register_form').valid({
-        message: {
-          'fullName' : "Campo Obligatorio"
-        }
-      })   
-
-      if( validacion ){
-        var active = $('.wizard .nav-tabs li.active');
-        active.next().removeClass('disabled');
-        nextTab(active);
-      }
-
+    let validacion = $('#register_form').valid();
+    
+    if( validacion ){
+      var active = $('.wizard .nav-tabs li.active');
+      active.next().removeClass('disabled');
+      nextTab(active);
+    }
   });
   
   $(".prev-step").click(function (e) {
@@ -69,11 +64,10 @@ function prevTab(elem) {
   $(elem).prev().find('a[data-toggle="tab"]').click();
 }
 
-
-$('.nav-tabs').on('click', 'li', function() {
-  $('.nav-tabs li.active').removeClass('active');
-  $(this).addClass('active');
-});
+// $('.nav-tabs').on('click', 'li', function() {
+//     $('.nav-tabs li.active').removeClass('active');
+//     $(this).addClass('active');
+// });
 
 //Drop de color de ojos
 $(document).ready(function() {
