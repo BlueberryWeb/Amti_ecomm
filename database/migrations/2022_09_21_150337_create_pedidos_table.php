@@ -43,7 +43,6 @@ return new class extends Migration
             $table->string('frente_licencia');
             $table->string('vuelta_licencia');
             $table->string('personal_frente');  
-            $table->string('personal_vuelta');  
             $table->string('fotografia_firma');  
 
             //Datos de pago

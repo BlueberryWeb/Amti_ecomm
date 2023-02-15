@@ -14,7 +14,7 @@
                 <div class="cuadro-como-comprar">
                     <div class="mx-3 py-5">
                         <div class="text-center">
-                            <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674061493/AMTI%20Ecommerce/verifica-cobertura_nymmfq.png" alt="Icono cobertura" class="img-fluid mb-2"/>
+                            <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310952/amtiEcommerce/verifica-cobertura_eculdp.png" alt="Icono cobertura" class="img-fluid mb-2"/>
                             <h1 class="bold txt-color-tit titulos">Verifica tu</h1>
                             <h1 class="bold txt-azul-oscuro titulos">cobertura</h1>
                             <div class="my-4 regular top-menu">
@@ -27,11 +27,11 @@
             </div>
             <div class="d-block d-sm-block d-md-none">
                 <div class="text-center">
-                    <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674078618/AMTI%20Ecommerce/flecha-down_qu2qjc.png" alt="Felchita" class="img-fluid flecha"/>
+                    <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310963/amtiEcommerce/flecha-down_myrh1w.png" alt="Felchita" class="img-fluid flecha"/>
                 </div>
             </div>
             <div class="flechita d-none d-sm-none d-md-block">
-                <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674073239/AMTI%20Ecommerce/icono-flechita_e4l6om.png" alt="Flechita" class="img-fluid"/>
+                <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310971/amtiEcommerce/icono-flechita_jo9pmy.png" alt="Flechita" class="img-fluid"/>
             </div>
         </div>
         <div class="col-12 col-sm-12 col-md-12 col-lg-3 cuad-lic mb-4">
@@ -39,7 +39,7 @@
                 <div class="cuadro-como-comprar">
                     <div class="mx-3 py-5">
                         <div class="text-center">
-                            <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674061490/AMTI%20Ecommerce/llena-formulario_bfyfkl.png" alt="Icono cobertura" class="img-fluid mb-2"/>
+                            <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310986/amtiEcommerce/llena-formulario_tyedyv.png" alt="Icono cobertura" class="img-fluid mb-2"/>
                             <h1 class="bold txt-color-tit titulos">Llena el</h1>
                             <h1 class="bold txt-azul-oscuro titulos">formulario</h1>
                             <div class="my-4 regular top-menu">
@@ -52,11 +52,11 @@
             </div>
             <div class="d-block d-sm-block d-md-none">
                 <div class="text-center">
-                    <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674078618/AMTI%20Ecommerce/flecha-down_qu2qjc.png" alt="Felchita" class="img-fluid flecha"/>
+                    <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310963/amtiEcommerce/flecha-down_myrh1w.png" alt="Felchita" class="img-fluid flecha"/>
                 </div>
             </div>
             <div class="flechita d-none d-sm-none d-md-block">
-                <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674073239/AMTI%20Ecommerce/icono-flechita_e4l6om.png" alt="Flechita" class="img-fluid"/>
+                <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310971/amtiEcommerce/icono-flechita_jo9pmy.png" alt="Flechita" class="img-fluid"/>
             </div>
         </div>
         <div class="col-12 col-sm-12 col-md-12 col-lg-3 cuad-lic mb-4">
@@ -64,7 +64,7 @@
                 <div class="cuadro-como-comprar">
                     <div class="mx-3 py-5">
                         <div class="text-center">
-                            <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674061492/AMTI%20Ecommerce/realiza-pago_tjxfsc.png" alt="Icono cobertura" class="img-fluid mb-2"/>
+                            <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310997/amtiEcommerce/realiza-pago_cdlsdf.png" alt="Icono cobertura" class="img-fluid mb-2"/>
                             <h1 class="bold txt-color-tit titulos">Realiza</h1>
                             <h1 class="bold txt-azul-oscuro titulos">el pago</h1>
                             <div class="my-4 regular top-menu">
@@ -78,11 +78,11 @@
             </div>
             <div class="d-block d-sm-block d-md-none">
                 <div class="text-center">
-                    <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674078618/AMTI%20Ecommerce/flecha-down_qu2qjc.png" alt="Felchita" class="img-fluid flecha"/>
+                    <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310963/amtiEcommerce/flecha-down_myrh1w.png" alt="Felchita" class="img-fluid flecha"/>
                 </div>
             </div>
             <div class="flechita d-none d-sm-none d-md-block">
-                <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674073239/AMTI%20Ecommerce/icono-flechita_e4l6om.png" alt="Flechita" class="img-fluid"/>
+                <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310971/amtiEcommerce/icono-flechita_jo9pmy.png" alt="Flechita" class="img-fluid"/>
             </div>
         </div>
         <div class="col-12 col-sm-12 col-md-12 col-lg-3  mb-4">
@@ -90,7 +90,7 @@
                 <div class="cuadro-como-comprar">
                     <div class="mx-3 py-5">
                         <div class="text-center">
-                            <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674061490/AMTI%20Ecommerce/licencia-lista_bqgynw.png" alt="Icono cobertura" class="img-fluid mb-2"/>
+                            <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310985/amtiEcommerce/licencia-lista_qdxdhk.png" alt="Icono cobertura" class="img-fluid mb-2"/>
                             <h1 class="bold txt-color-tit titulos">Tu licencia</h1>
                             <h1 class="bold txt-azul-oscuro titulos">estará lista</h1>
                             <div class="my-4 regular top-menu">

@@ -21,7 +21,7 @@ return new class extends Migration
             $table->string("calle");
             $table->string("colonia");
             $table->string("numExterior");
-            $table->string("numInterior");
+            $table->string("numInterior")->nullable();
             $table->string("cp");
             $table->string("ciudad");
             $table->string("estado");
@@ -31,6 +31,7 @@ return new class extends Migration
             $table->string("cfdi");
             $table->string("regimen_fiscal");
             $table->string("constancia_fiscal");
+            $table->string('estatus');
             $table->timestamps();
 
             $table->foreign('id_pedido')->references('id')->on('pedidos');
