@@ -8,7 +8,6 @@ factura.addEventListener('change', function(){
     else facturaSent.setAttribute('value', "No");
 });
 
-
 let vigencia = document.getElementById('vigencia');
 let vigencia2 = document.getElementById('vigencia2');
 let vigencia3 = document.getElementById('vigencia3');
@@ -24,3 +23,4 @@ vigencia2.addEventListener('change', function(){
 vigencia3.addEventListener('change', function(){
     vigenciaSent.setAttribute('value', vigencia3.value);
 });
+

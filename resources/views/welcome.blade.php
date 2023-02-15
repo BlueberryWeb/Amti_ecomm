@@ -75,7 +75,7 @@
             </div>
             <div class="col-12 col-sm-12 col-md-12 col-lg-5">
                 <div class="text-center">
-                    <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674064026/AMTI%20Ecommerce/booklet-shine_geaycv.png" alt="Ilustración de licencia internacional" class="img-fluid"/>
+                    <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310960/amtiEcommerce/booklet-shine_emwqrn.png" alt="Ilustración de licencia internacional" class="img-fluid"/>
                 </div>
             </div>
             <div class="col-12 col-sm-12 col-md-12 col-lg-1"></div>
@@ -108,7 +108,7 @@
         <div class="row">
             <div class="col-12 col-sm-12 col-md-12 col-lg-4 mb-4">
                 <div class="cuadro-avalado py-5">
-                    <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674061491/AMTI%20Ecommerce/num-1_exypxs.png" alt="1" class="img-fluid num-avalado"/>
+                    <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310988/amtiEcommerce/num-1_qouwnh.png" alt="1" class="img-fluid num-avalado"/>
                     <div class="mx-5">
                         <h1 class="txt-color-tit titulos bold">Convención de las</h1>
                         <h1 class="txt-azul-oscuro titulos bold">Naciones Unidas</h1>
@@ -133,13 +133,13 @@
                             </div>
                         </div>
                         
-                        <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674065697/AMTI%20Ecommerce/UNCTAD-logo_yjd8gt.png" alt="UNCTAD" class="img-fluid logo-unctad"/>
+                        <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676315426/amtiEcommerce/UNCTAD-logo_bizhgj.png" alt="UNCTAD" class="img-fluid logo-unctad"/>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-sm-12 col-md-12 col-lg-4 mb-4">
                 <div class="cuadro-avalado py-5">
-                    <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674061491/AMTI%20Ecommerce/num-2_xbe1xe.png" alt="2" class="img-fluid num-avalado"/>
+                    <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310990/amtiEcommerce/num-2_rux6ac.png" alt="2" class="img-fluid num-avalado"/>
                     <div class="mx-5">
                         <h1 class="txt-color-tit titulos bold">Convención de</h1>
                         <h1 class="txt-azul-oscuro titulos bold">Ginebra (1949)</h1>
@@ -162,13 +162,13 @@
                             </div>
                         </div>
                         
-                        <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674065697/AMTI%20Ecommerce/logo-CICR_gym4kx.png" alt="CICR" class="img-fluid logo-cicr"/>
+                        <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310986/amtiEcommerce/logo-CICR_eanzwh.png" alt="CICR" class="img-fluid logo-cicr"/>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-sm-12 col-md-12 col-lg-4 mb-4">
                 <div class="cuadro-avalado py-5">
-                    <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674061492/AMTI%20Ecommerce/num-3_jwszdl.png" alt="3" class="img-fluid num-avalado"/>
+                    <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310993/amtiEcommerce/num-3_apkhwa.png" alt="3" class="img-fluid num-avalado"/>
                     <div class="mx-5">
                         <h1 class="txt-color-tit titulos bold">A través del</h1>
                         <h1 class="txt-azul-oscuro titulos bold">Gobierno de México</h1>
@@ -191,7 +191,7 @@
                             </div>
                         </div>
                         
-                        <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674065697/AMTI%20Ecommerce/logo-gob-mexico_f1f6vg.png" alt="GOB. MÉXICO" class="img-fluid logo-gob-mexico"/>
+                        <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310987/amtiEcommerce/logo-gob-mexico_mo2x95.png" alt="GOB. MÉXICO" class="img-fluid logo-gob-mexico"/>
                     </div>
                 </div>
             </div>
@@ -205,7 +205,7 @@
                 <div class="col-12 col-sm-12 col-md-12 col-lg-10">
                     <div class="row">
                         <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-                            <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674061491/AMTI%20Ecommerce/licencia-libro_swjrdf.png" alt="Ilustración de cuadernillo AMTI" class="img-fluid"/>
+                            <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310984/amtiEcommerce/licencia-libro_wcfj4e.png" alt="Ilustración de cuadernillo AMTI" class="img-fluid"/>
                         </div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-6">
                             <div class="mx-4">
@@ -214,35 +214,35 @@
                                 <div class="row my-5">
                                     <div class="col-12 col-sm-12 col-md-12 col-lg-6">
                                         <div class="regular parrafo txt-idp mb-5">
-                                            <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674067327/AMTI%20Ecommerce/icono-aprobacion_ttplt7.png" alt="" class="img-fluid float-start icono-beneficios"/>
+                                            <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310967/amtiEcommerce/icono-aprobacion_rlewy2.png" alt="" class="img-fluid float-start icono-beneficios"/>
                                             <h6 class="">Aprobación </h6>
                                             <h6 class="regular">instantánea</h6>
                                         </div>
                                         <div class="regular parrafo txt-idp mb-5">
-                                            <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674067327/AMTI%20Ecommerce/icono-validacion_tnt8bx.png" alt="" class="img-fluid float-start icono-beneficios"/>
+                                            <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310974/amtiEcommerce/icono-validacion_nelnst.png" alt="" class="img-fluid float-start icono-beneficios"/>
                                             <h6 class="">Válida en más </h6>
                                             <h6 class="regular">de 130 países</h6>
                                         </div>
                                         <div class="regular parrafo txt-idp mb-5">
-                                            <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674067327/AMTI%20Ecommerce/icono-envio-gratis_wwoy30.png" alt="" class="img-fluid float-start icono-beneficios"/>
+                                            <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310969/amtiEcommerce/icono-envio-gratis_vvjpc2.png" alt="" class="img-fluid float-start icono-beneficios"/>
                                             <h6 class="">Envío gratis</h6>
                                             <h6 class="regular">a nivel nacional</h6>
                                         </div>
                                     </div>
                                     <div class="col-12 col-sm-12 col-md-12 col-lg-6">
                                         <div class="regular parrafo txt-idp mb-5">
-                                            <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674067327/AMTI%20Ecommerce/icono-vigencia_rkvhqe.png" alt="" class="img-fluid float-start icono-beneficios"/>
+                                            <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310975/amtiEcommerce/icono-vigencia_fqhhol.png" alt="" class="img-fluid float-start icono-beneficios"/>
                                             <h6 class="">Vigencia de</h6>
                                             <h6 class="regular">1-5 años </h6>
                                         </div>
                                         <div class="regular parrafo txt-idp mb-5">
-                                            <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674067327/AMTI%20Ecommerce/icono-normas_deaqxb.png" alt="" class="img-fluid float-start icono-beneficios mb-5"/>
+                                            <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310972/amtiEcommerce/icono-normas_ci9an4.png" alt="" class="img-fluid float-start icono-beneficios mb-5"/>
                                             <h6 class="">Todas las </h6>
                                             <h6 class="regular">normativas </h6>
                                             <h6>gubernamentales</h6>
                                         </div>
                                         <div class="regular parrafo txt-idp mb-5">
-                                            <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674067327/AMTI%20Ecommerce/icono-soporte_sf0ljf.png" alt="" class="img-fluid float-start icono-beneficios"/>
+                                            <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310973/amtiEcommerce/icono-soporte_dsanww.png" alt="" class="img-fluid float-start icono-beneficios"/>
                                             <h6 class="">Soporte</h6>
                                             <h6 class="regular">24/7</h6>
                                         </div>
@@ -266,7 +266,7 @@
                         <div class="row">
                             <div class="col-12 col-sm-12 col-md-12 col-lg-6 mb-4">
                                 <div class="">
-                                    <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674070253/AMTI%20Ecommerce/logo-amti-gde_tasxta.png" alt="AMTI" class="img-fluid mb-4 logo-amti"/>
+                                    <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310985/amtiEcommerce/logo-amti-gde_ff8yg0.png" alt="AMTI" class="img-fluid mb-4 logo-amti"/>
                                     <h1 class="bold titulos">Tu licencia internacional  <b class="txt-azul">de AMTI</b></h1>
                                     <h1 class="semiBold titulos">asegura tu viaje en el extranjero</h1>
                                     <div class="mt-5">
@@ -277,8 +277,8 @@
                             <div class="col-12 col-sm-12 col-md-12 col-lg-1 mb-4"></div>
                             <div class="col-12 col-sm-12 col-md-12 col-lg-5 mb-4">
                                 <div class="video-modal">
-                                    <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674069474/AMTI%20Ecommerce/portada-video_wbs5yc.png" alt="" class="img-fluid"/>
-                                    <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674069474/AMTI%20Ecommerce/boton-play_aps3sm.png" alt="Play" class="img-fluid btn-play" data-bs-toggle="modal" data-bs-target="#VideoPrincipal"/>
+                                    <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310997/amtiEcommerce/portada-video_iigwmb.png" alt="" class="img-fluid"/>
+                                    <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310952/amtiEcommerce/boton-play_rfbhxb.png" alt="Play" class="img-fluid btn-play" data-bs-toggle="modal" data-bs-target="#VideoPrincipal"/>
                                     @include('components.modalVideo')
                                 </div>
                             </div>
@@ -316,14 +316,14 @@
                               <div class="row">
                                   <div class="col-12 col-lg-4 col-sm-12 col-md-12">
                                     <div class="mx-3">
-                                        <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674576261/AMTI%20Ecommerce/review-roberto_gasnph.png" alt="AMTI" class="img-fluid image-review"/>
+                                        <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310997/amtiEcommerce/review-roberto_ud9ebj.png" alt="AMTI" class="img-fluid image-review"/>
                                     </div>
                                   </div>
                                   <div class="col-12 col-lg-8 col-sm-12 col-md-12">
                                     <h5 class="bold titulos txt-azul-oscuro"> ROBERTO MONTES</h5>
                                     <h6 class="regular parrafos txt-color-parrafo">Licencia de 5 años</h6>
                                     <span>
-                                        <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674576152/AMTI%20Ecommerce/estrellas_ocs0zi.png" alt="AMTI" class="img-fluid me-2"/>
+                                        <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676315695/amtiEcommerce/estrellas_tncxuo.png" alt="AMTI" class="img-fluid me-2 estrellas"/>
                                         <b class="bold tags txt-color-parrafo">¡Excelente!</b>
                                     </span>
                                     <div class="row pt-2">
@@ -341,14 +341,14 @@
                               <div class="row">
                                   <div class="col-12 col-lg-4 col-sm-12 col-md-12">
                                     <div class="mx-3">
-                                        <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674576261/AMTI%20Ecommerce/review-maria_l7c9je.png" alt="AMTI" class="img-fluid image-review"/>
+                                        <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310997/amtiEcommerce/review-maria_nmtbam.png" alt="AMTI" class="img-fluid image-review"/>
                                     </div>
                                   </div>
                                   <div class="col-12 col-lg-8 col-sm-12 col-md-12">
                                       <h5 class="bold titulos txt-azul-oscuro">SOFÍA MARTÍNEZ</h5>
                                       <h6 class="regular parrafos txt-color-parrafo">Licencia 5 años</h6>
                                       <span>
-                                          <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674576152/AMTI%20Ecommerce/estrellas_ocs0zi.png" alt="AMTI" class="img-fluid me-2"/>
+                                          <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676315695/amtiEcommerce/estrellas_tncxuo.png" alt="AMTI" class="img-fluid me-2 estrellas"/>
                                           <b class="bold tags txt-color-parrafo">Muy fácil</b>
                                       </span>
                                       <div class="row pt-2">
@@ -368,14 +368,14 @@
                               <div class="row">
                                   <div class="col-12 col-lg-4 col-sm-12 col-md-12">
                                     <div class="mx-3">
-                                        <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674656837/AMTI%20Ecommerce/testimonio-6_kriwa2.png" alt="AMTI" class="img-fluid image-review"/>
+                                        <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676315839/amtiEcommerce/testimonio-6_fy1wvi.png" alt="AMTI" class="img-fluid image-review"/>
                                     </div>
                                   </div>
                                   <div class="col-12 col-lg-8 col-sm-12 col-md-12">
                                     <h5 class="bold titulos txt-azul-oscuro">HÉCTOR NAVARRO</h5>
                                     <h6 class="regular parrafos txt-color-parrafo">Licencia 3 años</h6>
                                     <span>
-                                        <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674576152/AMTI%20Ecommerce/estrellas_ocs0zi.png" alt="AMTI" class="img-fluid me-2"/>   
+                                        <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676315695/amtiEcommerce/estrellas_tncxuo.png" alt="AMTI" class="img-fluid me-2 estrellas"/>   
                                         <b class="bold tags txt-color-parrafo">Justo a tiempo</b>
                                     </span>
                                     <div class="row pt-2">
@@ -395,14 +395,14 @@
                               <div class="row">
                                   <div class="col-12 col-lg-4 col-sm-12 col-md-12">
                                     <div class="mx-3">
-                                        <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674656837/AMTI%20Ecommerce/testimonio-7_w4lurb.png" alt="AMTI" class="img-fluid image-review"/>
+                                        <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676315839/amtiEcommerce/testimonio-7_hft3cv.png" alt="AMTI" class="img-fluid image-review"/>
                                     </div>
                                   </div>
                                   <div class="col-12 col-lg-8 col-sm-12 col-md-12">
                                       <h5 class="bold titulos txt-azul-oscuro">PAOLA BRAVO</h5>
                                       <h6 class="regular parrafos txt-color-parrafo">Licencia 1 año</h6>
                                       <span>
-                                          <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674576152/AMTI%20Ecommerce/estrellas_ocs0zi.png" alt="AMTI" class="img-fluid me-2"/>
+                                          <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676315695/amtiEcommerce/estrellas_tncxuo.png" alt="AMTI" class="img-fluid me-2 estrellas"/>
                                           <b class="bold tags txt-color-parrafo">Muy fácil</b>
                                       </span>
                                       <div class="row pt-2">
@@ -423,14 +423,14 @@
                               <div class="row">
                                   <div class="col-12 col-lg-4 col-sm-12 col-md-12">
                                     <div class="mx-3">
-                                        <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674656837/AMTI%20Ecommerce/testimonio-4_lzdovq.png" alt="AMTI" class="img-fluid image-review"/>
+                                        <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676315839/amtiEcommerce/testimonio-4_ynditc.png" alt="AMTI" class="img-fluid image-review"/>
                                     </div>
                                   </div>
                                   <div class="col-12 col-lg-8 col-sm-12 col-md-12">
                                     <h5 class="bold titulos txt-azul-oscuro">CARLA GÓNZALEZ</h5>
                                     <h6 class="regular parrafos txt-color-parrafo">Licencia 3 años</h6>
                                     <span>
-                                        <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674576152/AMTI%20Ecommerce/estrellas_ocs0zi.png" alt="AMTI" class="img-fluid me-2"/>
+                                        <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676315695/amtiEcommerce/estrellas_tncxuo.png" alt="AMTI" class="img-fluid me-2 estrellas"/>
                                         <b class="bold tags txt-color-parrafo">Muy rápido</b>
                                     </span>
                                     <div class="row pt-2">
@@ -450,14 +450,14 @@
                               <div class="row">
                                   <div class="col-12 col-lg-4 col-sm-12 col-md-12">
                                     <div class="mx-3">
-                                        <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674656837/AMTI%20Ecommerce/testimonio-3_cwyc83.png" alt="AMTI" class="img-fluid image-review"/>
+                                        <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676315839/amtiEcommerce/testimonio-3_f7m0my.png" alt="AMTI" class="img-fluid image-review"/>
                                     </div>
                                   </div>
                                   <div class="col-12 col-lg-8 col-sm-12 col-md-12">
                                     <h5 class="bold titulos txt-azul-oscuro"> JUAN DÍAZ</h5>
                                     <h6 class="regular parrafos txt-color-parrafo">Licencia de 5 años</h6>
                                     <span>
-                                        <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674576152/AMTI%20Ecommerce/estrellas_ocs0zi.png" alt="AMTI" class="img-fluid me-2"/>
+                                        <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676315695/amtiEcommerce/estrellas_tncxuo.png" alt="AMTI" class="img-fluid me-2 estrellas"/>
                                         <b class="bold tags txt-color-parrafo">Muy simple</b>
                                     </span>
                                     <div class="row pt-2">
@@ -493,14 +493,14 @@
             </div>
             <div class="col-12 col-sm-12 col-md-12 col-lg-4 mb-4">
                 <div class="cuadro-sucursales py-5">
-                    <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674061490/AMTI%20Ecommerce/icono-ubicacion-fondo_n5rubm.png" alt="2" class="img-fluid icono-suc"/>
+                    <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310974/amtiEcommerce/icono-ubicacion-fondo_lj1npd.png" alt="2" class="img-fluid icono-suc"/>
                     <div class="mx-5">
                         <h1 class="txt-color-tit titulos bold">Sucursal</h1>
                         <h1 class="txt-azul-oscuro titulos bold">Guadalajara</h1>
                         <div class="my-4 parrafos txt-color-parrafo">
                             <div class="mb-4">
                                 <a href="https://goo.gl/maps/2KwUDyvY4ywRFFma6" class="a_none_style txt-color-parrafo">
-                                    <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674082096/AMTI%20Ecommerce/icono-ubi-azul_cwfi4i.png" alt="" class="img-fluid icon-suc float-start mb-3"/>
+                                    <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310974/amtiEcommerce/icono-ubi-azul_zotx3g.png" alt="" class="img-fluid icon-suc float-start mb-3"/>
                                     <h6 class="regular top-menu txt-color-parrafo">Av. Rubén Darío #586 int.8, Lomas de </h6>
                                     <h6 class="regular top-menu txt-color-parrafo">Guevara, CP: 44657 Guadalajara, Jal.</h6>
                                 </a>
@@ -508,14 +508,14 @@
                             </div>
                             <div class="">
                                 <a href="tel:+523327903393" class="a_none_style txt-color-parrafo" target="_blank">
-                                    <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674082096/AMTI%20Ecommerce/icono-tel-azul_lfvzjs.png" alt="" class="img-fluid icon-suc float-start"/>
+                                    <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310973/amtiEcommerce/icono-tel-azul_gk6ccf.png" alt="" class="img-fluid icon-suc float-start"/>
                                     <h6 class="semiBold top-menu txt-color-parrafo">33 2790 3393</h6>
                                 </a>
                                 
                             </div>
                             <div class="">
                                 <a href="https://api.whatsapp.com/send?phone=525540324042" class="a_none_style txt-color-parrafo" target="_blank">
-                                    <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674082096/AMTI%20Ecommerce/icono-whats-azul_avcovi.png" alt="" class="img-fluid icon-suc float-start"/>
+                                    <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310975/amtiEcommerce/icono-whats-azul_yyetea.png" alt="" class="img-fluid icon-suc float-start"/>
                                     <h6 class="semiBold top-menu txt-color-parrafo">55 4032 4042</h6>
                                 </a>
                             </div>
@@ -525,14 +525,14 @@
             </div>
             <div class="col-12 col-sm-12 col-md-12 col-lg-4 mb-4">
                 <div class="cuadro-sucursales py-5">
-                    <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674061490/AMTI%20Ecommerce/icono-ubicacion-fondo_n5rubm.png" alt="2" class="img-fluid icono-suc"/>
+                    <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310974/amtiEcommerce/icono-ubicacion-fondo_lj1npd.png" alt="2" class="img-fluid icono-suc"/>
                     <div class="mx-5">
                         <h1 class="txt-color-tit titulos bold">Sucursal</h1>
                         <h1 class="txt-azul-oscuro titulos bold">Monterrey</h1>
                         <div class="my-4 parrafos txt-color-parrafo">
                             <div class="mb-4">
                                 <a href="https://goo.gl/maps/PSjpMpWCMuRc7zgEA" class="a_none_style txt-color-parrafo" target="_blank">
-                                    <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674082096/AMTI%20Ecommerce/icono-ubi-azul_cwfi4i.png" alt="" class="img-fluid icon-suc float-start mb-3"/>
+                                    <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310974/amtiEcommerce/icono-ubi-azul_zotx3g.png" alt="" class="img-fluid icon-suc float-start mb-3"/>
                                     <h6 class="regular top-menu txt-color-parrafo">Av. Dr. José Eleuterio González 250, Planta  </h6>
                                     <h6 class="regular top-menu txt-color-parrafo">Alta , San Jerónimo, 64634 Monterrey, N.L.</h6>
                                 </a>
@@ -540,14 +540,14 @@
                             </div>
                             <div class="">
                                 <a href="tel:+528132532915" class="a_none_style txt-color-parrafo" target="_blank">
-                                    <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674082096/AMTI%20Ecommerce/icono-tel-azul_lfvzjs.png" alt="" class="img-fluid icon-suc float-start"/>
+                                    <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310973/amtiEcommerce/icono-tel-azul_gk6ccf.png" alt="" class="img-fluid icon-suc float-start"/>
                                     <h6 class="semiBold top-menu txt-color-parrafo">81 3253 2915</h6>
                                 </a>
                                 
                             </div>
                             <div class="">
                                 <a href="https://api.whatsapp.com/send?phone=525540324042" class="a_none_style txt-color-parrafo" target="_blank">
-                                    <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674082096/AMTI%20Ecommerce/icono-whats-azul_avcovi.png" alt="" class="img-fluid icon-suc float-start"/>
+                                    <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310975/amtiEcommerce/icono-whats-azul_yyetea.png" alt="" class="img-fluid icon-suc float-start"/>
                                     <h6 class="semiBold top-menu txt-color-parrafo">55 4032 4042</h6>
                                 </a>
                             </div>
@@ -557,14 +557,14 @@
             </div>
             <div class="col-12 col-sm-12 col-md-12 col-lg-4 mb-4">
                 <div class="cuadro-sucursales py-5">
-                    <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674061490/AMTI%20Ecommerce/icono-ubicacion-fondo_n5rubm.png" alt="2" class="img-fluid icono-suc"/>
+                    <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310974/amtiEcommerce/icono-ubicacion-fondo_lj1npd.png" alt="2" class="img-fluid icono-suc"/>
                     <div class="mx-5">
                         <h1 class="txt-color-tit titulos bold">Sucursal</h1>
                         <h1 class="txt-azul-oscuro titulos bold">Ciudad de México</h1>
                         <div class="my-4 parrafos txt-color-parrafo">
                             <div class="mb-4">
                                 <a href="https://goo.gl/maps/nqMYVTjAG8voMDGL9" class="a_none_style txt-color-parrafo" target="_blank">
-                                    <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674082096/AMTI%20Ecommerce/icono-ubi-azul_cwfi4i.png" alt="" class="img-fluid icon-suc float-start mb-3"/>
+                                    <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310974/amtiEcommerce/icono-ubi-azul_zotx3g.png" alt="" class="img-fluid icon-suc float-start mb-3"/>
                                     <h6 class="regular top-menu txt-color-parrafo">Av. Presidente Masaryk #61, Piso 9 Col. </h6>
                                     <h6 class="regular top-menu txt-color-parrafo">Polanco V secc, CP 11560, CDMX.</h6>
                                 </a>
@@ -572,14 +572,14 @@
                             </div>
                             <div class="">
                                 <a href="https://api.whatsapp.com/send?phone=525540324042" class="a_none_style txt-color-parrafo" target="_blank">
-                                    <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674082096/AMTI%20Ecommerce/icono-tel-azul_lfvzjs.png" alt="" class="img-fluid icon-suc float-start"/>
+                                    <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310973/amtiEcommerce/icono-tel-azul_gk6ccf.png" alt="" class="img-fluid icon-suc float-start"/>
                                     <h6 class="semiBold top-menu txt-color-parrafo">55 4032 4042</h6>
                                 </a>
                                 
                             </div>
                             <div class="">
                                 <a href="tel:+525536891390" class="a_none_style txt-color-parrafo" target="_blank">
-                                    <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674082096/AMTI%20Ecommerce/icono-whats-azul_avcovi.png" alt="" class="img-fluid icon-suc float-start"/>
+                                    <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310975/amtiEcommerce/icono-whats-azul_yyetea.png" alt="" class="img-fluid icon-suc float-start"/>
                                     <h6 class="semiBold top-menu txt-color-parrafo">55 3689 1390</h6>
                                 </a>
                             </div>

@@ -5,7 +5,7 @@
                 <div class="">
                     <a href="https://api.whatsapp.com/send?phone=5255403240423" class="a_none_style text-white" target="_blank">
                         <h6>
-                            <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674060120/AMTI%20Ecommerce/icono-cel-menu_c5jw9e.png" alt="" class="img-fluid icono-menu"/>
+                            <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310969/amtiEcommerce/icono-cel-menu_u0i6in.png" alt="" class="img-fluid icono-menu"/>
                             55 4032 4042
                         </h6>
                     </a>
@@ -23,7 +23,7 @@
             <div class="col-12 col-sm-12 col-md-12 col-lg-5">
                 <div class="">
                     <a href="https://goo.gl/maps/sPQYLW6SRJ1wTTbm6" class="a_none_style text-white" target="_blank">
-                        <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674060120/AMTI%20Ecommerce/icono-ubi-menu_asv1z5.png" alt="" class="img-fluid icono-menu"/>
+                        <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310973/amtiEcommerce/icono-ubi-menu_cokbre.png" alt="" class="img-fluid icono-menu"/>
                         Av. Rubén Darío #586 int.8, Lomas de Guevara, CP: 44657 Guadalajara, Jal.
                     </a>
                 </div>
@@ -34,7 +34,7 @@
     <nav class="navbar navbar-expand-lg navbar-light regular">
         <div class="container">
             <a class="navbar-brand" href="{{ url('/') }}">
-                <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674070253/AMTI%20Ecommerce/logo-amti-gde_tasxta.png" alt="AMTI" class="img-fluid logo-menu"/>
+                <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310985/amtiEcommerce/logo-amti-gde_ff8yg0.png" alt="AMTI" class="img-fluid logo-menu"/>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon pt-1">
@@ -63,7 +63,7 @@
                     </div>
                     <div class="ms-4 bolsa">
                         <a href="{{ route('procesoCompra')  }}" class="a_none_style text-white">
-                            <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674061005/AMTI%20Ecommerce/icono-bolsa-menu_wdqhff.png" alt="" class="img-fluid icono-bolsa"/>
+                            <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310968/amtiEcommerce/icono-bolsa-menu_lacrxb.png" alt="" class="img-fluid icono-bolsa"/>
                         </a>
                         <div class="items">
                             <h6 class="regular">6</h6>

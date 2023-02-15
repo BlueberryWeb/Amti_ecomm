@@ -16,7 +16,7 @@
                     <div class="row">
                         <div class="col-12 col-sm-12 col-md-12 col-lg-8">
                             <div class="text-center">
-                                <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674497796/AMTI%20Ecommerce/licencia-de-conducir_qv2b1i.png" alt="Ilustración de fotografía de ejemplo" class="img-fluid"/>
+                                <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310963/amtiEcommerce/ejemplo-iden_sve0jw.png" alt="Ilustración de fotografía de ejemplo" class="img-fluid"/>
                             </div>
                         </div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-4">
@@ -39,8 +39,8 @@
                         </div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-3">
                             <div class="text-center">
-                                <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674245927/AMTI%20Ecommerce/icono-cancelar_r7z8j8.png" alt="Ilustración prohibido" class="img-fluid my-2 icono-proh"/>
-                                <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674251521/AMTI%20Ecommerce/mal-ejemplo-1_bohqlg.png" alt="Ilustración de lentes" class="img-fluid m-2"/>
+                                <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676312785/amtiEcommerce/icono-cancelar_an550h.png" alt="Ilustración prohibido" class="img-fluid my-2 icono-proh"/>
+                                <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310980/amtiEcommerce/licencia-1_jyss9s.png" alt="Ilustración de lentes" class="img-fluid m-2"/>
                                 <h6 class="top-menu text-white regular">Cortarla y que se </h6>
                                 <h6 class="top-menu text-white regular">salga fuera del </h6>
                                 <h6 class="top-menu text-white regular">marco</h6>
@@ -48,8 +48,8 @@
                         </div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-3">
                             <div class="text-center">
-                                <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674245927/AMTI%20Ecommerce/icono-cancelar_r7z8j8.png" alt="Ilustración prohibido" class="img-fluid my-2 icono-proh"/>
-                                <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674251521/AMTI%20Ecommerce/mal-ejemplo-2_hgav0m.png" alt="Ilustración de lentes" class="img-fluid  m-2"/>
+                                <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676312785/amtiEcommerce/icono-cancelar_an550h.png" alt="Ilustración prohibido" class="img-fluid my-2 icono-proh"/>
+                                <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310979/amtiEcommerce/licencia-2_r8janc.png" alt="Ilustración de lentes" class="img-fluid  m-2"/>
                                 <h6 class="top-menu text-white regular">En diagonal y que</h6>
                                 <h6 class="top-menu text-white regular">se corten las</h6>
                                 <h6 class="top-menu text-white regular">esquinas</h6>
@@ -57,8 +57,8 @@
                         </div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-3">
                             <div class="text-center">
-                                <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674245927/AMTI%20Ecommerce/icono-cancelar_r7z8j8.png" alt="Ilustración prohibido" class="img-fluid my-2 icono-proh"/>
-                                <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674251521/AMTI%20Ecommerce/mal-ejemplo-3_nyfwk5.png" alt="Ilustración de lentes" class="img-fluid  m-2"/>
+                                <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676312785/amtiEcommerce/icono-cancelar_an550h.png" alt="Ilustración prohibido" class="img-fluid my-2 icono-proh"/>
+                                <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310979/amtiEcommerce/licencia-3_ce2xbb.png" alt="Ilustración de lentes" class="img-fluid  m-2"/>
                                 <h6 class="top-menu text-white regular">Tomarla </h6>
                                 <h6 class="top-menu text-white regular">demasiado </h6>
                                 <h6 class="top-menu text-white regular">obscura </h6>
@@ -66,8 +66,8 @@
                         </div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-3">
                             <div class="text-center">
-                                <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674245927/AMTI%20Ecommerce/icono-cancelar_r7z8j8.png" alt="Ilustración prohibido" class="img-fluid my-2 icono-proh"/>
-                                <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674251521/AMTI%20Ecommerce/mal-ejemplo-4_gfbnow.png" alt="Ilustración de lentes" class="img-fluid  m-2"/>
+                                <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676312785/amtiEcommerce/icono-cancelar_an550h.png" alt="Ilustración prohibido" class="img-fluid my-2 icono-proh"/>
+                                <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310987/amtiEcommerce/mal-ejemplo-4_ocnrxj.png" alt="Ilustración de lentes" class="img-fluid  m-2"/>
                                 <h6 class="top-menu text-white regular">Que salga borrosa</h6>
                                 <h6 class="top-menu text-white regular">o difusa</h6>
                             </div>
@@ -116,7 +116,7 @@
                         </div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-3">
                             <div class="text-center">
-                                <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674245927/AMTI%20Ecommerce/icono-cancelar_r7z8j8.png" alt="Ilustración prohibido" class="img-fluid my-2 icono-proh"/>
+                                <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676312785/amtiEcommerce/icono-cancelar_an550h.png" alt="Ilustración prohibido" class="img-fluid my-2 icono-proh"/>
                                 <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674497588/AMTI%20Ecommerce/licencia-1_uuq61z.png" alt="Ilustración de lentes" class="img-fluid m-2"/>
                                 <h6 class="top-menu text-white regular">Cortarla y que se </h6>
                                 <h6 class="top-menu text-white regular">salga fuera del </h6>
@@ -125,7 +125,7 @@
                         </div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-3">
                             <div class="text-center">
-                                <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674245927/AMTI%20Ecommerce/icono-cancelar_r7z8j8.png" alt="Ilustración prohibido" class="img-fluid my-2 icono-proh"/>
+                                <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676312785/amtiEcommerce/icono-cancelar_an550h.png" alt="Ilustración prohibido" class="img-fluid my-2 icono-proh"/>
                                 <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674497588/AMTI%20Ecommerce/licencia-2_jt8yvk.png" alt="Ilustración de lentes" class="img-fluid  m-2"/>
                                 <h6 class="top-menu text-white regular">En diagonal y que</h6>
                                 <h6 class="top-menu text-white regular">se corten las</h6>
@@ -134,7 +134,7 @@
                         </div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-3">
                             <div class="text-center">
-                                <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674245927/AMTI%20Ecommerce/icono-cancelar_r7z8j8.png" alt="Ilustración prohibido" class="img-fluid my-2 icono-proh"/>
+                                <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676312785/amtiEcommerce/icono-cancelar_an550h.png" alt="Ilustración prohibido" class="img-fluid my-2 icono-proh"/>
                                 <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674497588/AMTI%20Ecommerce/licencia-3_fpgvx7.png" alt="Ilustración de lentes" class="img-fluid  m-2"/>
                                 <h6 class="top-menu text-white regular">Tomarla </h6>
                                 <h6 class="top-menu text-white regular">demasiado </h6>
@@ -143,7 +143,7 @@
                         </div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-3">
                             <div class="text-center">
-                                <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674245927/AMTI%20Ecommerce/icono-cancelar_r7z8j8.png" alt="Ilustración prohibido" class="img-fluid my-2 icono-proh"/>
+                                <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676312785/amtiEcommerce/icono-cancelar_an550h.png" alt="Ilustración prohibido" class="img-fluid my-2 icono-proh"/>
                                 <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674251521/AMTI%20Ecommerce/mal-ejemplo-4_gfbnow.png" alt="Ilustración de lentes" class="img-fluid  m-2"/>
                                 <h6 class="top-menu text-white regular">Que salga borrosa</h6>
                                 <h6 class="top-menu text-white regular">o difusa</h6>

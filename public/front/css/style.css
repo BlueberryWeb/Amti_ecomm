@@ -102,7 +102,7 @@ ICONOS
 BACKGROUNDS
 ***************/
 body{
-    background-image: url('https://res.cloudinary.com/dra1bsh4u/image/upload/v1674061897/AMTI%20Ecommerce/bg-mundo_ep37o4.png');
+    background-image: url('https://res.cloudinary.com/dhigl3clg/image/upload/v1676311255/amtiEcommerce/bg-mundo_ybvvc4.png');
     background-attachment: fixed;
 }
 .bg-menu{
@@ -112,7 +112,7 @@ body{
     font-family: 'OpenSans Regular';
 }
 .bg-index{
-    background-image: url('https://res.cloudinary.com/dra1bsh4u/image/upload/v1674061496/AMTI%20Ecommerce/bg-index_otpv2v.png');
+    background-image: url('https://res.cloudinary.com/dhigl3clg/image/upload/v1676310959/amtiEcommerce/bg-index_dyecbu.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -134,13 +134,13 @@ body{
     color: #fff;
 }
 .bg-continente{
-    background-image: url('https://res.cloudinary.com/dra1bsh4u/image/upload/v1674069263/AMTI%20Ecommerce/bg-continente_izlsr7.png');
+    background-image: url('https://res.cloudinary.com/dhigl3clg/image/upload/v1676310958/amtiEcommerce/bg-continente_dleia9.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .bg-comoFunciona{
-    background-image: url('https://res.cloudinary.com/dra1bsh4u/image/upload/v1674144230/AMTI%20Ecommerce/bg-como-funciona_h2wia9.png');
+    background-image: url('https://res.cloudinary.com/dhigl3clg/image/upload/v1676310957/amtiEcommerce/bg-como-funciona_wsgcor.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -149,13 +149,13 @@ body{
     color: #fff;
 }
 .bg-continenteB{
-    background-image: url('https://res.cloudinary.com/dra1bsh4u/image/upload/v1674509994/AMTI%20Ecommerce/bg-mundo_nb3u7q.png');
+    background-image: url('https://res.cloudinary.com/dhigl3clg/image/upload/v1676311255/amtiEcommerce/bg-mundo_ybvvc4.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .bg-vigencias{
-    background-image: url('https://res.cloudinary.com/dra1bsh4u/image/upload/v1674151948/AMTI%20Ecommerce/bg-vigencias_enyhq6.png');
+    background-image: url('https://res.cloudinary.com/dhigl3clg/image/upload/v1676311540/amtiEcommerce/bg-vigencias_ievbgw.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -168,7 +168,7 @@ body{
     background: linear-gradient(160deg, rgba(56,103,142,1) 27%, rgba(32,74,105,1) 100%);
 }
 .bg-contacto{
-    background-image: url('https://res.cloudinary.com/dra1bsh4u/image/upload/v1674510996/AMTI%20Ecommerce/bg-contacto_cizw9i.png');
+    background-image: url('https://res.cloudinary.com/dhigl3clg/image/upload/v1676310956/amtiEcommerce/bg-contacto_arlce3.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -374,6 +374,9 @@ IMÁGENES
 }
 .video-bg_video{
     width: 100%;
+}
+.estrellas{
+    width: 90px;
 }
 /*****************
 CUADROS AVALADOS
@@ -1111,6 +1114,7 @@ CUADRO INFORMACIÓN COMPLEMENTARIA
     border-radius: 5px;
     margin-top: 1.9rem;
 }
+
 /**********************************
 CUADRO CONFIRMA INFORMACIÓN 
 *********************************/
@@ -1129,8 +1133,16 @@ CUADRO CONFIRMA INFORMACIÓN
 CUADRO ENVÍO
 *********************************/
 .check-envio{
-    background: transparent;
-    border: 1px solid #BEBEBE;
+    width: 1.3em;
+    height: 1.3em;
+    background-color: white;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
 }
 .form-info-envio{
     background-color: #fff;

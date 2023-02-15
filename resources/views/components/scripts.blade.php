@@ -7,7 +7,7 @@
 <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
 <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
 <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'></script>
-
+<!-- SCRIPTS PROPIOS -->
 <script src="{{ asset('front/js/script.js') }}"></script>
 <script src="{{ asset('front/js/justNumber.js') }}"></script>
 <script src="{{ asset('front/js/justText.js') }}"></script>

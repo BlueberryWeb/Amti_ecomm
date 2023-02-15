@@ -13,7 +13,7 @@
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-2">
                     <a class="a_none_style" href="{{ url('/') }}">
-                        <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674070253/AMTI%20Ecommerce/logo-amti-gde_tasxta.png" alt="AMTI" class="img-fluid logo-menu"/>
+                        <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310985/amtiEcommerce/logo-amti-gde_ff8yg0.png" alt="AMTI" class="img-fluid logo-menu"/>
                     </a>
                 </div>
                 <div class="col-12 col-sm-12 col-md-12 col-lg-8"></div>
@@ -54,7 +54,7 @@
                                                 <div class="row">
                                                     <div class="col-12 col-sm-12 col-md-12 col-lg-6">
                                                         <div class="text-center pt-4 pb-2 mx-3">
-                                                            <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674237481/AMTI%20Ecommerce/licenciaAMTI_heavk9.png" alt="Ilustración de licencia y libro AMTI" class="img-fluid licencia-proceso"/>
+                                                            <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310985/amtiEcommerce/licenciaAMTI_nibmnp.png" alt="Ilustración de licencia y libro AMTI" class="img-fluid licencia-proceso"/>
                                                            
                                                         </div>
                                                     </div>
@@ -94,10 +94,10 @@
                                                     <input class="form-check-input chkAll" type="checkbox" value="" id="chkAccordion2All">
                                                   </div>
                                                   Tarjeta de crédito o débito
-                                                  <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1673275235/Jeanswest/footer/icono-visa_yam3bx.png" alt="Visa" class="img-fluid icono-visa"/>
-                                                  <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1673275234/Jeanswest/footer/icono-master_nemers.png" alt="Mastercard" class="img-fluid icono-master"/>
-                                                  <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1673275234/Jeanswest/footer/icono-maestro_wbtgcr.png" alt="Maestro" class="img-fluid icono-mestro"/>
-                                                  <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1673275234/Jeanswest/footer/icono-american_na2mcs.png" alt="American Express" class="img-fluid icono-american"/>
+                                                  <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676313844/amtiEcommerce/icono-visa_z6ckyo.png" alt="Visa" class="img-fluid icono-visa"/>
+                                                  <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676313866/amtiEcommerce/icono-master_wyj2k0.png" alt="Mastercard" class="img-fluid icono-master"/>
+                                                  <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676313847/amtiEcommerce/icono-maestro_qf48fu.png" alt="Maestro" class="img-fluid icono-mestro"/>
+                                                  <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676313844/amtiEcommerce/icono-america_jtnih0.png" alt="American Express" class="img-fluid icono-american"/>
                                                 </button>
                                               </h2>
                                               <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
@@ -213,7 +213,7 @@
                                                       <input class="form-check-input chkAll" type="checkbox" value="" id="chkAccordion2All">
                                                     </div>
                                                     Pago en efectivo
-                                                    <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1673275235/Jeanswest/footer/icono-oxxo_ofuq4d.png" alt="Oxxo" class="img-fluid icono-oxxo"/>
+                                                    <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676313866/amtiEcommerce/icono-oxxo_ajvd37.png" alt="Oxxo" class="img-fluid icono-oxxo"/>
                                                   </button>
                                                 </h2>
                                                 <div id="panelsStayOpen-efectivo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
@@ -263,18 +263,18 @@
         <div class="row mb-3">
             <div class="col-12 col-sm-12 col-md-12 col-lg-3">
                 <h6 class="parrafos txt-color-parrafo bold">Pagos del checkout seguros</h6>
-                <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1673275337/Jeanswest/pagos/icono-secure_r1fnlg.png" alt="Certificado SecureTrust" class="img-fluid secure-trust"/>
-                <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1673275337/Jeanswest/pagos/icono-ssl_dnzh3m.png" alt="Certificado SSL" class="img-fluid ssl"/>
+                <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676313844/amtiEcommerce/icono-secure_yvj46c.png" alt="Certificado SecureTrust" class="img-fluid secure-trust"/>
+                <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676313844/amtiEcommerce/icono-ssl_doufze.png" alt="Certificado SSL" class="img-fluid ssl"/>
             </div>
             <div class="col-12 col-sm-12 col-md-12 col-lg-5"></div>
             <div class="col-12 col-sm-12 col-md-12 col-lg-4">
                 <div class="text-end">
                     <h6 class="parrafos txt-color-parrafo bold">Medios y soluciones de pago</h6>
-                    <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1673275337/Jeanswest/pagos/icono-visa_emqhjy.png" alt="Visa" class="img-fluid icono-pagos"/>
-                    <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1673275234/Jeanswest/footer/icono-master_nemers.png" alt="Mastercard" class="img-fluid icono-pagos"/>
-                    <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1673275234/Jeanswest/footer/icono-maestro_wbtgcr.png" alt="Maestro" class="img-fluid icono-pagos"/>
-                    <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1673275234/Jeanswest/footer/icono-american_na2mcs.png" alt="American Express" class="img-fluid icono-pagos"/>
-                    <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1673275235/Jeanswest/footer/icono-oxxo_ofuq4d.png" alt="Oxxo" class="img-fluid icono-pagos"/>
+                    <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676313844/amtiEcommerce/icono-visa_z6ckyo.png" alt="Visa" class="img-fluid icono-pagos"/>
+                    <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676313866/amtiEcommerce/icono-master_wyj2k0.png" alt="Mastercard" class="img-fluid icono-pagos"/>
+                    <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676313847/amtiEcommerce/icono-maestro_qf48fu.png" alt="Maestro" class="img-fluid icono-pagos"/>
+                    <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676313844/amtiEcommerce/icono-america_jtnih0.png" alt="American Express" class="img-fluid icono-pagos"/>
+                    <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676313866/amtiEcommerce/icono-oxxo_ajvd37.png" alt="Oxxo" class="img-fluid icono-pagos"/>
                 </div>
                 
             </div>
@@ -289,7 +289,7 @@
             <div class="col-12 col-sm-12 col-md-12 col-lg-4">
                 <div class="text-end">
                     <a href="https://blueberry.mx/" class="a_none_style" target="_blank">
-                        <img src="https://res.cloudinary.com/dra1bsh4u/image/upload/v1674595263/Cosas%20generales/blueberry-tech_se5b3f.gif" alt="Materialized by Blueberry" class="img-fluid bb-logo"/>
+                        <img src="https://res.cloudinary.com/dej55trpk/image/upload/v1675785357/Blueberry%20animtion%20footer/blueberry-tech_smhi55.gif" alt="Materialized by Blueberry" class="img-fluid bb-logo"/>
                     </a>
                 </div>
                 

@@ -28,6 +28,7 @@ AOS.init();
 // ------------step-wizard-------------
 $(document).ready(function () {
   $('.nav-tabs > li a[title]').tooltip();
+  let validacion = $('#register_form').valid()
   
   //Wizard
   $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
@@ -64,10 +65,7 @@ function prevTab(elem) {
   $(elem).prev().find('a[data-toggle="tab"]').click();
 }
 
-// $('.nav-tabs').on('click', 'li', function() {
-//     $('.nav-tabs li.active').removeClass('active');
-//     $(this).addClass('active');
-// });
+
 
 //Drop de color de ojos
 $(document).ready(function() {
