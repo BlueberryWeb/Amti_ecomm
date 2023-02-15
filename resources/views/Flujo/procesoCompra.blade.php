@@ -55,7 +55,7 @@
                                             <li role="presentation" class="active">
                                                 <a href="#step1" name="_steps" onclick="validateFlujo(this)" data-toggle="tab" aria-controls="step1" role="tab" aria-expanded="true"><span class="round-tab"><h6 class="pt-2">1</h6> </span> <i> Datos iniciales</i></a>
                                             </li>
-                                            <li role="presentation" class="disabled">
+                                            <li role="presentation" class="disabled" target="_blank">
                                                 <a href="#step2" target="_blank" name="_steps" onclick="validateFlujo(this)" data-toggle="tab" aria-controls="step2" role="tab" aria-expanded="false"><span class="round-tab"><h6 class="pt-2">2</h6></span> <i> Vigencia</i></a>
                                             </li>
                                             <li role="presentation" class="disabled">
@@ -113,7 +113,6 @@
                                                                 <div class="mb-3">
                                                                     <label for="exampleInputEmail1" class="form-label">Nombre completo del solicitante*</label>
                                                                     <input type="text" class="form-control text" id="fullName" name="fullName" aria-describedby="" required>
-                                                                    
                                                                 </div>
                                                                 <div class="">
                                                                     <label for="exampleInputEmail1" class="form-label">Teléfono*</label>
@@ -177,7 +176,7 @@
                                                                                             <p class="semibold txt-color-tit titulos">$2,700 MXN.</p>
                                                                                         </div>
                                                                                         <div class="form-check btn-seleccionar py-2">
-                                                                                            <input class="form-check-input" required type="checkbox" value="3" id="vigencia" name="vigencia" >
+                                                                                            <input class="form-check-input checks" required type="checkbox" value="3" id="vigencia" name="vigencia" >
                                                                                             <label class="form-check-label" for="vigencia">
                                                                                               Seleccionar
                                                                                             </label>
@@ -221,7 +220,7 @@
                                                                                             </div>
                                                                                         </div>
                                                                                         <div class="form-check btn-seleccionar py-2">
-                                                                                            <input class="form-check-input" required type="checkbox" value="5" id="vigencia2" name="vigencia">
+                                                                                            <input class="form-check-input checks" required type="checkbox" value="5" id="vigencia2" name="vigencia">
                                                                                             <label class="form-check-label" for="vigencia2">
                                                                                               Seleccionar
                                                                                             </label>
@@ -252,7 +251,7 @@
                                                                                             <p class="semibold txt-color-tit titulos">$1,450 MXN..</p>
                                                                                         </div>
                                                                                         <div class="form-check btn-seleccionar py-2">
-                                                                                            <input class="form-check-input" required type="checkbox" value="1" id="vigencia3" name="vigencia">
+                                                                                            <input class="form-check-input checks" required type="checkbox" value="1" id="vigencia3" name="vigencia">
                                                                                             <label class="form-check-label" for="vigencia3">
                                                                                               Seleccionar
                                                                                             </label>
@@ -841,7 +840,7 @@
                                                                                 <div class="option-image active placeholder" data-value="placeholder">
                                                                                     <img  src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310995/amtiEcommerce/ojo-cafe_gmhmit.png" alt="Ilustración de color de ojos" class="me-3"/>Selecciona un color de ojos
                                                                                 </div>
-                                                                                <div class="option-image" id="prueba" data-value="wow" onclick="getEyes(this)">
+                                                                                <div class="option-image" data-value="wow" onclick="getEyes(this)">
                                                                                     <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310992/amtiEcommerce/ojo-ambar_rwib9n.png" alt="Ilustración de color de ojos" class="me-3"/> Ambar
                                                                                 </div>
                                                                                 <div class="option-image" data-value="wow" onclick="getEyes(this)">
@@ -861,7 +860,7 @@
                                                                                 </div>
                                                                               </div>
                                                                         </div>
-                                                                        <input type="hidden" name="color_ojos" id="color_ojos" value="">
+                                                                        <input type="hidden" name="color_ojos" id="color_ojos" value="" required >
                                                                         <div class="col-12 col-sm-12 col-md-12 col-lg-4"></div>
                                                                     </div>
                                                                     <hr/>
@@ -1101,6 +1100,12 @@
                                                                     </div>
                                                                     <div class="col-12 col-sm-12 col-md-12 col-lg-6">
                                                                         <div class="mb-4">
+                                                                            <label for="numeroIntEnvio" class="form-label">Número interior</label>
+                                                                            <input type="text" class="form-control number" id="numeroIntEnvio" name="numeroIntEnvio" aria-describedby="">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                                                        <div class="mb-4">
                                                                             <label for="ciudadEnvio" class="form-label">Ciudad*</label>
                                                                             <input type="text" class="form-control text" id="ciudadEnvio" name="ciudadEnvio" aria-describedby="" required>
                                                                         </div>
@@ -1120,7 +1125,7 @@
                                                                     <label for="exampleInputEmail1" class="form-label">Selecciona tu tipo de envío*</label>
                                                                     <div class="col-12 col-sm-12 col-md-12 col-lg-4">
                                                                         <div class="form-check">
-                                                                            <input class="form-check-input check-envio" type="radio" name="tipoEnvio" id="tipoEnvio1" checked value="Estandar" required>
+                                                                            <input class="form-check-input checks" type="checkbox" name="tipoEnvio" id="tipoEnvio1"  value="Estandar" required>
                                                                             <label class="form-check-label txt-color-tit bold" for="tipoEnvio1">Envío<b class="txt-azul-oscuro"> estándar</b> <br/>
                                                                                 <i class="fa-solid fa-check txt-verde"></i> <b class="txt-verde">Gratuito</b> <br/>
                                                                                 <b class="top-menu regular">5 - 7 días hábiles</b>
@@ -1129,7 +1134,7 @@
                                                                     </div>
                                                                     <div class="col-12 col-sm-12 col-md-12 col-lg-4">
                                                                         <div class="form-check ">
-                                                                            <input class="form-check-input check-envio" type="radio" name="tipoEnvio" id="tipoEnvio2" value="Express" required>
+                                                                            <input class="form-check-input checks" type="checkbox" name="tipoEnvio" id="tipoEnvio2" value="Express" required>
                                                                             <label class="form-check-label" for="tipoEnvio2">Envío<b class="txt-azul-oscuro"> express</b> <br/>
                                                                                 <b class="regular">$199</b> <br/>
                                                                                 <b class="top-menu regular">1 a 3 días hábiles</b>
@@ -1138,7 +1143,7 @@
                                                                     </div>
                                                                     <div class="col-12 col-sm-12 col-md-12 col-lg-4">
                                                                         <div class="form-check">
-                                                                            <input class="form-check-input check-envio" type="radio" name="tipoEnvio" id="tipoEnvio3" value="Recogerla" required>
+                                                                            <input class="form-check-input checks" type="checkbox" name="tipoEnvio" id="tipoEnvio3" value="Recogerla" required>
                                                                             <label class="form-check-label" for="tipoEnvio3">Recoger en<b class="txt-azul-oscuro"> sucursal</b> <br/>
                                                                                 <i class="fa-solid fa-check txt-verde"></i> <b class="txt-verde">Gratuito</b> <br/>
                                                                                 <b class="top-menu regular">2 a 3 días hábiles.</b>
@@ -1157,7 +1162,7 @@
                                                                             <label class="form-check-label pb-2" for="chkFactura" id="btnFactura" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
                                                                                 Requiero factura
                                                                             </label>
-                                                                            <input type="hidden" name="factura" id="factura" value="No">
+                                                                            <input type="hidden" id="factura" name="factura" value="No">
                                                                         </div>
                                                                       <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
                                                                         <div class="accordion-body ms-3">

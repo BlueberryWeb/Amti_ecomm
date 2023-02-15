@@ -19,12 +19,6 @@ let numInterior = document.getElementById('numInterior');
 let previewDireccion = document.getElementById('previewDireccion');
 let previewDireccion2 = document.getElementById('previewDireccion2');
 
-const previewAddres = () => {
-    let interior = numInterior.value === '' ? '' : ' Int. ' + numInterior.value;
-    previewDireccion.innerHTML = calle.value + ' ' + colonia.value + ' #' + numExterior.value + (numInterior === '' ? '' : interior);
-    previewDireccion2.innerHTML = calle.value + ' ' + colonia.value + ' #' + numExterior.value + (numInterior === '' ? '' : interior);
-};
-
 // --> Precargar País <--//
 let pais = document.getElementById('pais');
 let previewPais = document.getElementById('previewPais');
@@ -57,6 +51,24 @@ colorCabello.addEventListener('change', () => {
     previewCabello.innerHTML = colorCabello.options[colorCabello.selectedIndex].text;
 });
 
+// --> Precargar Direccion <-- //
+const previewAddres = () => {
+    let interior = numInterior.value === '' ? '' : ' Int. ' + numInterior.value;
+    previewDireccion.innerHTML = calle.value + ' ' + colonia.value + ' #' + numExterior.value + (numInterior === '' ? '' : interior);
+    previewDireccion2.innerHTML = calle.value + ' ' + colonia.value + ' #' + numExterior.value + (numInterior === '' ? '' : interior);
+
+    let colorOjos = document.getElementById('color_ojos').value;
+    
+    if( colorOjos === '' ){
+        console.log('vacio');
+        return false
+    }
+    // else if( colorOjos !== '' ){
+    //     console.log('lleno');
+    //     return true
+    // }
+};
+
 // --> Precargar Fotografía Personal <-- //
 let imgPersonal = document.getElementById('imgPersonalFrente');
 let previewImgPersonal = document.getElementById('previewImgPersonal');
@@ -73,6 +85,7 @@ imgPersonal.addEventListener('change', () => {
         reader.readAsDataURL(imgPersonal.files[0]);
     }
 });
+
 
 // --> Precargar Fotografía de Firma <-- //
 let imgFirma = document.getElementById('imgFirma');

@@ -7,3 +7,9 @@ const getEyes = (color) => {
     let previewOjos = document.getElementById('previewOjos');
     previewOjos.innerHTML = color_ojos.trim();
 }
+
+// const validateColor = () => {
+//     let color = document.getElementById('color_ojos').value;
+//     console.log(color);
+//     if( color === '') return false
+// }
