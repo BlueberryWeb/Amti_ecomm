@@ -40,17 +40,16 @@ $(document).ready(function () {
       }
   });
 
-  if( validacion ){
-    $(".next-step").click(function (e) {
-
-        validacion.setDefaults({ ignore: null });
-      
-        var active = $('.wizard .nav-tabs li.active');
-        active.next().removeClass('disabled');
-        nextTab(active);
-    });
-  }
-
+  $(".next-step").click(function (e) {
+    let validacion = $('#register_form').valid();
+    
+    if( validacion ){
+      var active = $('.wizard .nav-tabs li.active');
+      active.next().removeClass('disabled');
+      nextTab(active);
+    }
+  });
+  
   $(".prev-step").click(function (e) {
       var active = $('.wizard .nav-tabs li.active');
       prevTab(active);
@@ -66,14 +65,7 @@ function prevTab(elem) {
   $(elem).prev().find('a[data-toggle="tab"]').click();
 }
 
-   $('.nav-tabs').on('click', 'li', function() {
-    let validacion = $('#register_form').valid()
-    if( validacion ){
-    console.log('a');
-    $('.nav-tabs li.active').removeClass('active');
-    $(this).addClass('active');
-    }
-  });
+
 
 //Drop de color de ojos
 $(document).ready(function() {

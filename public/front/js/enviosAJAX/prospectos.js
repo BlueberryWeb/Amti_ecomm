@@ -13,6 +13,5 @@ const enviarProspecto = () => {
             procesData: false
         })
         .then(response =>{});
-
     }
 }
