@@ -220,9 +220,6 @@
                                                                                               Seleccionar
                                                                                             </label>
                                                                                         </div>
-                                                                                        {{-- <div class="etiqueta-recom py-1">
-                                                                                            
-                                                                                       </div> --}}
                                                                                         <div class="col-12 col-sm-12 col-md-12 col-lg-12 d-flex justify-content-end">
                                                                                             <img src="img/green_Check.png" alt="" class="img-fluid" width="50"/>
                                                                                         </div>
@@ -232,6 +229,7 @@
                                                                             <input type="hidden" id="vigenciaSent" name="vigenciaSent" value="">
                                                                         </div>
                                                                     </div>
+                                                                    
                                                                 </div>
                                                                 <div class="col-12 col-sm-12 col-md-12 col-lg-4 mb-4">
                                                                     <div class="mx-3">
@@ -1106,7 +1104,6 @@
                                                                             <label for="cp" class="form-label">Código Postal*</label>
                                                                             <input type="text" class="form-control number" id="cpEnvio" name="cpEnvio" aria-describedby="" maxlength="5" required>
                                                                         </div>
-                                                                    </div>
                                                                     </div>
                                                                     <div class="col-12 col-sm-12 col-md-12 col-lg-6">
                                                                         <div class="mb-4">
