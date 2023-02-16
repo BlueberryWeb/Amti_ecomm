@@ -71,6 +71,13 @@ input, label, textarea{
 .a_none_style{
     text-decoration: none;
 }
+.a_hover_style:hover{
+    color: #262626;
+    font-weight: 250;
+}
+.error{
+    color:#ff8080!important;
+}
 /******************
 ICONOS 
 ******************/
@@ -101,9 +108,18 @@ ICONOS
 /****************
 BACKGROUNDS
 ***************/
-body{
+body::after{
+    content: "";
     background-image: url('https://res.cloudinary.com/dhigl3clg/image/upload/v1676311255/amtiEcommerce/bg-mundo_ybvvc4.png');
     background-attachment: fixed;
+    opacity: .35;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+
 }
 .bg-menu{
     background: rgb(23,60,91);

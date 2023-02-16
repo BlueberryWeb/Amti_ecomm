@@ -6,7 +6,7 @@
             <div class="modal-content bg-azul-3 modal-tuto">
                 <div class="modal-body bg-continente">
                     <div class="text-end">
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="closeVideo()">
                             <i class="fa-solid fa-xmark"></i>
                         </button>
                     </div>
