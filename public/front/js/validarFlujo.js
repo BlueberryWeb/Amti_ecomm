@@ -12,9 +12,17 @@ const changeAttribute = (component) => {
 const validateFlujo = (selected) => {
 
     let validacion = $('#register_form').valid();
+
+    if( !validacion ){
+        let error = document.querySelectorAll('div.wizard label[class="error"]');
+    
+        error.forEach(element => {
+            element.innerHTML = 'Este campo es requerido.';
+        });
+    }
+
     let step = selected.querySelector('a').href;
     let numberStep;
-
 
     switch (step) {
         case 'http://amti_ecomm.test/procesoCompra#step1':
@@ -46,8 +54,12 @@ const validateFlujo = (selected) => {
         break;
     }
     if( numberStep == (actual + 1) ){
-        if( !validacion )
+        if( !validacion ){
             selected.querySelector('a').setAttribute('data-toggle', '');
+            setTimeout(() => {
+                selected.querySelector('a').setAttribute('data-toggle', 'tab');
+            }, 300);
+        }
         else{
             actual = numberStep;
             changeAttribute(selected);

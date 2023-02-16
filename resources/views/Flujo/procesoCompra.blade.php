@@ -9,7 +9,6 @@
     <title>AMTI | Carrito de compra</title>
 </head>
 <body>
-
     <div class="bg-azul-3 py-4">
         <div class="container">
             <div class="row">
@@ -83,7 +82,6 @@
                             <form class="login-box needs-validation" role="form" action="{{ route('licencia.pedido.add')}}" enctype="multipart/form-data" method="POST" id="register_form" name="register_form">
                                 <div class="tab-content" id="main_form">
                                     @csrf
-                                    {{-- <input type="hidden" name="_token" id="_token" value="{{ csrf_token() }}"> --}}
                                     <!-- NOMBRE Y TELÉFONO -->
                                     <div class="tab-pane active" role="tabpanel" id="step1">
                                         <div class="d-block d-sm-block d-md-none">
@@ -129,7 +127,7 @@
                                                 <div class="col-12 col-sm-12 col-md-12 col-lg-8"></div>
                                                 <div class="col-12 col-sm-12 col-md-12 col-lg-4">
                                                     <ul class="list-inline pull-right">
-                                                        <li><button type="submit" onclick="enviarProspecto()" id="btnProspectos" name="btnProspectos" class="default-btn next-step">Siguiente <i class="fa-solid fa-arrow-right"></i></button></li>
+                                                        <li><button type="button"  id="btnProspectos" name="btnProspectos" class="default-btn next-step">Siguiente <i class="fa-solid fa-arrow-right"></i></button></li>
                                                     </ul>
                                                 </div>
                                                 
@@ -204,7 +202,7 @@
                                                                             <div class="mx-4">
                                                                                 <hr/>
                                                                                 <div class="row my-4">
-                                                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-10">
+                                                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                                                                                         <div class="">
                                                                                             <p class="regular txt-color-parrafo parrafos">Vigencia: 5 años</p>
                                                                                             <div class="row">
@@ -222,13 +220,18 @@
                                                                                               Seleccionar
                                                                                             </label>
                                                                                         </div>
+                                                                                        {{-- <div class="etiqueta-recom py-1">
+                                                                                            
+                                                                                       </div> --}}
+                                                                                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 d-flex justify-content-end">
+                                                                                            <img src="img/green_Check.png" alt="" class="img-fluid" width="50"/>
+                                                                                        </div>
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
                                                                             <input type="hidden" id="vigenciaSent" name="vigenciaSent" value="">
                                                                         </div>
                                                                     </div>
-                                                                    
                                                                 </div>
                                                                 <div class="col-12 col-sm-12 col-md-12 col-lg-4 mb-4">
                                                                     <div class="mx-3">
@@ -409,17 +412,17 @@
                                                             </div>
                                                             
                                                             <div class=" parrafos txt-color-parrafo">
-                                                                <div class="mb-3">
+                                                                <div class="mb-5">
                                                                     <label for="imgPersonalFrente" class="form-label">Frente*</label>
                                                                     <input class="form-control form-control-sm" id="imgPersonalFrente" name="imgPersonalFrente" type="file" required  accept="image/png,image/jpeg">
+                                                                    <br>
+                                                                    <br>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         @include('Flujo.components.modalFotografia')
                                                     </div>
                                                 </div>
-                                                
-                                    
                                             </div>
                                         </div>
                                         <div class="container">
@@ -851,7 +854,7 @@
                                                                                 </div>
                                                                               </div>
                                                                         </div>
-                                                                        <input type="text" class="form-control " name="color_ojos" id="color_ojos" value="" required>
+                                                                        <input type="hidden" class="form-control " name="color_ojos" id="color_ojos" value="" required>
                                                                         <div class="col-12 col-sm-12 col-md-12 col-lg-4"></div>
                                                                     </div>
                                                                     <hr/>
@@ -1006,6 +1009,15 @@
                                                     <div class="row">
                                                         <div class="col-12 col-sm-12 col-md-12 col-lg-2"></div>
                                                         <div class="col-12 col-sm-12 col-md-12 col-lg-8">
+                                                            <div class="d-flex justify-content-center">
+                                                                <div class="form-check pt-2">
+                                                                    <input class="form-check-input" type="checkbox" value="" id="terminos" name="terminos" required>
+                                                                    <label class="form-check-label" for="terminos">
+                                                                        He leído y acepto los 
+                                                                        <a class="txt-color-parrafo a_none_style a_hover_style" href="{{ route('terminos') }}" target="_blank"><u>términos y condiciones.</u> </a>
+                                                                    </label>
+                                                                  </div>
+                                                            </div>
                                                             <div class="row">
                                                                 <div class="col-12 col-sm-12 col-md-12 col-lg-4">
                                                                     <ul class="list-inline pull-right">
@@ -1095,11 +1107,6 @@
                                                                             <input type="text" class="form-control number" id="cpEnvio" name="cpEnvio" aria-describedby="" maxlength="5" required>
                                                                         </div>
                                                                     </div>
-                                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-                                                                        <div class="mb-4">
-                                                                            <label for="numeroIntEnvio" class="form-label">Número interior</label>
-                                                                            <input type="text" class="form-control number" id="numeroIntEnvio" name="numeroIntEnvio" aria-describedby="">
-                                                                        </div>
                                                                     </div>
                                                                     <div class="col-12 col-sm-12 col-md-12 col-lg-6">
                                                                         <div class="mb-4">
