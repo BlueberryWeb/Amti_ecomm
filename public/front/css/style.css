@@ -1088,7 +1088,15 @@ CUADROS SUBE TUS DOCUMENTOS
     width: 120px;
     border-radius: 7px;
     font-family: 'OpenSans Regular';
+    text-decoration: none;
+    padding: 10px 20px;
 }
+
+a.btn-ejemplo:hover{
+  color: white;
+  cursor: pointer;
+}
+
 .txt-evitar h6{
     line-height: 70%;
 }

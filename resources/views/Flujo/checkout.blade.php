@@ -49,20 +49,31 @@
                                         <div class="">
                                             <div class="cuadro-compra-2 pb-4">
                                                 <div class="header-cuadro-2 py-2">
-                                                    <h3 class="semiBold h5">5 años</h3>
+                                                    @if( $producto->vigencia == 1)
+                                                        <h3 class="semiBold h5">{{ $producto->vigencia }} año</h3>
+                                                    @else
+                                                        <h3 class="semiBold h5">{{ $producto->vigencia }} años</h3>
+                                                    @endif
                                                 </div>
                                                 <div class="row">
                                                     <div class="col-12 col-sm-12 col-md-12 col-lg-6">
                                                         <div class="text-center pt-4 pb-2 mx-3">
-                                                            <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310985/amtiEcommerce/licenciaAMTI_nibmnp.png" alt="Ilustración de licencia y libro AMTI" class="img-fluid licencia-proceso"/>
-                                                           
+                                                            <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310985/amtiEcommerce/licenciaAMTI_nibmnp.png" alt="Ilustración de licencia y libro AMTI" class="img-fluid licencia-proceso"/> 
                                                         </div>
                                                     </div>
                                                     <div class="col-12 col-sm-12 col-md-12 col-lg-6">
                                                         <div class="mt-5">
-                                                            <p class="regular txt-color-parrafo parrafos mb-0">Vigencia: 5 años</p>
-                                                            <p class="regular parrafos tachado my-0">$4,900 MXN</p>
-                                                            <p class="bold txt-color-tit h5">$3,700 MXN.</p>
+                                                            @if( $producto->vigencia == 1 )
+                                                                <p class="regular txt-color-parrafo parrafos mb-0">Vigencia: {{ $producto->vigencia }} año</p>
+                                                                <p class="bold txt-color-tit h5">${{ $producto->precio}} MXN.</p>
+                                                            @elseif( $producto->vigencia == 3 )
+                                                                <p class="regular txt-color-parrafo parrafos mb-0">Vigencia: {{ $producto->vigencia }} años</p>
+                                                                <p class="bold txt-color-tit h5">${{ $producto->precio}} MXN.</p>
+                                                            @elseif( $producto->vigencia == 5 )
+                                                                <p class="regular txt-color-parrafo parrafos mb-0">Vigencia: {{ $producto->vigencia }} años</p>
+                                                                <p class="regular parrafos tachado my-0">$4,900 MXN</p>
+                                                                <p class="bold txt-color-tit h5">${{ $producto->precio}} MXN.</p>
+                                                            @endif
                                                         </div>
                                                     </div>
                                                 </div>

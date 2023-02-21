@@ -10,7 +10,7 @@
                     </button>
                 </div>
                 <div class="text-center mb-5">
-                    <h1 class="titulos text-white bold">Ejemplo de licencia de conducir</h1>
+                    <h1 class="titulos text-white bold">Ejemplo de identificación oficial</h1>
                 </div>
                 <div class="container my-5">
                     <div class="row">

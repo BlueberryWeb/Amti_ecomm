@@ -162,13 +162,13 @@
                                                                             <div class="text-center pt-4 pb-2">
                                                                                 <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310985/amtiEcommerce/licenciaAMTI_nibmnp.png" alt="Ilustración de licencia y libro AMTI" class="img-fluid licencia-proceso"/>
                                                                             </div>
-                                                                            <div class="mx-4">
+                                                                            <div class="mx-4 precioVigencia">
                                                                                 <hr/>
                                                                                 <div class="row ">
                                                                                     <div class="col-12 col-sm-12 col-md-12 col-lg-10">
                                                                                         <div class="">
                                                                                             <p class="regular txt-color-parrafo parrafos">Vigencia: 3 años</p>
-                                                                                            <p class="semibold txt-color-tit titulos">$2,700 MXN.</p>
+                                                                                            <p class="semibold txt-color-tit titulos" id="precio">$2,700 MXN.</p>
                                                                                         </div>
                                                                                         <div class="form-check btn-seleccionar py-2">
                                                                                             <input class="form-check-input checks" required type="checkbox" value="3" id="vigencia" name="vigencia" >
@@ -199,7 +199,7 @@
                                                                                     </h6>
                                                                                </div>
                                                                             </div>
-                                                                            <div class="mx-4">
+                                                                            <div class="mx-4 precioVigencia">
                                                                                 <hr/>
                                                                                 <div class="row my-4">
                                                                                     <div class="col-12 col-sm-12 col-md-12 col-lg-12">
@@ -207,7 +207,7 @@
                                                                                             <p class="regular txt-color-parrafo parrafos">Vigencia: 5 años</p>
                                                                                             <div class="row">
                                                                                                 <div class="col-12 col-sm-12 col-md-12 col-lg-5">
-                                                                                                    <p class="regular parrafos tachado">$4,900 MXN</p>
+                                                                                                    <p class="regular parrafos tachado" id="precio">$4,900 MXN</p>
                                                                                                 </div>
                                                                                                 <div class="col-12 col-sm-12 col-md-12 col-lg-7">
                                                                                                     <p class="semibold txt-color-tit titulos">$3,700 MXN.</p>
@@ -235,18 +235,18 @@
                                                                     <div class="mx-3">
                                                                         <div class="cuadro-compra pb-2">
                                                                             <div class="header-cuadro py-2">
-                                                                                <h3 class="semiBold h5">1 años</h3>
+                                                                                <h3 class="semiBold h5">1 año</h3>
                                                                             </div>
                                                                             <div class="text-center pt-4 pb-2">
                                                                                 <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310985/amtiEcommerce/licenciaAMTI_nibmnp.png" alt="Ilustración de licencia y libro AMTI" class="img-fluid licencia-proceso"/>
                                                                             </div>
-                                                                            <div class="mx-4">
+                                                                            <div class="mx-4 precioVigencia">
                                                                                 <hr/>
                                                                                 <div class="row">
                                                                                     <div class="col-12 col-sm-12 col-md-12 col-lg-10">
                                                                                         <div class="">
                                                                                             <p class="regular txt-color-parrafo parrafos">Vigencia: 1 año</p>
-                                                                                            <p class="semibold txt-color-tit titulos">$1,450 MXN..</p>
+                                                                                            <p class="semibold txt-color-tit titulos" id="precio">$1,450 MXN..</p>
                                                                                         </div>
                                                                                         <div class="form-check btn-seleccionar py-2">
                                                                                             <input class="form-check-input checks" required type="checkbox" value="1" id="vigencia3" name="vigencia">
@@ -322,7 +322,7 @@
                                                                     </div>
                                                                     
                                                                     <div class="my-3 text-end">
-                                                                        <button class="btn btn-primary btn-ejemplo" data-bs-toggle="modal" data-bs-target="#Identificacion">Ver ejemplo</button>
+                                                                        <a class="btn-ejemplo" data-bs-toggle="modal" data-bs-target="#Identificacion">Ver ejemplo</a>
                                                                     </div>
                                                                 </div>
                                                                 <hr/>
@@ -363,7 +363,7 @@
                                                                     </div>
                                                                     
                                                                     <div class="mt-3 mb-4 pb-3 text-end">
-                                                                        <button class="btn btn-primary btn-ejemplo" data-bs-toggle="modal" data-bs-target="#Licencia">Ver ejemplo</button>
+                                                                        <a class="btn-ejemplo" data-bs-toggle="modal" data-bs-target="#Licencia">Ver ejemplo</a>
                                                                     </div>
                                                                 </div>
                                                                 <hr/>
@@ -403,7 +403,7 @@
                                                                     </div>
                                                                     
                                                                     <div class="mt-3 mb-4 pb-3  text-end">
-                                                                        <button class="btn btn-primary btn-ejemplo" data-bs-toggle="modal" data-bs-target="#Fotografia">Ver ejemplo</button>
+                                                                        <a class="btn-ejemplo" data-bs-toggle="modal" data-bs-target="#Fotografia">Ver ejemplo</a>
                                                                     </div>
                                                                 </div>
                                                                 <hr/>
@@ -476,7 +476,7 @@
                                                                     </div>
                                                                     
                                                                     <div class="my-3 text-end">
-                                                                        <button class="btn btn-primary btn-ejemplo" data-bs-toggle="modal" data-bs-target="#Firma">Ver ejemplo</button>
+                                                                        <a class="btn-ejemplo" data-bs-toggle="modal" data-bs-target="#Firma">Ver ejemplo</a>
                                                                     </div>
                                                                     @include('Flujo.components.modalFirma')
                                                                     <hr/>
@@ -818,7 +818,6 @@
                                                                             <option value="Castaño Oscuro">Castaño Oscuro</option>
                                                                             <option value="Castaño Claro">Castaño Claro</option>
                                                                             <option value="Rubio">Rubio</option>
-                                                                            <option value="Rubio Osucuro">Rubio Osucuro</option>
                                                                             <option value="Rubio Claro">Rubio Claro</option>
                                                                             <option value="Platino">Platino</option>
                                                                         </select>
@@ -1055,273 +1054,281 @@
                                             <div class="col-12 col-sm-12 col-md-12 col-lg-3"></div>
                                             <div class="col-12 col-sm-12 col-md-12 col-lg-6">
                                                 <div class="mx-2">
-                                                    <div class="form-info-envio">
-                                                        <div class="mx-5">
-                                                            <div class="row py-5 txt-firma">
-                                                                <div class="mb-4">
-                                                                    <label for="nombreEnvio" class="form-label">Nombre Completo*</label>
-                                                                    <input type="text" class="form-control text" id="nombreEnvio" name="nombreEnvio" aria-describedby="" required>
-                                                                </div>
-                                                                <div class="row">
-                                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-                                                                        <div class="mb-4">
-                                                                            <label for="telefonoEnvio" class="form-label">Teléfono*</label>
-                                                                            <input type="text" class="form-control number" id="telefonoEnvio" name="telefonoEnvio" maxlength="10" aria-describedby="" required>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-                                                                        <div class="mb-4">
-                                                                            <label for="correoEnvio" class="form-label">Correo electrónico*</label>
-                                                                            <input type="email" class="form-control" id="correoEnvio" name="correoEnvio" aria-describedby="" required>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-                                                                        <div class="mb-4">
-                                                                            <label for="calleEnvio" class="form-label">Calle*</label>
-                                                                            <input type="text" class="form-control" id="calleEnvio" name="calleEnvio" aria-describedby="" required>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-                                                                        <div class="mb-4">
-                                                                            <label for="coloniaEnvio" class="form-label">Colonia*</label>
-                                                                            <input type="text" class="form-control" id="coloniaEnvio" name="coloniaEnvio" aria-describedby="" required>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-4">
-                                                                        <div class="mb-4">
-                                                                            <label for="numeroExtEnvio" class="form-label">Número exterior*</label>
-                                                                            <input type="text" class="form-control number" id="numeroExtEnvio" name="numeroExtEnvio" aria-describedby="" required>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-4">
-                                                                        <div class="mb-4">
-                                                                            <label for="numeroIntEnvio" class="form-label">Número interior</label>
-                                                                            <input type="text" class="form-control number" id="numeroIntEnvio" name="numeroIntEnvio" aria-describedby="">
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-4">
-                                                                        <div class="mb-4">
-                                                                            <label for="cp" class="form-label">Código Postal*</label>
-                                                                            <input type="text" class="form-control number" id="cpEnvio" name="cpEnvio" aria-describedby="" maxlength="5" required>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-                                                                        <div class="mb-4">
-                                                                            <label for="ciudadEnvio" class="form-label">Ciudad*</label>
-                                                                            <input type="text" class="form-control text" id="ciudadEnvio" name="ciudadEnvio" aria-describedby="" required>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-                                                                        <div class="mb-4">
-                                                                            <label for="estadoEnvio" class="form-label">Estado*</label>
-                                                                            <input type="text" class="form-control text" id="estadoEnvio" name="estadoEnvio" aria-describedby="" required>
-                                                                        </div>
+                                                    <div class="accordion" id="accordionEnvioExample">
+                                                        <div class="accordion-item">
+                                                            <div class="row mb-5">
+                                                                <label for="exampleInputEmail1" class="form-label">Selecciona tu tipo de envío*</label>
+                                                                <div class="col-12 col-sm-12 col-md-12 col-lg-4">
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input checks" type="checkbox" name="tipoEnvio" id="tipoEnvio1" value="Estandar" required>
+                                                                        <label class="form-check-label txt-color-tit bold" for="tipoEnvio1">Envío<b class="txt-azul-oscuro"> estándar</b> <br/>
+                                                                            <i class="fa-solid fa-check txt-verde"></i> <b class="txt-verde">Gratuito</b> <br/>
+                                                                            <b class="top-menu regular">5 - 7 días hábiles</b>
+                                                                        </label>
                                                                     </div>
                                                                 </div>
-                                                                <div class="mb-4">
-                                                                    <label for="instrucciones" class="form-label">Instrucciones adicionales para acceder al domicilio*</label>
-                                                                    <input type="text" class="form-control" id="instrucciones" name="instrucciones" aria-describedby="" required >
-                                                                </div>
-                                                                <div class="row mb-5">
-                                                                    <label for="exampleInputEmail1" class="form-label">Selecciona tu tipo de envío*</label>
-                                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-4">
-                                                                        <div class="form-check">
-                                                                            <input class="form-check-input checks" type="checkbox" name="tipoEnvio" id="tipoEnvio1" value="Estandar" required>
-                                                                            <label class="form-check-label txt-color-tit bold" for="tipoEnvio1">Envío<b class="txt-azul-oscuro"> estándar</b> <br/>
-                                                                                <i class="fa-solid fa-check txt-verde"></i> <b class="txt-verde">Gratuito</b> <br/>
-                                                                                <b class="top-menu regular">5 - 7 días hábiles</b>
-                                                                            </label>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-4">
-                                                                        <div class="form-check ">
-                                                                            <input class="form-check-input checks" type="checkbox" name="tipoEnvio" id="tipoEnvio2" value="Express" required>
-                                                                            <label class="form-check-label" for="tipoEnvio2">Envío<b class="txt-azul-oscuro"> express</b> <br/>
-                                                                                <b class="regular">$199</b> <br/>
-                                                                                <b class="top-menu regular">1 a 3 días hábiles</b>
-                                                                            </label>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-4">
-                                                                        <div class="form-check">
-                                                                            <input class="form-check-input checks" type="checkbox" name="tipoEnvio" id="tipoEnvio3" value="Recogerla" required>
-                                                                            <label class="form-check-label" for="tipoEnvio3">Recoger en<b class="txt-azul-oscuro"> sucursal</b> <br/>
-                                                                                <i class="fa-solid fa-check txt-verde"></i> <b class="txt-verde">Gratuito</b> <br/>
-                                                                                <b class="top-menu regular">2 a 3 días hábiles.</b>
-                                                                            </label>
-                                                                        </div>
+                                                                <div class="col-12 col-sm-12 col-md-12 col-lg-4">
+                                                                    <div class="form-check ">
+                                                                        <input class="form-check-input checks" type="checkbox" name="tipoEnvio" id="tipoEnvio2" value="Express" required>
+                                                                        <label class="form-check-label" for="tipoEnvio2">Envío<b class="txt-azul-oscuro" data-bs-target="#panelEnvio2" data-bs-toggle="collapse" aria-expanded="false" aria-controls="panelEnvio2"> express</b><br/>
+                                                                            <b class="regular">$199</b> <br/>
+                                                                            <b class="top-menu regular">1 a 3 días hábiles</b>
+                                                                        </label>
                                                                     </div>
                                                                 </div>
-                                                                <div class="text-end mb-3">
+                                                                <div class="col-12 col-sm-12 col-md-12 col-lg-4">
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input checks" type="checkbox" name="tipoEnvio" id="tipoEnvio3" value="Recogerla" aria-controls="panelEnvio" aria-expanded="false" required>
+                                                                        <label class="form-check-label" for="tipoEnvio3">Recoger en<b class="txt-azul-oscuro"> sucursal</b> <br/>
+                                                                            <i class="fa-solid fa-check txt-verde"></i> <b class="txt-verde">Gratuito</b> <br/>
+                                                                            <b class="top-menu regular">2 a 3 días hábiles.</b>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="text-end mb-3 pt-3">
                                                                     <h6 class="top-menu txt-color-parrafo"><i>*Los días de entrega pueden variar según sea la zona de entrega por políticas de paqueterías.</i></h6>
                                                                 </div>
-
-                                                                <div class="accordion" id="accordionPanelsStayOpenExample">
-                                                                    <div class="accordion-item">
-                                                                        <div class="form-check">
-                                                                            <input class="form-check-input chkAll" type="checkbox" value="" id="chkFactura" name="chkFactura" data-bs-target="#panelsStayOpen-collapseTwo" data-bs-toggle="collapse" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                                                                            <label class="form-check-label pb-2" for="chkFactura" id="btnFactura" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                                                                                Requiero factura
-                                                                            </label>
-                                                                            <input type="hidden" id="factura" name="factura" value="No">
+                                                            </div>
+                                                            <div id="panelEnvio" class="accordion-collapse collapse">
+                                                                <div class="accordion-body ms-3">
+                                                                    <div class="row txt-firma">
+                                                                        <div class="mb-4">
+                                                                            <label for="nombreEnvio" class="form-label">Nombre Completo*</label>
+                                                                            <input type="text" class="form-control text" id="nombreEnvio" name="nombreEnvio" aria-describedby="" required>
                                                                         </div>
-                                                                      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
-                                                                        <div class="accordion-body ms-3">
-                                                                            <div class="row">
-                                                                                <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-                                                                                    <div class="mb-4">
-                                                                                        <label for="razonSocial" class="form-label">Nombre o Razón Social</label>
-                                                                                        <input type="text" class="form-control text" id="razonSocial" name="razonSocial" aria-describedby="" required >
-                                                                                    </div>
+                                                                        <div class="row">
+                                                                            <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                                                                <div class="mb-4">
+                                                                                    <label for="telefonoEnvio" class="form-label">Teléfono*</label>
+                                                                                    <input type="text" class="form-control number" id="telefonoEnvio" name="telefonoEnvio" maxlength="10" aria-describedby="" required>
                                                                                 </div>
-                                                                                <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-                                                                                    <div class="mb-4">
-                                                                                        <label for="rfc" class="form-label">RFC*</label>
-                                                                                        <input type="text" class="form-control" id="rfc" name="rfc" aria-describedby="" required>
-                                                                                    </div>
+                                                                            </div>
+                                                                            <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                                                                <div class="mb-4">
+                                                                                    <label for="correoEnvio" class="form-label">Correo electrónico*</label>
+                                                                                    <input type="email" class="form-control" id="correoEnvio" name="correoEnvio" aria-describedby="" required>
                                                                                 </div>
-                                                                                <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-                                                                                    <div class="mb-4">
-                                                                                        <label for="calleFactura" class="form-label">Calle*</label>
-                                                                                        <input type="text" class="form-control" id="calleFactura" name="calleFactura" aria-describedby="" required>
-                                                                                    </div>
+                                                                            </div>
+                                                                            <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                                                                <div class="mb-4">
+                                                                                    <label for="calleEnvio" class="form-label">Calle*</label>
+                                                                                    <input type="text" class="form-control" id="calleEnvio" name="calleEnvio" aria-describedby="" required>
                                                                                 </div>
-                                                                                <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-                                                                                    <div class="mb-4">
-                                                                                        <label for="coloniaFactua" class="form-label">Colonia*</label>
-                                                                                        <input type="text" class="form-control" id="coloniaFactua" name="coloniaFactura" aria-describedby="" required >
-                                                                                    </div>
+                                                                            </div>
+                                                                            <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                                                                <div class="mb-4">
+                                                                                    <label for="coloniaEnvio" class="form-label">Colonia*</label>
+                                                                                    <input type="text" class="form-control" id="coloniaEnvio" name="coloniaEnvio" aria-describedby="" required>
                                                                                 </div>
-                                                                                <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-                                                                                    <div class="mb-4">
-                                                                                        <label for="numExteriorFactura" class="form-label">Número exterior*</label>
-                                                                                        <input type="text" class="form-control number" id="numExteriorFactura" name="numExteriorFactura" aria-describedby="" required>
-                                                                                    </div>
+                                                                            </div>
+                                                                            <div class="col-12 col-sm-12 col-md-12 col-lg-4">
+                                                                                <div class="mb-4">
+                                                                                    <label for="numeroExtEnvio" class="form-label">Número exterior*</label>
+                                                                                    <input type="text" class="form-control number" id="numeroExtEnvio" name="numeroExtEnvio" aria-describedby="" required>
                                                                                 </div>
-                                                                                <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-                                                                                    <div class="mb-4">
-                                                                                        <label for="numInteriorFactura" class="form-label">Número interior</label>
-                                                                                        <input type="text" class="form-control number" id="numInteriorFactura" name="numInteriorFactura" aria-describedby="">
-                                                                                    </div>
+                                                                            </div>
+                                                                            <div class="col-12 col-sm-12 col-md-12 col-lg-4">
+                                                                                <div class="mb-4">
+                                                                                    <label for="numeroIntEnvio" class="form-label">Número interior</label>
+                                                                                    <input type="text" class="form-control number" id="numeroIntEnvio" name="numeroIntEnvio" aria-describedby="">
                                                                                 </div>
-                                                                                <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-                                                                                    <div class="mb-4">
-                                                                                        <label for="cpFactutra" class="form-label">Código Postal*</label>
-                                                                                        <input type="text" class="form-control number" id="cpFactutra" name="cpFactutra" aria-describedby="" maxlength="5" required >
-                                                                                    </div>
+                                                                            </div>
+                                                                            <div class="col-12 col-sm-12 col-md-12 col-lg-4">
+                                                                                <div class="mb-4">
+                                                                                    <label for="cp" class="form-label">Código Postal*</label>
+                                                                                    <input type="text" class="form-control number" id="cpEnvio" name="cpEnvio" aria-describedby="" maxlength="5" required>
                                                                                 </div>
-                                                                                <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-                                                                                    <div class="mb-4">
-                                                                                        <label for="ciudadFactura" class="form-label">Ciudad*</label>
-                                                                                        <input type="text" class="form-control text" id="ciudadFactura" name="ciudadFactura" aria-describedby="" required>
-                                                                                    </div>
+                                                                            </div>
+                                                                            <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                                                                <div class="mb-4">
+                                                                                    <label for="ciudadEnvio" class="form-label">Ciudad*</label>
+                                                                                    <input type="text" class="form-control text" id="ciudadEnvio" name="ciudadEnvio" aria-describedby="" required>
                                                                                 </div>
-                                                                                <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-                                                                                    <div class="mb-4">
-                                                                                        <label for="estadoFactura" class="form-label">Estado*</label>
-                                                                                        <input type="text" class="form-control text" id="estadoFactura" name="estadoFactura" aria-describedby="" required>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-                                                                                    <div class="mb-4">
-                                                                                        <label for="paisFactura" class="form-label">País*</label>
-                                                                                        <input type="text" class="form-control text" id="paisFactura" name="paisFactura" aria-describedby="" required>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-                                                                                    <div class="mb-4">
-                                                                                        <label for="emailFactura" class="form-label">Correo electrónico*</label>
-                                                                                        <input type="email" class="form-control" id="emailFactura" name="emailFactura" aria-describedby="" required>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-                                                                                    <div class="mb-4">
-                                                                                        <label for="telefonoFactura" class="form-label">Teléfono*</label>
-                                                                                        <input type="text" class="form-control number" id="telefonoFactura" maxlength="10" name="telefonoFactura" aria-describedby="" required>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-                                                                                    <div class="mb-4">
-                                                                                        <label for="exampleInputEmail1" class="form-label">Uso del CFDI*</label>
-                                                                                        <select required class="form-select f-italic bg-obscuro txt-blanco t-s"
-                                                                                        aria-label="Default select example" name="cfdi" id="cfdi">
-                                                                                        <option value="">Selecciona una opción</option>
-                                                                                        <option value="G01">Adquisición de mercancías.</option>
-                                                                                        <option value="G02">Devoluciones, descuentos o bonificaciones.</option>
-                                                                                        <option value="G03">Gastos en general.</option>
-                                                                                        <option value="I01">Construcciones.</option>
-                                                                                        <option value="I02">Mobiliario y equipo de oficina por inversiones.</option>
-                                                                                        <option value="I03">Equipo de transporte.</option>
-                                                                                        <option value="I04">Equipo de computo y accesorios.</option>
-                                                                                        <option value="I05">Dados, troqueles, moldes, matrices y herramental.</option>
-                                                                                        <option value="I06">Comunicaciones telefónicas.</option>
-                                                                                        <option value="I07">Comunicaciones satelitales.</option>
-                                                                                        <option value="I08">Otra maquinaria y equipo.</option>
-                                                                                        <option value="D01">Honorarios médicos, dentales y gastos hospitalarios.
-                                                                                        </option>
-                                                                                        <option value="D02">Gastos médicos por incapacidad o discapacidad.</option>
-                                                                                        <option value="D03">Gastos funerales.</option>
-                                                                                        <option value="D04">Donativos.</option>
-                                                                                        <option value="D05">Intereses reales efectivamente pagados por créditos
-                                                                                            hipotecarios (casa habitación).</option>
-                                                                                        <option value="D06">Aportaciones voluntarias al SAR.</option>
-                                                                                        <option value="D07">Primas por seguros de gastos médicos.</option>
-                                                                                        <option value="D08">Gastos de transportación escolar obligatoria.</option>
-                                                                                        <option value="D09">Depósitos en cuentas para el ahorro, primas que tengan como
-                                                                                            base planes de pensiones.</option>
-                                                                                        <option value="D10">Pagos por servicios educativos (colegiaturas).</option>
-                                                                                        <option value="S01">Sin efectos fiscales.</option>
-                                                                                        <option value="CP01">Pagos.</option>
-                                                                                        <option value="CN01">Nómina.</option>
-                                                                                    </select>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-                                                                                    <div class="mb-4">
-                                                                                        <label for="exampleInputEmail1" class="form-label">Regimen Fiscal*</label>
-                                                                                        <select required class="form-select f-italic bg-obscuro txt-blanco t-s"
-                                                                                        aria-label="Default select example" name="regimen_fiscal" id="regimen_fiscal">
-                                                                                        <option value="">Selecciona una opción</option>
-                                                                                        <option value="601">General de Ley Personas Morales</option>
-                                                                                        <option value="603">Personas Morales con Fines no Lucrativos</option>
-                                                                                        <option value="605">Sueldos y Salarios e Ingresos Asimilados a Salarios</option>
-                                                                                        <option value="606">Arrendamiento</option>
-                                                                                        <option value="607">Régimen de Enajenación o Adquisición de Bienes</option>
-                                                                                        <option value="608">Demás ingresos</option>
-                                                                                        <option value="610">Residentes en el Extranjero sin Establecimiento Permanente
-                                                                                            en México</option>
-                                                                                        <option value="611">Ingresos por Dividendos (socios y accionistas)</option>
-                                                                                        <option value="612">Personas Físicas con Actividades Empresariales y
-                                                                                            Profesionales</option>
-                                                                                        <option value="614">Ingresos por intereses</option>
-                                                                                        <option value="615">Régimen de los ingresos por obtención de premios</option>
-                                                                                        <option value="616">Sin obligaciones fiscales</option>
-                                                                                        <option value="620">Sociedades Cooperativas de Producción que optan por diferir
-                                                                                            sus ingresos</option>
-                                                                                        <option value="621">Incorporación Fiscal</option>
-                                                                                        <option value="622">Actividades Agrícolas, Ganaderas, Silvícolas y Pesqueras
-                                                                                        </option>
-                                                                                        <option value="623">Opcional para Grupos de Sociedades</option>
-                                                                                        <option value="624">Coordinados</option>
-                                                                                        <option value="625">Régimen de las Actividades Empresariales con ingresos a
-                                                                                            través de Plataformas Tecnológicas</option>
-                                                                                        <option value="626">Régimen Simplificado de Confianza</option>
-                                                                                    </select>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-                                                                                    <div class="mb-4">
-                                                                                        <label class="txt-obscuro f-semibold" for="constancia">Sube tu constancia fiscal*</label>
-                                                                                        <input required type="file" id="constancia_fiscal" name="constancia_fiscal" class="form-control addimg mb-2"  accept="application/pdf"/>
-                                                                                    </div>
+                                                                            </div>
+                                                                            <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                                                                <div class="mb-4">
+                                                                                    <label for="estadoEnvio" class="form-label">Estado*</label>
+                                                                                    <input type="text" class="form-control text" id="estadoEnvio" name="estadoEnvio" aria-describedby="" required>
                                                                                 </div>
                                                                             </div>
                                                                         </div>
-                                                                      </div>
+                                                                        <div class="mb-4">
+                                                                            <label for="instrucciones" class="form-label">Instrucciones adicionales para acceder al domicilio*</label>
+                                                                            <input type="text" class="form-control" id="instrucciones" name="instrucciones" aria-describedby="" required >
+                                                                        </div>
                                                                     </div>
                                                                 </div>
-                                                                
-                                                                
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12 col-sm-12 col-md-12 col-lg-3"></div>
+                                            <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                                <div class="mx-2">
+                                                    <div class="accordion" id="accordionPanelsStayOpenExample">
+                                                        <div class="accordion-item">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input chkAll" type="checkbox" value="" id="chkFactura" name="chkFactura" data-bs-target="#panelsStayOpen-collapseTwo" data-bs-toggle="collapse" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                                                <label class="form-check-label pb-2" for="chkFactura" id="btnFactura" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                                                    Requiero factura
+                                                                </label>
+                                                                <input type="hidden" id="factura" name="factura" value="No">
+                                                            </div>
+                                                            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                                                                <div class="accordion-body ms-3">
+                                                                    <div class="row">
+                                                                        <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                                                            <div class="mb-4">
+                                                                                <label for="razonSocial" class="form-label">Nombre o Razón Social</label>
+                                                                                <input type="text" class="form-control text" id="razonSocial" name="razonSocial" aria-describedby="" required >
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                                                            <div class="mb-4">
+                                                                                <label for="rfc" class="form-label">RFC*</label>
+                                                                                <input type="text" class="form-control" id="rfc" name="rfc" aria-describedby="" required>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                                                            <div class="mb-4">
+                                                                                <label for="calleFactura" class="form-label">Calle*</label>
+                                                                                <input type="text" class="form-control" id="calleFactura" name="calleFactura" aria-describedby="" required>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                                                            <div class="mb-4">
+                                                                                <label for="coloniaFactua" class="form-label">Colonia*</label>
+                                                                                <input type="text" class="form-control" id="coloniaFactua" name="coloniaFactura" aria-describedby="" required >
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                                                            <div class="mb-4">
+                                                                                <label for="numExteriorFactura" class="form-label">Número exterior*</label>
+                                                                                <input type="text" class="form-control number" id="numExteriorFactura" name="numExteriorFactura" aria-describedby="" required>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                                                            <div class="mb-4">
+                                                                                <label for="numInteriorFactura" class="form-label">Número interior</label>
+                                                                                <input type="text" class="form-control number" id="numInteriorFactura" name="numInteriorFactura" aria-describedby="">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                                                            <div class="mb-4">
+                                                                                <label for="cpFactutra" class="form-label">Código Postal*</label>
+                                                                                <input type="text" class="form-control number" id="cpFactutra" name="cpFactutra" aria-describedby="" maxlength="5" required >
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                                                            <div class="mb-4">
+                                                                                <label for="ciudadFactura" class="form-label">Ciudad*</label>
+                                                                                <input type="text" class="form-control text" id="ciudadFactura" name="ciudadFactura" aria-describedby="" required>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                                                            <div class="mb-4">
+                                                                                <label for="estadoFactura" class="form-label">Estado*</label>
+                                                                                <input type="text" class="form-control text" id="estadoFactura" name="estadoFactura" aria-describedby="" required>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                                                            <div class="mb-4">
+                                                                                <label for="paisFactura" class="form-label">País*</label>
+                                                                                <input type="text" class="form-control text" id="paisFactura" name="paisFactura" aria-describedby="" required>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                                                            <div class="mb-4">
+                                                                                <label for="emailFactura" class="form-label">Correo electrónico*</label>
+                                                                                <input type="email" class="form-control" id="emailFactura" name="emailFactura" aria-describedby="" required>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                                                            <div class="mb-4">
+                                                                                <label for="telefonoFactura" class="form-label">Teléfono*</label>
+                                                                                <input type="text" class="form-control number" id="telefonoFactura" maxlength="10" name="telefonoFactura" aria-describedby="" required>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                                                            <div class="mb-4">
+                                                                                <label for="exampleInputEmail1" class="form-label">Uso del CFDI*</label>
+                                                                                <select required class="form-select f-italic bg-obscuro txt-blanco t-s"
+                                                                                aria-label="Default select example" name="cfdi" id="cfdi">
+                                                                                <option value="">Selecciona una opción</option>
+                                                                                <option value="G01">Adquisición de mercancías.</option>
+                                                                                <option value="G02">Devoluciones, descuentos o bonificaciones.</option>
+                                                                                <option value="G03">Gastos en general.</option>
+                                                                                <option value="I01">Construcciones.</option>
+                                                                                <option value="I02">Mobiliario y equipo de oficina por inversiones.</option>
+                                                                                <option value="I03">Equipo de transporte.</option>
+                                                                                <option value="I04">Equipo de computo y accesorios.</option>
+                                                                                <option value="I05">Dados, troqueles, moldes, matrices y herramental.</option>
+                                                                                <option value="I06">Comunicaciones telefónicas.</option>
+                                                                                <option value="I07">Comunicaciones satelitales.</option>
+                                                                                <option value="I08">Otra maquinaria y equipo.</option>
+                                                                                <option value="D01">Honorarios médicos, dentales y gastos hospitalarios.
+                                                                                </option>
+                                                                                <option value="D02">Gastos médicos por incapacidad o discapacidad.</option>
+                                                                                <option value="D03">Gastos funerales.</option>
+                                                                                <option value="D04">Donativos.</option>
+                                                                                <option value="D05">Intereses reales efectivamente pagados por créditos
+                                                                                    hipotecarios (casa habitación).</option>
+                                                                                <option value="D06">Aportaciones voluntarias al SAR.</option>
+                                                                                <option value="D07">Primas por seguros de gastos médicos.</option>
+                                                                                <option value="D08">Gastos de transportación escolar obligatoria.</option>
+                                                                                <option value="D09">Depósitos en cuentas para el ahorro, primas que tengan como
+                                                                                    base planes de pensiones.</option>
+                                                                                <option value="D10">Pagos por servicios educativos (colegiaturas).</option>
+                                                                                <option value="S01">Sin efectos fiscales.</option>
+                                                                                <option value="CP01">Pagos.</option>
+                                                                                <option value="CN01">Nómina.</option>
+                                                                            </select>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                                                            <div class="mb-4">
+                                                                                <label for="exampleInputEmail1" class="form-label">Regimen Fiscal*</label>
+                                                                                <select required class="form-select f-italic bg-obscuro txt-blanco t-s"
+                                                                                aria-label="Default select example" name="regimen_fiscal" id="regimen_fiscal">
+                                                                                <option value="">Selecciona una opción</option>
+                                                                                <option value="601">General de Ley Personas Morales</option>
+                                                                                <option value="603">Personas Morales con Fines no Lucrativos</option>
+                                                                                <option value="605">Sueldos y Salarios e Ingresos Asimilados a Salarios</option>
+                                                                                <option value="606">Arrendamiento</option>
+                                                                                <option value="607">Régimen de Enajenación o Adquisición de Bienes</option>
+                                                                                <option value="608">Demás ingresos</option>
+                                                                                <option value="610">Residentes en el Extranjero sin Establecimiento Permanente
+                                                                                    en México</option>
+                                                                                <option value="611">Ingresos por Dividendos (socios y accionistas)</option>
+                                                                                <option value="612">Personas Físicas con Actividades Empresariales y
+                                                                                    Profesionales</option>
+                                                                                <option value="614">Ingresos por intereses</option>
+                                                                                <option value="615">Régimen de los ingresos por obtención de premios</option>
+                                                                                <option value="616">Sin obligaciones fiscales</option>
+                                                                                <option value="620">Sociedades Cooperativas de Producción que optan por diferir
+                                                                                    sus ingresos</option>
+                                                                                <option value="621">Incorporación Fiscal</option>
+                                                                                <option value="622">Actividades Agrícolas, Ganaderas, Silvícolas y Pesqueras
+                                                                                </option>
+                                                                                <option value="623">Opcional para Grupos de Sociedades</option>
+                                                                                <option value="624">Coordinados</option>
+                                                                                <option value="625">Régimen de las Actividades Empresariales con ingresos a
+                                                                                    través de Plataformas Tecnológicas</option>
+                                                                                <option value="626">Régimen Simplificado de Confianza</option>
+                                                                            </select>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                                                            <div class="mb-4">
+                                                                                <label class="txt-obscuro f-semibold" for="constancia">Sube tu constancia fiscal*</label>
+                                                                                <input required type="file" id="constancia_fiscal" name="constancia_fiscal" class="form-control addimg mb-2"  accept="application/pdf"/>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
