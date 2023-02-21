@@ -57,7 +57,7 @@ Route::get('factura', FacturacionController::class, 'index')->name('licencia.ped
 
 //PROCESO COMPRA
 Route::get('procesoCompra', procesoCompraController::class, 'index')->name('procesoCompra');
-Route::get('checkout', checkoutController::class, 'index')->name('checkout');
+Route::get('checkout/{producto}/{pedido}', checkoutController::class, 'index')->name('checkout');
 
 
 // Agregar //

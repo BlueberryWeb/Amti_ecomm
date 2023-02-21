@@ -51,7 +51,7 @@ return new class extends Migration
             $table->string('description'); //Sugerencia: Borrar (productos ya cuenta con esta información).
             $table->string('tarjeta');
             $table->string('tarjeta_name');
-            $table->double('pago'); //Sugerencia: Borrar (productos ya cuenta con esta información).
+            $table->string('pago'); //Sugerencia: Borrar (productos ya cuenta con esta información).
             $table->double('total');
 
             //Datos Facturación
