@@ -17,7 +17,7 @@
                         <div class="row">
                             <div class="col-12 col-sm-12 col-md-12 col-lg-4">
                                 <div class="video-modal">
-                                    <video controls class="video-bg_video">
+                                    <video controls class="video-bg_video" id="video">
                                         <source src="https://res.cloudinary.com/dhigl3clg/video/upload/v1676310984/amtiEcommerce/VIDEOS/Amti_Funciona_ep9czf.mp4" type="video/mp4">
                                     </video>
                                     <div class="text-center my-3">
@@ -28,7 +28,7 @@
                             </div>
                             <div class="col-12 col-sm-12 col-md-12 col-lg-4">
                                 <div class="video-modal">
-                                    <video controls class="video-bg_video">
+                                    <video controls class="video-bg_video" id="video2">
                                         <source src="https://res.cloudinary.com/dhigl3clg/video/upload/v1676311019/amtiEcommerce/VIDEOS/AMTI_Tramite_embdtt.mp4" type="video/mp4">
                                     </video>
                                     <div class="text-center my-3">
@@ -39,7 +39,7 @@
                             </div>
                             <div class="col-12 col-sm-12 col-md-12 col-lg-4">
                                 <div class="video-modal">
-                                    <video controls class="video-bg_video">
+                                    <video controls class="video-bg_video" id="video3">
                                         <source src="https://res.cloudinary.com/dhigl3clg/video/upload/v1676311036/amtiEcommerce/VIDEOS/AMTI_Pagar_kdepqt.mp4" type="video/mp4">
                                     </video>
                                     <div class="text-center my-3">

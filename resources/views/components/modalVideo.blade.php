@@ -10,7 +10,7 @@
                             <i class="fa-solid fa-xmark"></i>
                         </button>
                     </div>
-                    <video controls class="video-bg_video">
+                    <video controls class="video-bg_video" id="video">
                         <source src="https://res.cloudinary.com/dhigl3clg/video/upload/v1676311073/amtiEcommerce/VIDEOS/Amti_full_wqrtlt.mp4" type="video/mp4">
                     </video>
                 </div>

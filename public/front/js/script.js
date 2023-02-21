@@ -112,7 +112,12 @@ for (i = 0; i < accord.length; i++) {
         this.nextElementSibling.classList.toggle("show");
     }
 }
-
+// PONER PAUSA A EL VIDEO AL SALIR DEL MODAL  
+$('button').click(function(){ //agrego la funcion click a las etiquetas "button" para que al cerrar el modal pongan pausa al video, como vez utilice la etiqueta <video> y con el id del div utilizo la función pause();        
+  $('#video').get(0).pause();
+  $('#video2').get(0).pause();
+  $('#video3').get(0).pause();
+});
 //CARROUSEL DE OPINIONES
 let x = 0;
 let p = -10;
