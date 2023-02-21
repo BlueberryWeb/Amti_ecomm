@@ -247,17 +247,14 @@ BOTONES
 **************/
 .btn-bordes-azul{
     border: 1px solid #56D4E3;
-    background: transparent;
     width: 200px;
 }
 .btn-bordes-azul:hover{
     border: 1px solid #56D4E3;
-    background: transparent;
     width: 200px;
 }
 .btn-bordes-azul:focus{
     border: 1px solid #56D4E3;
-    background: transparent;
     width: 200px;
 }
 .btn-bordes-azul i{

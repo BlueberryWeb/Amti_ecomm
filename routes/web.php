@@ -57,7 +57,11 @@ Route::get('factura', FacturacionController::class, 'index')->name('licencia.ped
 
 //PROCESO COMPRA
 Route::get('procesoCompra', procesoCompraController::class, 'index')->name('procesoCompra');
+
+
+Route::post('pedido/tarjeta', [checkoutController::class, 'payT'])->name('pedido.tarjeta');
 Route::get('checkout/{producto}/{pedido}', checkoutController::class, 'index')->name('checkout');
+
 
 
 // Agregar //

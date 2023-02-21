@@ -160,7 +160,7 @@
                     <div class="mb-4">
                         <h4 class="bold txt-color-tit">Envío <b class="txt-azul-oscuro">express</b></h4>
                         <h6 class="top-menu semiBold">$199</h6>
-                        <h6 class="top-menu regular txt-color-parrafo">5 - 7 días hábiles</h6>
+                        <h6 class="top-menu regular txt-color-parrafo">1 - 2 días hábiles</h6>
                     </div>
                     <div class="mb-4">
                         <h4 class="bold txt-color-tit">Recoger en <b class="txt-azul-oscuro">sucursal</b></h4>
