@@ -80,7 +80,7 @@
                                 <h1 class="txt-azul-oscuro titulos bold">Guadalajara</h1>
                                 <div class="my-4 parrafos txt-color-parrafo">
                                     <div class="mb-4">
-                                        <a href="https://goo.gl/maps/2KwUDyvY4ywRFFma6" class="a_none_style txt-color-parrafo">
+                                        <a href="https://goo.gl/maps/sa77LNkDxsG96Nmo6" class="a_none_style txt-color-parrafo" target="_blank">
                                             <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310974/amtiEcommerce/icono-ubi-azul_zotx3g.png" alt="" class="img-fluid icon-suc float-start mb-3"/>
                                             <h6 class="regular top-menu txt-color-parrafo">Av. Rubén Darío #586 int.8, Lomas de </h6>
                                             <h6 class="regular top-menu txt-color-parrafo">Guevara, CP: 44657 Guadalajara, Jal.</h6>
@@ -112,7 +112,7 @@
                                 <h1 class="txt-azul-oscuro titulos bold">Monterrey</h1>
                                 <div class="my-4 parrafos txt-color-parrafo">
                                     <div class="mb-4">
-                                        <a href="https://goo.gl/maps/PSjpMpWCMuRc7zgEA" class="a_none_style txt-color-parrafo" target="_blank">
+                                        <a href="https://goo.gl/maps/4PbNimg6pkhDrRgq9" class="a_none_style txt-color-parrafo" target="_blank">
                                             <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310974/amtiEcommerce/icono-ubi-azul_zotx3g.png" alt="" class="img-fluid icon-suc float-start mb-3"/>
                                             <h6 class="regular top-menu txt-color-parrafo">Av. Dr. José Eleuterio González 250, Planta  </h6>
                                             <h6 class="regular top-menu txt-color-parrafo">Alta , San Jerónimo, 64634 Monterrey, N.L.</h6>
@@ -144,7 +144,7 @@
                                 <h1 class="txt-azul-oscuro titulos bold">Ciudad de México</h1>
                                 <div class="my-4 parrafos txt-color-parrafo">
                                     <div class="mb-4">
-                                        <a href="https://goo.gl/maps/nqMYVTjAG8voMDGL9" class="a_none_style txt-color-parrafo" target="_blank">
+                                        <a href="https://goo.gl/maps/md8kcMi73iA7ALxZ6" class="a_none_style txt-color-parrafo" target="_blank">
                                             <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310974/amtiEcommerce/icono-ubi-azul_zotx3g.png" alt="" class="img-fluid icon-suc float-start mb-3"/>
                                             <h6 class="regular top-menu txt-color-parrafo">Av. Presidente Masaryk #61, Piso 9 Col. </h6>
                                             <h6 class="regular top-menu txt-color-parrafo">Polanco V secc, CP 11560, CDMX.</h6>

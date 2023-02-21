@@ -49,7 +49,7 @@
                         <div class="col-12 col-sm-12 col-md-12 col-lg-1"></div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-5">
                             <div class="text-center">
-                                <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310984/amtiEcommerce/licencia-libro_wcfj4e.png" alt="Ilustración libro y licencia" class="img-fluid"/>
+                                <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676988817/amtiEcommerce/Booklet-2_mg8mbs.png" alt="Ilustración libro y licencia" class="img-fluid"/>
                             </div>
                         </div>
                     </div>
@@ -64,7 +64,7 @@
         <div class="row">
             <div class="col-12 col-sm-12 col-md-12 col-lg-7">
                 <div class="p-0">
-                    <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310984/amtiEcommerce/licencia-digital_hwt4po.png" alt="Ilustración de licencia digital" class="img-fluid"/>
+                    <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676988817/amtiEcommerce/booklet-photo_xi0y1l.png" alt="Ilustración de licencia digital" class="img-fluid"/>
                 </div>
             </div>
             <div class="col-12 col-sm-12 col-md-12 col-lg-5">
@@ -208,7 +208,7 @@
                                 </div>
                             </div>
                             <div class="col-12 col-sm-12 col-md-12 col-lg-5">
-                                <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310981/amtiEcommerce/licencia-libro-2_f96jr1.png" alt="" class="img-fluid"/>
+                                <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676988816/amtiEcommerce/Booklet-3_i7omzy.png" alt="" class="img-fluid"/>
                                 <h6 class="text-white regular parrafo text-center">Cubierta de cuero de alta calidad</h6>
                             </div>
                         </div>

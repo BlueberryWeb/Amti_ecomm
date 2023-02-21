@@ -91,8 +91,6 @@
                                 Italia.
                             </p>
                         </div>
-                    </div>
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
                         <div class="mb-3">
                             <h1 class="bold txt-azul-oscuro big">J</h1>
                             <p class="regular txt-color-parrafo parrafos">
@@ -112,6 +110,8 @@
                                 Luxemburgo.
                             </p>
                         </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
                         <div class="mb-3">
                             <h1 class="bold txt-azul-oscuro big">M</h1>
                             <p class="regular txt-color-parrafo parrafos">
@@ -146,6 +146,50 @@
                             <h1 class="bold txt-azul-oscuro big">Q</h1>
                             <p class="regular txt-color-parrafo parrafos">
                                 Qatar
+                            </p>
+                        </div>
+                        <div class="mb-3">
+                            <h1 class="bold txt-azul-oscuro big">R</h1>
+                            <p class="regular txt-color-parrafo parrafos">
+                                Reino Unido, Rep. Dominicana, República Checa, Rumania, Rusia, Ruanda.
+                            </p>
+                        </div>
+                        <div class="mb-3">
+                            <h1 class="bold txt-azul-oscuro big">S</h1>
+                            <p class="regular txt-color-parrafo parrafos">
+                                San Marino, Santo Tomé, Senegal, Seychelles, Sierra Leona, Singapur, 
+                                Siria, Sri Lanka, Sudáfrica, Sudán, Suecia, Suiza, Surinam, Swaziland.
+                            </p>
+                        </div>
+                        <div class="mb-3">
+                            <h1 class="bold txt-azul-oscuro big">T</h1>
+                            <p class="regular txt-color-parrafo parrafos">
+                                Tailandia, Taiwan, Tajikistan, Tanzania, Togo, Trinidad y Tobago, Túnez, 
+                                Turkmenistán, Turquía.
+                            </p>
+                        </div>
+                        <div class="mb-3">
+                            <h1 class="bold txt-azul-oscuro big">U</h1>
+                            <p class="regular txt-color-parrafo parrafos">
+                                Ucrania, Uganda, Uruguay, Uzbekistán.
+                            </p>
+                        </div>
+                        <div class="mb-3">
+                            <h1 class="bold txt-azul-oscuro big">V</h1>
+                            <p class="regular txt-color-parrafo parrafos">
+                                Venezuela, Vietnam.
+                            </p>
+                        </div>
+                        <div class="mb-3">
+                            <h1 class="bold txt-azul-oscuro big">Y</h1>
+                            <p class="regular txt-color-parrafo parrafos">
+                                Yemen.
+                            </p>
+                        </div>
+                        <div class="mb-3">
+                            <h1 class="bold txt-azul-oscuro big">Z</h1>
+                            <p class="regular txt-color-parrafo parrafos">
+                                Zambia.
                             </p>
                         </div>
                     </div>
