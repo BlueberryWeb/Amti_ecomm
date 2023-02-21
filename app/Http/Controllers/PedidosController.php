@@ -13,8 +13,9 @@ use Illuminate\Support\Facades\Validator;
 
 class PedidosController extends Controller
 {
-    public function _invoke() {
-        //
+    public function _invoke(Productos $producto) {
+   
+        
     }
 
 
@@ -63,6 +64,7 @@ class PedidosController extends Controller
         // }
 
         try{
+            // dd($request);
             $imagen = $request->file('identificacionFrente')->store('public/imagenes');
             $urlIdentificacionFrente = Storage::url($imagen);
             $imagen = $request->file('identeificacionVuelta')->store('public/imagenes');
@@ -91,34 +93,37 @@ class PedidosController extends Controller
             $pedidos->tipo_medida = $request->medida;
             $pedidos->color_ojos = $request->color_ojos;
             $pedidos->color_cabello = $request->colorCabello;
-            $id_envio = Envios::where('nombre', $request->tipoEnvio)->first();
-            $pedidos->id_envio = $id_envio->id;
-            $pedidos->nombre = $request->nombreEnvio;
-            $pedidos->telefono = $request->telefonoEnvio;
-            $pedidos->correo = $request->correoEnvio;
-            $pedidos->calle = $request->calleEnvio .  ' #' . $request->numExteriorEnvio . ' ' . $request->coloniaEnvio . $request->numInteriorEnvio != '' ? ' Int. ' . $request->numInteriorEnvio : '';
-            $pedidos->ciudad = $request->ciudadEnvio;
-            $pedidos->cp = $request->cpEnvio;
-            $pedidos->instrucciones = $request->instrucciones;
             $pedidos->frente_ine = $urlIdentificacionFrente;
             $pedidos->vuelta_ine = $urlIdentificacionVuelta;
             $pedidos->frente_licencia = $urlLicenciaFrente;
             $pedidos->vuelta_licencia = $urlLicenciaVulta;
             $pedidos->personal_frente = $urlPersonalFrente;
             $pedidos->fotografia_firma = $urlFirma;
-            $id_producto = Productos::where('vigencia', $request->vigenciaSent)->first();
-            $pedidos->id_producto = $id_producto->id;
+            $envio = Envios::where('nombre', $request->tipoEnvio)->first();
+            $pedidos->id_envio = $envio->id;
+            $pedidos->nombre = $request->tipoEnvio == 3 ? $request->nombreEnvio : "";
+            $pedidos->telefono = $request->tipoEnvio == 3 ? $request->telefonoEnvio : "";
+            $pedidos->correo = $request->tipoEnvio == 3 ? $request->correoEnvio : "";
+            $pedidos->calle = $request->tipoEnvio == 3 ? ($request->calleEnvio .  ' #' . $request->numExteriorEnvio . ' ' . $request->coloniaEnvio . $request->numInteriorEnvio != '' ? ' Int. ' . $request->numInteriorEnvio : '') : "";
+            $pedidos->ciudad = $request->tipoEnvio == 3 ? $request->ciudadEnvio : "";
+            $pedidos->cp = $request->tipoEnvio == 3 ? $request->cpEnvio : "";
+            $pedidos->instrucciones = $request->instrucciones;
+            $producto = Productos::where('vigencia', $request->vigenciaSent)->first();
+            $pedidos->id_producto = $producto->id;
             $pedidos->description = "";
             $pedidos->tarjeta = "";
             $pedidos->tarjeta_name = "";
-            $pedidos->pago = 0;
-            $pedidos->total = 0;
+            $pedidos->pago = 'Indefinido';
+            $pedidos->total = (int)str_replace(',', '', $producto->precio) + (int)$envio->precio;
             $pedidos->id_factura = 0;
             $pedidos->save();
-
             $ultimoPedido = Pedidos::latest('id')->first();
 
-            if( $request->factura == 'No') return redirect()->route('checkout', $ultimoPedido->id);
+            if( $request->factura == 'No') {
+                return redirect()->route('checkout', ['producto' => $producto, 'pedido' => $ultimoPedido]);
+                // return redirect()->route('checkout')->with( ['idProducto' => 'producto'] );
+            }
+
         }
         catch(\Exception $e){
             return redirect()->back()->with('error', 'Error en la alta del pedido.');
@@ -153,7 +158,9 @@ class PedidosController extends Controller
                 $ultimaFactura = Facturacion::latest('id')->first();
                 Pedidos::select('id_factura')->where('id', $ultimoPedido->id)->update(['id_factura' => $ultimaFactura->id]);
 
-                return redirect()->route('checkout', $ultimoPedido->id);
+ 
+                return redirect()->route('checkout', ['producto' => $producto, 'pedido' => $ultimoPedido]);
+
             }
             catch(\Exception $e){
                 return redirect()->back()->with('error', 'Error en la alta del pedido.');

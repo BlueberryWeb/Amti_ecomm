@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Pedidos;
-
+use App\Models\Productos;
 use Illuminate\Http\Request;
 use Stripe\Stripe;
 use Stripe\Charge;
@@ -40,5 +40,6 @@ class checkoutController extends Controller
             ]);
             
             return view('Flujo.success');
+
     }
 }

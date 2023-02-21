@@ -22,17 +22,17 @@ class ProductosSeeder extends Seeder
             [
                 'nombre' => 'Permiso internacional',
                 'vigencia' => '1',
-                'precio' => '1450'
+                'precio' => '1,450'
             ],
             [
                 'nombre' => 'Permiso internacional',
                 'vigencia' => '3',
-                'precio' => '2700'
+                'precio' => '2,700'
             ],
             [
                 'nombre' => 'Permiso internacional',
                 'vigencia' => '5',
-                'precio' => '3700'
+                'precio' => '3,700'
             ],
 
         ];
