@@ -80,7 +80,7 @@ class PedidosController extends Controller
             $urlFirma= Storage::url($imagen);
             
             $pedidos = new Pedidos();
-            $pedidos->estatus = 'Exitoso';
+            $pedidos->estatus = 'Pendiente';
             $pedidos->factura = $request->factura;
             $ultimoProspecto = Prospectos::latest('id')->first();
             $pedidos->id_prospecto = $ultimoProspecto->id;
@@ -116,7 +116,9 @@ class PedidosController extends Controller
             $pedidos->id_factura = 0;
             $pedidos->save();
 
-            if( $request->factura == 'No') return redirect()->route('checkout');
+            $ultimoPedido = Pedidos::latest('id')->first();
+
+            if( $request->factura == 'No') return redirect()->route('checkout', $ultimoPedido->id);
         }
         catch(\Exception $e){
             return redirect()->back()->with('error', 'Error en la alta del pedido.');
@@ -151,7 +153,7 @@ class PedidosController extends Controller
                 $ultimaFactura = Facturacion::latest('id')->first();
                 Pedidos::select('id_factura')->where('id', $ultimoPedido->id)->update(['id_factura' => $ultimaFactura->id]);
 
-                return redirect()->route('checkout');
+                return redirect()->route('checkout', $ultimoPedido->id);
             }
             catch(\Exception $e){
                 return redirect()->back()->with('error', 'Error en la alta del pedido.');

@@ -38,14 +38,14 @@
                         <h1 class="bold big">de <b class="txt-azul">conducir internacional?</b></h1>
                         <div class="d-none d-sm-none d-md-block">
                             <div class="my-4 regular parrafos">
-                                <p>La licencia internacional de conducir es un documento oficial que </p>
+                                <p>La licencia internacional de conducir es un documento que </p>
                                 <p>funciona como una extensión de tu licencia nacional en países </p>
                                 <p>extranjeros.</p>
                             </div>
                         </div>
                         <div class="d-block d-sm-block d-md-none">
                             <div class="my-4 regular parrafos">
-                                <p>La licencia internacional de conducir es un documento oficial que 
+                                <p>La licencia internacional de conducir es un documento que 
                                     funciona como una extensión de tu licencia nacional en países 
                                     extranjeros.</p>
                             </div>
@@ -54,8 +54,8 @@
                         <div class="d-none d-sm-none d-md-block">
                             <div class="regular parrafos">
                                 <p>El <b class="bold">International Driver’s Document</b>  traduce tu licencia al idioma </p>
-                                <p>hablado y escrito en el país de destino para que pueda ser entendido </p>
-                                <p>allí. Cuenta con un folleto y una tarjeta de identificación no </p>
+                                <p>hablado y escrito en el país de destino para que pueda ser entendido.</p>
+                                <p>Cuenta con un libro y una tarjeta de identificación no </p>
                                 <p>gubernamental traducida en más de 9 idiomas (portugués, chino, </p>
                                 <p>alemán, español, francés, inglés, árabe, italiano y ruso).</p>
                             </div>
@@ -63,8 +63,8 @@
                         <div class="d-block d-sm-block d-md-none">
                             <div class="regular parrafos">
                                 <p>El <b class="bold">International Driver’s Document</b>  traduce tu licencia al idioma 
-                                    hablado y escrito en el país de destino para que pueda ser entendido 
-                                    allí. Cuenta con un folleto y una tarjeta de identificación no 
+                                    hablado y escrito en el país de destino para que pueda ser entendido. 
+                                    Cuenta con un libro y una tarjeta de identificación no 
                                     gubernamental traducida en más de 9 idiomas (portugués, chino, 
                                     alemán, español, francés, inglés, árabe, italiano y ruso).</p>
                             </div>

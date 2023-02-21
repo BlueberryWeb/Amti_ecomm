@@ -1011,6 +1011,12 @@
                                                                 <div class="form-check pt-2">
                                                                     <input class="form-check-input" type="checkbox" value="" id="terminos" name="terminos" required>
                                                                     <label class="form-check-label" for="terminos">
+                                                                       Confirmo que mis datos estan correctos
+                                                                    </label>
+                                                                  </div>
+                                                                <div class="form-check pt-2">
+                                                                    <input class="form-check-input" type="checkbox" value="" id="terminos" name="terminos" required>
+                                                                    <label class="form-check-label" for="terminos">
                                                                         He leído y acepto los 
                                                                         <a class="txt-color-parrafo a_none_style a_hover_style" href="{{ route('terminos') }}" target="_blank"><u>términos y condiciones.</u> </a>
                                                                     </label>

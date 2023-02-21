@@ -173,6 +173,13 @@
                                 alt="..." width="80">
                         </div>
                     </div>
+                    <div class="col-6 py-2 px-3">
+                        <h4> <b style="color: #163B5B">Firma: </b> </h4>
+                        <div class="card card-body">
+                            <img src="{{ $pedido->fotografia_firma }}" class="rounded mx-auto d-block"
+                                alt="..." width="80">
+                        </div>
+                    </div>
                 </div>
 
             </div>
