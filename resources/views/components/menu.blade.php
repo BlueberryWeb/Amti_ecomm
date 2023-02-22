@@ -59,7 +59,7 @@
                 </ul>
                 <div class="d-flex">
                     <div class="">
-                        <a href="{{ route('procesoCompra')  }}" class="btn btn-primary btn-bordes-azul">Tamitar mi licencia</a>
+                        <a href="{{ route('procesoCompra')  }}" class="btn text-light btn-bordes-azul">Tamitar mi licencia</a>
                     </div>
                     <div class="ms-4 bolsa">
                         <a href="{{ route('procesoCompra')  }}" class="a_none_style text-white">

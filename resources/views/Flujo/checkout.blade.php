@@ -24,7 +24,7 @@
                 <div class="col-12 col-sm-12 col-md-12 col-lg-2">
                     <div class="">
                         <a href="https://api.whatsapp.com/send?phone=525540324042"
-                            class="btn btn-primary btn-bordes-azul regular" target="_blank">
+                            class="btn text-light btn-bordes-azul regular" target="_blank">
                             <i class="fa-brands fa-whatsapp me-3"></i> 55 4032 4042
                         </a>
                     </div>
@@ -268,6 +268,7 @@
                                                 <div id="panelsStayOpen-efectivo" class="accordion-collapse collapse"
                                                     aria-labelledby="panelsStayOpen-headingTwo">
                                                     <div class="accordion-body ms-3">
+                                                        <small>* Recuerda que solo puedes realizar un pago por referencia</small>
                                                         <form id="payment-form">
                                                             <input type="hidden" name="total" value="3700">
                                                             <div class="form-group">

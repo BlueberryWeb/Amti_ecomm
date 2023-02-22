@@ -53,10 +53,10 @@
                         
                         <div class="d-none d-sm-none d-md-block">
                             <div class="regular parrafos">
-                                <p>El <b class="bold">International Driver’s Document</b>  traduce tu licencia al idioma </p>
+                                <p>El <b class="bold">International Driving Permit (IDP)</b>  traduce tu licencia al idioma </p>
                                 <p>hablado y escrito en el país de destino para que pueda ser entendido.</p>
-                                <p>Cuenta con un libro y una tarjeta de identificación no </p>
-                                <p>gubernamental traducida en más de 9 idiomas (portugués, chino, </p>
+                                <p>Cuenta con un libro y una tarjeta de identificación </p>
+                                <p>traducida en más de 9 idiomas (portugués, chino, </p>
                                 <p>alemán, español, francés, inglés, árabe, italiano y ruso).</p>
                             </div>
                         </div>
@@ -145,19 +145,19 @@
                         <h1 class="txt-azul-oscuro titulos bold">Ginebra (1949)</h1>
                         <div class="d-none d-sm-none d-md-block">
                             <div class="my-4 parrafos txt-color-parrafo">
-                                <p>Capítulo III del Reglamento General de  </p>
-                                <p>Conductores.</p>
                                 <p>Convenio Internacional de Ginebra de 19 de </p>
                                 <p>septiembre de 1949.</p>
+                                <p>Capítulo III del Reglamento General de  </p>
+                                <p>Conductores.</p>
                                 <p>Capítulo XI: Transportes y comunicaciones.</p>
                             </div>
                         </div>
                         <div class="d-block d-sm-block d-md-none">
                             <div class="my-4 parrafos txt-color-parrafo">
-                                <p>Capítulo III del Reglamento General de  
-                                    Conductores.
-                                    Convenio Internacional de Ginebra de 19 de  
+                                <p> Convenio Internacional de Ginebra de 19 de  
                                     septiembre de 1949.
+                                    Capítulo III del Reglamento General de  
+                                    Conductores.
                                     Capítulo XI: Transportes y comunicaciones.</p>
                             </div>
                         </div>
@@ -170,8 +170,8 @@
                 <div class="cuadro-avalado py-5">
                     <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310993/amtiEcommerce/num-3_apkhwa.png" alt="3" class="img-fluid num-avalado"/>
                     <div class="mx-5">
-                        <h1 class="txt-color-tit titulos bold">A través del</h1>
-                        <h1 class="txt-azul-oscuro titulos bold">Gobierno de México</h1>
+                        <h1 class="txt-color-tit titulos bold">Gobierno de</h1>
+                        <h1 class="txt-azul-oscuro titulos bold">México</h1>
                         <div class="d-none d-sm-none d-md-block">
                             <div class="my-4 parrafos txt-color-parrafo">
                                 <p>El permiso internacional es un permiso </p>
@@ -233,7 +233,7 @@
                                         <div class="regular parrafo txt-idp mb-5">
                                             <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310975/amtiEcommerce/icono-vigencia_fqhhol.png" alt="" class="img-fluid float-start icono-beneficios"/>
                                             <h6 class="">Vigencia de</h6>
-                                            <h6 class="regular">1-5 años </h6>
+                                            <h6 class="regular">1, 3 y 5 años </h6>
                                         </div>
                                         <div class="regular parrafo txt-idp mb-5">
                                             <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310972/amtiEcommerce/icono-normas_ci9an4.png" alt="" class="img-fluid float-start icono-beneficios mb-5"/>
@@ -270,7 +270,7 @@
                                     <h1 class="bold titulos">Tu licencia internacional  <b class="txt-azul">de AMTI</b></h1>
                                     <h1 class="semiBold titulos">asegura tu viaje en el extranjero</h1>
                                     <div class="mt-5">
-                                        <a href="{{ route('procesoCompra') }}" class="btn btn-primary btn-bordes-azul">Tamitar mi licencia</a>
+                                        <a href="{{ route('procesoCompra') }}" class="btn text-light btn-bordes-azul">Tamitar mi licencia</a>
                                     </div>
                                 </div>
                             </div>
@@ -496,7 +496,8 @@
                     <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310974/amtiEcommerce/icono-ubicacion-fondo_lj1npd.png" alt="2" class="img-fluid icono-suc"/>
                     <div class="mx-5">
                         <h1 class="txt-color-tit titulos bold">Sucursal</h1>
-                        <h1 class="txt-azul-oscuro titulos bold">Guadalajara</h1>
+                        <h1 class="txt-azul-oscuro titulos bold">Guadalajara <br></h1>
+                        <br>
                         <div class="my-4 parrafos txt-color-parrafo">
                             <div class="mb-4">
                                 <a href="https://goo.gl/maps/sa77LNkDxsG96Nmo6" class="a_none_style txt-color-parrafo" target="_blank">
@@ -528,7 +529,7 @@
                     <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310974/amtiEcommerce/icono-ubicacion-fondo_lj1npd.png" alt="2" class="img-fluid icono-suc"/>
                     <div class="mx-5">
                         <h1 class="txt-color-tit titulos bold">Sucursal</h1>
-                        <h1 class="txt-azul-oscuro titulos bold">Monterrey</h1>
+                        <h1 class="txt-azul-oscuro titulos bold">Monterrey <br> (OFIC. ALFAO)</h1>
                         <div class="my-4 parrafos txt-color-parrafo">
                             <div class="mb-4">
                                 <a href="https://goo.gl/maps/4PbNimg6pkhDrRgq9" class="a_none_style txt-color-parrafo" target="_blank">
@@ -560,7 +561,7 @@
                     <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310974/amtiEcommerce/icono-ubicacion-fondo_lj1npd.png" alt="2" class="img-fluid icono-suc"/>
                     <div class="mx-5">
                         <h1 class="txt-color-tit titulos bold">Sucursal</h1>
-                        <h1 class="txt-azul-oscuro titulos bold">Ciudad de México</h1>
+                        <h1 class="txt-azul-oscuro titulos bold">Ciudad de México <br> (EDIF. AZUL MASARYK)</h1>
                         <div class="my-4 parrafos txt-color-parrafo">
                             <div class="mb-4">
                                 <a href="https://goo.gl/maps/md8kcMi73iA7ALxZ6" class="a_none_style txt-color-parrafo" target="_blank">

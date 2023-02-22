@@ -77,7 +77,8 @@
                             <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310974/amtiEcommerce/icono-ubicacion-fondo_lj1npd.png" alt="2" class="img-fluid icono-suc"/>
                             <div class="mx-5">
                                 <h1 class="txt-color-tit titulos bold">Sucursal</h1>
-                                <h1 class="txt-azul-oscuro titulos bold">Guadalajara</h1>
+                                <h1 class="txt-azul-oscuro titulos bold">Guadalajara <br></h1>
+                                <br>
                                 <div class="my-4 parrafos txt-color-parrafo">
                                     <div class="mb-4">
                                         <a href="https://goo.gl/maps/sa77LNkDxsG96Nmo6" class="a_none_style txt-color-parrafo" target="_blank">
@@ -109,7 +110,7 @@
                             <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310974/amtiEcommerce/icono-ubicacion-fondo_lj1npd.png" alt="2" class="img-fluid icono-suc"/>
                             <div class="mx-5">
                                 <h1 class="txt-color-tit titulos bold">Sucursal</h1>
-                                <h1 class="txt-azul-oscuro titulos bold">Monterrey</h1>
+                                <h1 class="txt-azul-oscuro titulos bold">Monterrey <br> (OFIC. ALFAO)</h1>
                                 <div class="my-4 parrafos txt-color-parrafo">
                                     <div class="mb-4">
                                         <a href="https://goo.gl/maps/4PbNimg6pkhDrRgq9" class="a_none_style txt-color-parrafo" target="_blank">
@@ -141,7 +142,7 @@
                             <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310974/amtiEcommerce/icono-ubicacion-fondo_lj1npd.png" alt="2" class="img-fluid icono-suc"/>
                             <div class="mx-5">
                                 <h1 class="txt-color-tit titulos bold">Sucursal</h1>
-                                <h1 class="txt-azul-oscuro titulos bold">Ciudad de México</h1>
+                                <h1 class="txt-azul-oscuro titulos bold">Ciudad de México <br> (EDIF. AZUL MASARYK)</h1>
                                 <div class="my-4 parrafos txt-color-parrafo">
                                     <div class="mb-4">
                                         <a href="https://goo.gl/maps/md8kcMi73iA7ALxZ6" class="a_none_style txt-color-parrafo" target="_blank">

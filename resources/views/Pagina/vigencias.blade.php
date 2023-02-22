@@ -30,7 +30,7 @@
                                     <h3 class="semiBold h5">3 años</h3>
                                 </div>
                                 <div class="text-center pt-4 pb-2">
-                                    <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310984/amtiEcommerce/licencia-libro_wcfj4e.png" alt="Ilustración de licencia y libro AMTI" class="img-fluid licencia-vigencia"/>
+                                    <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676988817/amtiEcommerce/Booklet-2_mg8mbs.png" alt="Ilustración de licencia y libro AMTI" class="img-fluid licencia-vigencia"/>
                                 </div>
                                 <div class="mx-4">
                                     <hr/>
@@ -66,7 +66,7 @@
                                     <h3 class="semiBold h5">5 años</h3>
                                 </div>
                                 <div class="text-center pt-4 pb-2">
-                                    <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310984/amtiEcommerce/licencia-libro_wcfj4e.png" alt="Ilustración de licencia y libro AMTI" class="img-fluid licencia-vigencia"/>
+                                    <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676988817/amtiEcommerce/Booklet-2_mg8mbs.png" alt="Ilustración de licencia y libro AMTI" class="img-fluid licencia-vigencia"/>
                                    <div class="etiqueta-recom py-1">
                                         <h6 class="regular top-menu pt-1">
                                             <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310973/amtiEcommerce/icono-recomendada_qlwq7s.png" alt="" class="img-fluid"/>
@@ -109,7 +109,7 @@
                                     <h3 class="semiBold h5">1 años</h3>
                                 </div>
                                 <div class="text-center pt-4 pb-2">
-                                    <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310984/amtiEcommerce/licencia-libro_wcfj4e.png" alt="Ilustración de licencia y libro AMTI" class="img-fluid licencia-vigencia"/>
+                                    <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676988817/amtiEcommerce/Booklet-2_mg8mbs.png" alt="Ilustración de licencia y libro AMTI" class="img-fluid licencia-vigencia"/>
                                 </div>
                                 <div class="mx-4">
                                     <hr/>
@@ -160,7 +160,7 @@
                     <div class="mb-4">
                         <h4 class="bold txt-color-tit">Envío <b class="txt-azul-oscuro">express</b></h4>
                         <h6 class="top-menu semiBold">$199</h6>
-                        <h6 class="top-menu regular txt-color-parrafo">1 - 2 días hábiles</h6>
+                        <h6 class="top-menu regular txt-color-parrafo">1 - 3 días hábiles</h6>
                     </div>
                     <div class="mb-4">
                         <h4 class="bold txt-color-tit">Recoger en <b class="txt-azul-oscuro">sucursal</b></h4>

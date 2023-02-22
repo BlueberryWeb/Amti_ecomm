@@ -24,10 +24,10 @@
                                     332 790 3393
                                 </h6>
                             </a>
-                            <a href="mailto:contacto@amti.mx?Subject=Contactar%20para%20informes%20en%20AMTI" class="a_none_style txt-color-parrafo" target="_blank">
+                            <a href="mailto:ventas@amti.mx?Subject=Contactar%20para%20informes%20en%20AMTI" class="a_none_style txt-color-parrafo" target="_blank">
                                 <h6 class="regular txt-color-parrafo">
                                     <i class="fa-regular fa-envelope me-3 txt-azul-oscuro"></i>
-                                    contacto@amti.mx
+                                    ventas@amti.mx
                                 </h6>
                             </a>
                         </div>

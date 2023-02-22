@@ -4,7 +4,7 @@
             <h1 class="bold txt-color-tit extra">¿Cómo comprar mi</h1>
             <h1 class="bold txt-azul extra">Licencia internacional?</h1>
             <h1 class="regular parrafos txt-color-parrafo">Adquirir tu licencia internacional es muy sencillo, </h1>
-            <h1 class="regular parrafos txt-color-parrafo mb-5">sólo sigue éstos 4 pasos</h1>
+            <h1 class="regular parrafos txt-color-parrafo mb-5">sólo sigue estos 4 pasos</h1>
 
         </div>
     </div>
