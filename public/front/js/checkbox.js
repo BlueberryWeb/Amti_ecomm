@@ -1,16 +1,13 @@
-const resetCheckBox = () => {
-    let checkbox = this.document.getElementsByClassName('checks');
-    let Checked = null;
-    
-    for (let CheckBox of checkbox){
-        CheckBox.onclick = function(){
-          if(Checked!=null){
-          Checked.checked = false;
-          Checked = CheckBox;
-        }
-        Checked = CheckBox;
-      }
-    }
+
+const reset_checbox = (selected, className) => {
+  let checks = document.getElementsByClassName(className);
+
+  for(let check of checks){
+    let id = '#' + check.id;
+    $(id).prop('checked', false);
+  }
+
+  let idSelected = '#' + selected.id
+  $( idSelected ).prop('checked', true)
 }
 
-window.addEventListener('load', resetCheckBox);
