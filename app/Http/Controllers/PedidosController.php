@@ -20,48 +20,6 @@ class PedidosController extends Controller
 
 
     public function agregarPedido(Request $request){
-        // $validator = Validator::make($request->all(), [
-        //     "vigencia" => 'required | string',
-        //     "pais" => 'required | string',
-        //     "estatura" => 'required | string',
-        //     "medida" => 'required | string',
-        //     "sexo" => 'required | string',
-        //     "colorCabello" => 'required | string',
-        //     "calle" => 'required | string',
-        //     "colonia" => 'required | string',
-        //     "numExterior" => 'required | string',
-        //     "ciudad" => 'required | string',
-        //     "estado" => 'required | string',
-        //     "nombreEnvio" => 'required | string',
-        //     "telefonoEnvio" => 'required | string',
-        //     "correoEnvio" => 'required | string',
-        //     "calleEnvio" => 'required | string',
-        //     "coloniaEnvio" => 'required | string',
-        //     "numeroExtEnvio" => 'required | string',
-        //     "ciudadEnvio" => 'required | string',
-        //     "estadoEnvio" => 'required | string',
-        //     "instrucciones" => 'required | string',
-        //     "tipoEnvio" => 'required | string',
-        //     "razonSocial" => 'required | string',
-        //     "rfc" => 'required | string',
-        //     "calleFactura" => 'required | string',
-        //     "coloniaFactua" => 'required | string',
-        //     "numExteriorFactura" => 'required | string',
-        //     "cpFactutra" => 'required | string',
-        //     "ciudadFactura" => 'required | string',
-        //     "estadoFactura" => 'required | string',
-        //     "paisFactura" => 'required | string',
-        //     "emailFactura" => 'required | string',
-        //     "telefonoFactura" => 'required | string',
-        //     "cfdi" => 'required | string',
-        // ]);
-
-        // if($validator->fails()){
-        //     dd($validator->errors()->getMessages());
-        //     return redirect()->back()
-        //     ->with('error_rules', $validator->errors()->getMessages())
-        //     ->withInput();
-        // }
 
         try{
             // dd($request);
@@ -101,13 +59,14 @@ class PedidosController extends Controller
             $pedidos->fotografia_firma = $urlFirma;
             $envio = Envios::where('nombre', $request->tipoEnvio)->first();
             $pedidos->id_envio = $envio->id;
-            $pedidos->nombre = $request->tipoEnvio == 3 ? $request->nombreEnvio : "";
-            $pedidos->telefono = $request->tipoEnvio == 3 ? $request->telefonoEnvio : "";
-            $pedidos->correo = $request->tipoEnvio == 3 ? $request->correoEnvio : "";
-            $pedidos->calle = $request->tipoEnvio == 3 ? ($request->calleEnvio .  ' #' . $request->numExteriorEnvio . ' ' . $request->coloniaEnvio . $request->numInteriorEnvio != '' ? ' Int. ' . $request->numInteriorEnvio : '') : "";
-            $pedidos->ciudad = $request->tipoEnvio == 3 ? $request->ciudadEnvio : "";
-            $pedidos->cp = $request->tipoEnvio == 3 ? $request->cpEnvio : "";
+            $pedidos->nombre = $request->nombreEnvio;
+            $pedidos->telefono = $request->telefonoEnvio;
+            $pedidos->correo = $request->correoEnvio;
+            $pedidos->calle = $request->calleEnvio .  ' #' . $request->numExteriorEnvio . ' ' . $request->coloniaEnvio . $request->numInteriorEnvio != '' ? ' Int. ' . $request->numInteriorEnvio : '';
+            $pedidos->ciudad = $request->ciudadEnvio;
+            $pedidos->cp = $request->cpEnvio;
             $pedidos->instrucciones = $request->instrucciones;
+            $pedidos->sucursal_entrega =  $request->sucursalEntrega;
             $producto = Productos::where('vigencia', $request->vigenciaSent)->first();
             $pedidos->id_producto = $producto->id;
             $pedidos->description = "";
@@ -121,11 +80,11 @@ class PedidosController extends Controller
 
             if( $request->factura == 'No') {
                 return redirect()->route('checkout', ['producto' => $producto, 'pedido' => $ultimoPedido]);
-                // return redirect()->route('checkout')->with( ['idProducto' => 'producto'] );
             }
 
         }
         catch(\Exception $e){
+            dd($e);
             return redirect()->back()->with('error', 'Error en la alta del pedido.');
         }
 

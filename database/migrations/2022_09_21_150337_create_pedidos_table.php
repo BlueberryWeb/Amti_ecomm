@@ -20,22 +20,23 @@ return new class extends Migration
 
             //Datos de personales
             $table->integer('id_prospecto')->unsigned();
-            $table->string('direccion');
-            $table->string('pais');
-            $table->string('sexo');
-            $table->string('estatura');
-            $table->string('tipo_medida');
-            $table->string('color_ojos');
-            $table->string('color_cabello');
+            $table->string('direccion')->nullable();
+            $table->string('pais')->nullable();
+            $table->string('sexo')->nullable();
+            $table->string('estatura')->nullable();
+            $table->string('tipo_medida')->nullable();
+            $table->string('color_ojos')->nullable();
+            $table->string('color_cabello')->nullable();
 
             //Datos de envio
             $table->integer('id_envio')->unsigned();
-            $table->string('nombre');
-            $table->string('telefono');
-            $table->string('correo');
-            $table->string('calle');
-            $table->string('ciudad');
-            $table->string('cp');
+            $table->string('nombre')->nullable();
+            $table->string('telefono')->nullable();
+            $table->string('correo')->nullable();
+            $table->string('calle')->nullable();
+            $table->string('ciudad')->nullable();
+            $table->string('cp')->nullable();
+            $table->string('sucursal_entrega')->nullable();
             $table->string('instrucciones')->nullable();
 
             //Archivos

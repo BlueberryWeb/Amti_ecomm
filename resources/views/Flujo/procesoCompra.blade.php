@@ -171,7 +171,7 @@
                                                                                             <p class="semibold txt-color-tit titulos" id="precio">$2,700 MXN.</p>
                                                                                         </div>
                                                                                         <div class="form-check btn-seleccionar py-2">
-                                                                                            <input class="form-check-input checks" required type="checkbox" value="3" id="vigencia" name="vigencia" >
+                                                                                            <input class="form-check-input checks_vigencia" onclick="reset_checbox(this, 'checks_vigencia')" required type="checkbox" value="3" id="vigencia" name="vigencia" >
                                                                                             <label class="form-check-label" for="vigencia">
                                                                                               Seleccionar
                                                                                             </label>
@@ -215,7 +215,7 @@
                                                                                             </div>
                                                                                         </div>
                                                                                         <div class="form-check btn-seleccionar py-2">
-                                                                                            <input class="form-check-input checks" required type="checkbox" value="5" id="vigencia2" name="vigencia">
+                                                                                            <input class="form-check-input checks_vigencia" onclick="reset_checbox(this, 'checks_vigencia')" required type="checkbox" value="5" id="vigencia2" name="vigencia">
                                                                                             <label class="form-check-label" for="vigencia2">
                                                                                               Seleccionar
                                                                                             </label>
@@ -249,7 +249,7 @@
                                                                                             <p class="semibold txt-color-tit titulos" id="precio">$1,450 MXN..</p>
                                                                                         </div>
                                                                                         <div class="form-check btn-seleccionar py-2">
-                                                                                            <input class="form-check-input checks" required type="checkbox" value="1" id="vigencia3" name="vigencia">
+                                                                                            <input class="form-check-input checks_vigencia" onclick="reset_checbox(this, 'checks_vigencia')" required type="checkbox" value="1" id="vigencia3" name="vigencia">
                                                                                             <label class="form-check-label" for="vigencia3">
                                                                                               Seleccionar
                                                                                             </label>
@@ -812,14 +812,11 @@
                                                                         <label for="exampleInputEmail1" class="form-label">Color de cabello natural*</label>
                                                                         <select class="form-select" id="colorCabello" name="colorCabello" aria-label=".form-select-lg example" required>
                                                                             <option value="" selected>Seleccione un opción</option>
-                                                                            <option value="Negro">Negro</option>
-                                                                            <option value="Oscuro">Oscuro</option>
-                                                                            <option value="Castaño">Castaño</option>
-                                                                            <option value="Castaño Oscuro">Castaño Oscuro</option>
-                                                                            <option value="Castaño Claro">Castaño Claro</option>
+                                                                            <option value="Negro">Café</option>
+                                                                            <option value="Oscuro">Negro</option>
                                                                             <option value="Rubio">Rubio</option>
-                                                                            <option value="Rubio Claro">Rubio Claro</option>
-                                                                            <option value="Platino">Platino</option>
+                                                                            <option value="Castaño">Gris</option>
+                                                                            <option value="Platino">Rojo</option>
                                                                         </select>
                                                                     </div>
                                                                     <div class="row">
@@ -832,16 +829,10 @@
                                                                                     <img  src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310995/amtiEcommerce/ojo-cafe_gmhmit.png" alt="Ilustración de color de ojos" class="me-3"/>Selecciona un color de ojos
                                                                                 </div>
                                                                                 <div class="option-image" data-value="wow" onclick="getEyes(this)">
-                                                                                    <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310992/amtiEcommerce/ojo-ambar_rwib9n.png" alt="Ilustración de color de ojos" class="me-3"/> Ambar
+                                                                                    <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310995/amtiEcommerce/ojo-cafe_gmhmit.png" alt="Ilustración de color de ojos" class="me-3"/> Café
                                                                                 </div>
                                                                                 <div class="option-image" data-value="wow" onclick="getEyes(this)">
-                                                                                    <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310996/amtiEcommerce/ojo-castano_agasng.png" alt="Ilustración de color de ojos" class="me-3"/> Castaño
-                                                                                </div>
-                                                                                <div class="option-image" data-value="drop-image" onclick="getEyes(this)">
-                                                                                    <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310994/amtiEcommerce/ojo-gris_wkyoyl.png" alt="Ilustración de color de ojos" class="me-3"/> Gris
-                                                                                </div>
-                                                                                <div class="option-image" data-value="select" onclick="getEyes(this)">
-                                                                                    <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310993/amtiEcommerce/ojo-avellana_slml8k.png" alt="Ilustración de color de ojos" class="me-3"/> Avellana
+                                                                                    <img src="img/black-eye.png" alt="Ilustración de color de ojos" class="me-3" width="45" /> Negro
                                                                                 </div>
                                                                                 <div class="option-image" data-value="custom" onclick="getEyes(this)">
                                                                                     <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310995/amtiEcommerce/ojo-verde_hmbkqc.png" alt="Ilustración de color de ojos" class="me-3"/> Verde
@@ -1066,7 +1057,7 @@
                                                                 <label for="exampleInputEmail1" class="form-label">Selecciona tu tipo de envío*</label>
                                                                 <div class="col-12 col-sm-12 col-md-12 col-lg-4">
                                                                     <div class="form-check">
-                                                                        <input class="form-check-input checks" type="checkbox" name="tipoEnvio" id="tipoEnvio1" value="Estandar" required>
+                                                                        <input class="form-check-input checks_envio" onclick="reset_checbox(this, 'checks_envio')" type="checkbox" name="tipoEnvio" id="tipoEnvio1" value="Estandar" required>
                                                                         <label class="form-check-label txt-color-tit bold" for="tipoEnvio1">Envío<b class="txt-azul-oscuro"> estándar</b> <br/>
                                                                             <i class="fa-solid fa-check txt-verde"></i> <b class="txt-verde">Gratuito</b> <br/>
                                                                             <b class="top-menu regular">5 - 7 días hábiles</b>
@@ -1075,7 +1066,7 @@
                                                                 </div>
                                                                 <div class="col-12 col-sm-12 col-md-12 col-lg-4">
                                                                     <div class="form-check ">
-                                                                        <input class="form-check-input checks" type="checkbox" name="tipoEnvio" id="tipoEnvio2" value="Express" required>
+                                                                        <input class="form-check-input checks_envio" onclick="reset_checbox(this, 'checks_envio')" type="checkbox" name="tipoEnvio" id="tipoEnvio2" value="Express" required>
                                                                         <label class="form-check-label" for="tipoEnvio2">Envío<b class="txt-azul-oscuro" data-bs-target="#panelEnvio2" data-bs-toggle="collapse" aria-expanded="false" aria-controls="panelEnvio2"> express</b><br/>
                                                                             <b class="regular">$199</b> <br/>
                                                                             <b class="top-menu regular">1 a 3 días hábiles</b>
@@ -1084,7 +1075,7 @@
                                                                 </div>
                                                                 <div class="col-12 col-sm-12 col-md-12 col-lg-4">
                                                                     <div class="form-check">
-                                                                        <input class="form-check-input checks" type="checkbox" name="tipoEnvio" id="tipoEnvio3" value="Recogerla" aria-controls="panelEnvio" aria-expanded="false" required>
+                                                                        <input class="form-check-input checks_envio" onclick="reset_checbox(this, 'checks_envio')" type="checkbox" name="tipoEnvio" id="tipoEnvio3" value="Recogerla" aria-controls="panelEnvio" aria-expanded="false" required>
                                                                         <label class="form-check-label" for="tipoEnvio3">Recoger en<b class="txt-azul-oscuro"> sucursal</b> <br/>
                                                                             <i class="fa-solid fa-check txt-verde"></i> <b class="txt-verde">Gratuito</b> <br/>
                                                                             <b class="top-menu regular">2 a 3 días hábiles.</b>
@@ -1161,6 +1152,134 @@
                                                                         <div class="mb-4">
                                                                             <label for="instrucciones" class="form-label">Instrucciones adicionales para acceder al domicilio*</label>
                                                                             <input type="text" class="form-control" id="instrucciones" name="instrucciones" aria-describedby="" required >
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div id="panelEnvio2" class="accordion-collapse collapse">
+                                                                <div class="accordion-body ms-3">
+                                                                    <div class="row txt-firma">
+                                                                        <div class="row">
+                                                                            <div class="py-2">
+                                                                                <div class="row">
+                                                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-4 mb-4">
+                                                                                        <div class="col">
+                                                                                            <div class="cuadro-sucursales py-4">
+                                                                                                <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310974/amtiEcommerce/icono-ubicacion-fondo_lj1npd.png" alt="2" class="img-fluid icono-suc"/>
+                                                                                                <div class="mx-5">
+                                                                                                    <h1 class="txt-color-tit titulos bold">Sucursal</h1>
+                                                                                                    <h1 class="txt-azul-oscuro titulos bold">Guadalajara</h1>
+                                                                                                    <div class="my-4 parrafos txt-color-parrafo">
+                                                                                                        <div class="mb-4">
+                                                                                                            <a href="https://goo.gl/maps/sa77LNkDxsG96Nmo6" class="a_none_style txt-color-parrafo" target="_blank">
+                                                                                                                <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310974/amtiEcommerce/icono-ubi-azul_zotx3g.png" alt="" class="img-fluid icon-suc float-start mb-3"/>
+                                                                                                                <h6 class="regular top-menu txt-color-parrafo">Av. Rubén Darío #586 int.8, Lomas de </h6>
+                                                                                                                <h6 class="regular top-menu txt-color-parrafo">Guevara, CP: 44657 Guadalajara, Jal.</h6>
+                                                                                                            </a>
+                                                                                                        </div>
+                                                                                                        <div class="">
+                                                                                                            <a href="tel:+523327903393" class="a_none_style txt-color-parrafo" target="_blank">
+                                                                                                                <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310973/amtiEcommerce/icono-tel-azul_gk6ccf.png" alt="" class="img-fluid icon-suc float-start"/>
+                                                                                                                <h6 class="semiBold top-menu txt-color-parrafo">33 2790 3393</h6>
+                                                                                                            </a>
+                                                                                                            
+                                                                                                        </div>
+                                                                                                        <div class="">
+                                                                                                            <a href="https://api.whatsapp.com/send?phone=525540324042" class="a_none_style txt-color-parrafo" target="_blank">
+                                                                                                                <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310975/amtiEcommerce/icono-whats-azul_yyetea.png" alt="" class="img-fluid icon-suc float-start"/>
+                                                                                                                <h6 class="semiBold top-menu txt-color-parrafo">55 4032 4042</h6>
+                                                                                                            </a>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col d-flex justify-content-center pt-2">
+                                                                                            <div class="form-check">
+                                                                                                <input class="form-check-input checks_sucursal" onclick="reset_checbox(this, 'checks_sucursal')" type="checkbox" name="sucursalEntrega" id="guadalajara" value="Guadalajara" required>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-4 mb-4">
+                                                                                        <div class="col">
+                                                                                            <div class="cuadro-sucursales py-4">
+                                                                                                <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310974/amtiEcommerce/icono-ubicacion-fondo_lj1npd.png" alt="2" class="img-fluid icono-suc"/>
+                                                                                                <div class="mx-5">
+                                                                                                    <h1 class="txt-color-tit titulos bold">Sucursal</h1>
+                                                                                                    <h1 class="txt-azul-oscuro titulos bold">Monterrey</h1>
+                                                                                                    <div class="my-4 parrafos txt-color-parrafo">
+                                                                                                        <div class="mb-4">
+                                                                                                            <a href="https://goo.gl/maps/4PbNimg6pkhDrRgq9" class="a_none_style txt-color-parrafo" target="_blank">
+                                                                                                                <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310974/amtiEcommerce/icono-ubi-azul_zotx3g.png" alt="" class="img-fluid icon-suc float-start mb-3"/>
+                                                                                                                <h6 class="regular top-menu txt-color-parrafo">Av. Dr. José Eleuterio González 250, Planta  </h6>
+                                                                                                                <h6 class="regular top-menu txt-color-parrafo">Alta , San Jerónimo, 64634 Monterrey, N.L.</h6>
+                                                                                                            </a>
+                                                                                                           
+                                                                                                        </div>
+                                                                                                        <div class="">
+                                                                                                            <a href="tel:+528132532915" class="a_none_style txt-color-parrafo" target="_blank">
+                                                                                                                <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310973/amtiEcommerce/icono-tel-azul_gk6ccf.png" alt="" class="img-fluid icon-suc float-start"/>
+                                                                                                                <h6 class="semiBold top-menu txt-color-parrafo">81 3253 2915</h6>
+                                                                                                            </a>
+                                                                                                            
+                                                                                                        </div>
+                                                                                                        <div class="">
+                                                                                                            <a href="https://api.whatsapp.com/send?phone=525540324042" class="a_none_style txt-color-parrafo" target="_blank">
+                                                                                                                <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310975/amtiEcommerce/icono-whats-azul_yyetea.png" alt="" class="img-fluid icon-suc float-start"/>
+                                                                                                                <h6 class="semiBold top-menu txt-color-parrafo">55 4032 4042</h6>
+                                                                                                            </a>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col d-flex justify-content-center pt-2">
+                                                                                            <div class="form-check">
+                                                                                                <input class="form-check-input checks_sucursal" onclick="reset_checbox(this, 'checks_sucursal')" type="checkbox" name="sucursalEntrega" id="monterrey" value="Monterrey" required>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-4 mb-4">
+                                                                                        <div class="col">
+                                                                                            <div class="cuadro-sucursales py-4">
+                                                                                                <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310974/amtiEcommerce/icono-ubicacion-fondo_lj1npd.png" alt="2" class="img-fluid icono-suc"/>
+                                                                                                <div class="mx-5">
+                                                                                                    <h1 class="txt-color-tit titulos bold">Sucursal</h1>
+                                                                                                    <h1 class="txt-azul-oscuro titulos bold">Ciudad de México</h1>
+                                                                                                    <div class="my-4 parrafos txt-color-parrafo">
+                                                                                                        <div class="mb-4">
+                                                                                                            <a href="https://goo.gl/maps/md8kcMi73iA7ALxZ6" class="a_none_style txt-color-parrafo" target="_blank">
+                                                                                                                <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310974/amtiEcommerce/icono-ubi-azul_zotx3g.png" alt="" class="img-fluid icon-suc float-start mb-3"/>
+                                                                                                                <h6 class="regular top-menu txt-color-parrafo">Av. Presidente Masaryk #61, Piso 9 Col. </h6>
+                                                                                                                <h6 class="regular top-menu txt-color-parrafo">Polanco V secc, CP 11560, CDMX.</h6>
+                                                                                                            </a>
+                                                                                                           
+                                                                                                        </div>
+                                                                                                        <div class="">
+                                                                                                            <a href="https://api.whatsapp.com/send?phone=525540324042" class="a_none_style txt-color-parrafo" target="_blank">
+                                                                                                                <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310973/amtiEcommerce/icono-tel-azul_gk6ccf.png" alt="" class="img-fluid icon-suc float-start"/>
+                                                                                                                <h6 class="semiBold top-menu txt-color-parrafo">55 4032 4042</h6>
+                                                                                                            </a>
+                                                                                                            
+                                                                                                        </div>
+                                                                                                        <div class="">
+                                                                                                            <a href="tel:+525536891390" class="a_none_style txt-color-parrafo" target="_blank">
+                                                                                                                <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310975/amtiEcommerce/icono-whats-azul_yyetea.png" alt="" class="img-fluid icon-suc float-start"/>
+                                                                                                                <h6 class="semiBold top-menu txt-color-parrafo">55 3689 1390</h6>
+                                                                                                            </a>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col d-flex justify-content-center pt-2">
+                                                                                            <div class="form-check">
+                                                                                                <input class="form-check-input checks_sucursal" onclick="reset_checbox(this, 'checks_sucursal')" type="checkbox" name="sucursalEntrega" id="mexico" value="Ciudad de México" required>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
