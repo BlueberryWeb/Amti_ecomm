@@ -163,6 +163,11 @@
                         <h6 class="top-menu regular txt-color-parrafo">1 - 2 días hábiles</h6>
                     </div>
                     <div class="mb-4">
+                        <h4 class="bold txt-color-tit">Envío <b class="txt-azul-oscuro">internacional</b></h4>
+                        <h6 class="top-menu semiBold">Sujeto a cotización, <b class="regular txt-color-parrafo">si se requiere</b>  </h6>
+                        <h6 class="top-menu regular txt-color-parrafo"> favor de contactarse a <a href="tel:+525540324042" class="a_none_style txt-color-parrafo">55 4032 4042</a> </h6>
+                    </div>
+                    <div class="mb-4">
                         <h4 class="bold txt-color-tit">Recoger en <b class="txt-azul-oscuro">sucursal</b></h4>
                         <h6 class="txt-verde top-menu semiBold"><i class="fa-solid fa-check"></i> Gratuito</h6>
                         <h6 class="top-menu regular mb-0 txt-color-parrafo">Recógela en cualquiera de nuestras </h6>

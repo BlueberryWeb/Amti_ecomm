@@ -316,18 +316,18 @@
                               <div class="row">
                                   <div class="col-12 col-lg-4 col-sm-12 col-md-12">
                                     <div class="mx-3">
-                                        <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310997/amtiEcommerce/review-roberto_ud9ebj.png" alt="AMTI" class="img-fluid image-review"/>
+                                        <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310997/amtiEcommerce/review-maria_nmtbam.png" alt="AMTI" class="img-fluid image-review"/>
                                     </div>
                                   </div>
                                   <div class="col-12 col-lg-8 col-sm-12 col-md-12">
-                                    <h5 class="bold titulos txt-azul-oscuro"> ROBERTO MONTES</h5>
+                                    <h5 class="bold titulos txt-azul-oscuro">CECILIA VIDAURRI</h5>
                                     <h6 class="regular parrafos txt-color-parrafo">Licencia de 5 años</h6>
                                     <span>
                                         <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676315695/amtiEcommerce/estrellas_tncxuo.png" alt="AMTI" class="img-fluid me-2 estrellas"/>
                                         <b class="bold tags txt-color-parrafo">¡Excelente!</b>
                                     </span>
                                     <div class="row pt-2">
-                                        <p class="regular top-menu txt-color-parrafo">La atención y asesoría fue bastante cercana, me resolvieron todas mis dudas y me ayudaron en el proceso de trámite. ¡Muy amables por cierto!</p>
+                                        <p class="regular top-menu txt-color-parrafo">¡Excelente servicio! ¡Súper rápido! ¡Trato amable y de calidad! Muy recomendado</p>
                                     </div>
                                   </div>
                               </div>
@@ -341,11 +341,11 @@
                               <div class="row">
                                   <div class="col-12 col-lg-4 col-sm-12 col-md-12">
                                     <div class="mx-3">
-                                        <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310997/amtiEcommerce/review-maria_nmtbam.png" alt="AMTI" class="img-fluid image-review"/>
+                                        <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310997/amtiEcommerce/review-roberto_ud9ebj.png" alt="AMTI" class="img-fluid image-review"/>
                                     </div>
                                   </div>
                                   <div class="col-12 col-lg-8 col-sm-12 col-md-12">
-                                      <h5 class="bold titulos txt-azul-oscuro">SOFÍA MARTÍNEZ</h5>
+                                      <h5 class="bold titulos txt-azul-oscuro">CHARLY PERCHA</h5>
                                       <h6 class="regular parrafos txt-color-parrafo">Licencia 5 años</h6>
                                       <span>
                                           <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676315695/amtiEcommerce/estrellas_tncxuo.png" alt="AMTI" class="img-fluid me-2 estrellas"/>
@@ -353,7 +353,7 @@
                                       </span>
                                       <div class="row pt-2">
                                         <p class="regular top-menu txt-color-parrafo">
-                                            ¡Muy practico! Hice mi tramite en unos cuantos clics, y en un par de días recibí mi licencia. Muuuuy recomendado.
+                                            ¡Excelente atención! Fue muy rápida y eficiente la obtención de información y la tramitación de la credencial de manejo internacional.
                                         </p>
                                     </div>
                                   </div>
@@ -372,14 +372,14 @@
                                     </div>
                                   </div>
                                   <div class="col-12 col-lg-8 col-sm-12 col-md-12">
-                                    <h5 class="bold titulos txt-azul-oscuro">HÉCTOR NAVARRO</h5>
+                                    <h5 class="bold titulos txt-azul-oscuro">ABRAHAM PICHARDO</h5>
                                     <h6 class="regular parrafos txt-color-parrafo">Licencia 3 años</h6>
                                     <span>
                                         <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676315695/amtiEcommerce/estrellas_tncxuo.png" alt="AMTI" class="img-fluid me-2 estrellas"/>   
                                         <b class="bold tags txt-color-parrafo">Justo a tiempo</b>
                                     </span>
                                     <div class="row pt-2">
-                                        <p class="regular top-menu txt-color-parrafo">Me encantó la experiencia con AMTI! Súper eficiente, rápido, y sencillo de tramitar.
+                                        <p class="regular top-menu txt-color-parrafo">Excelente servicio, la atención muy buena, recibí mi licencia a los pocos días del trámite. Los recomiendo ampliamente.
                                         </p>
                                     </div>
                                   </div>
@@ -399,7 +399,7 @@
                                     </div>
                                   </div>
                                   <div class="col-12 col-lg-8 col-sm-12 col-md-12">
-                                      <h5 class="bold titulos txt-azul-oscuro">PAOLA BRAVO</h5>
+                                      <h5 class="bold titulos txt-azul-oscuro">MARISOL RUIZ</h5>
                                       <h6 class="regular parrafos txt-color-parrafo">Licencia 1 año</h6>
                                       <span>
                                           <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676315695/amtiEcommerce/estrellas_tncxuo.png" alt="AMTI" class="img-fluid me-2 estrellas"/>
@@ -407,7 +407,7 @@
                                       </span>
                                       <div class="row pt-2">
                                         <p class="regular top-menu txt-color-parrafo">
-                                            ¡Gran servicio! Súper sencillo y rápido.
+                                            Estoy súper contenta con el servicio brindado, muy rápidos y muy amables. Solicite la licencia un lunes y el miércoles ya la tenía en mis manos en Delicias,Chih.
                                         </p>
                                     </div>
                                   </div>
@@ -427,14 +427,14 @@
                                     </div>
                                   </div>
                                   <div class="col-12 col-lg-8 col-sm-12 col-md-12">
-                                    <h5 class="bold titulos txt-azul-oscuro">CARLA GÓNZALEZ</h5>
+                                    <h5 class="bold titulos txt-azul-oscuro">ALI HAMID</h5>
                                     <h6 class="regular parrafos txt-color-parrafo">Licencia 3 años</h6>
                                     <span>
                                         <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676315695/amtiEcommerce/estrellas_tncxuo.png" alt="AMTI" class="img-fluid me-2 estrellas"/>
                                         <b class="bold tags txt-color-parrafo">Muy rápido</b>
                                     </span>
                                     <div class="row pt-2">
-                                        <p class="regular top-menu txt-color-parrafo">Woow no me imagine que fuera tan rapido la entrega de la licencia.
+                                        <p class="regular top-menu txt-color-parrafo">Excelente servicio, me apoyaron para obtener la licencia en menos de 24 horas. Gracias
                                         </p>
                                     </div>
                                   </div>
