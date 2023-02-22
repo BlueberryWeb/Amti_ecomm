@@ -36,5 +36,5 @@ $('#tipoEnvio3').on('click', function(){
     }
     else{
         $('#panelEnvio2').collapse('hide');
-    }
+    } 
 });

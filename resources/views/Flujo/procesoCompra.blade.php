@@ -812,14 +812,11 @@
                                                                         <label for="exampleInputEmail1" class="form-label">Color de cabello natural*</label>
                                                                         <select class="form-select" id="colorCabello" name="colorCabello" aria-label=".form-select-lg example" required>
                                                                             <option value="" selected>Seleccione un opción</option>
-                                                                            <option value="Negro">Negro</option>
-                                                                            <option value="Oscuro">Oscuro</option>
-                                                                            <option value="Castaño">Castaño</option>
-                                                                            <option value="Castaño Oscuro">Castaño Oscuro</option>
-                                                                            <option value="Castaño Claro">Castaño Claro</option>
+                                                                            <option value="Negro">Café</option>
+                                                                            <option value="Oscuro">Negro</option>
                                                                             <option value="Rubio">Rubio</option>
-                                                                            <option value="Rubio Claro">Rubio Claro</option>
-                                                                            <option value="Platino">Platino</option>
+                                                                            <option value="Castaño">Gris</option>
+                                                                            <option value="Platino">Rojo</option>
                                                                         </select>
                                                                     </div>
                                                                     <div class="row">
@@ -832,16 +829,10 @@
                                                                                     <img  src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310995/amtiEcommerce/ojo-cafe_gmhmit.png" alt="Ilustración de color de ojos" class="me-3"/>Selecciona un color de ojos
                                                                                 </div>
                                                                                 <div class="option-image" data-value="wow" onclick="getEyes(this)">
-                                                                                    <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310992/amtiEcommerce/ojo-ambar_rwib9n.png" alt="Ilustración de color de ojos" class="me-3"/> Ambar
+                                                                                    <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310995/amtiEcommerce/ojo-cafe_gmhmit.png" alt="Ilustración de color de ojos" class="me-3"/> Café
                                                                                 </div>
                                                                                 <div class="option-image" data-value="wow" onclick="getEyes(this)">
-                                                                                    <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310996/amtiEcommerce/ojo-castano_agasng.png" alt="Ilustración de color de ojos" class="me-3"/> Castaño
-                                                                                </div>
-                                                                                <div class="option-image" data-value="drop-image" onclick="getEyes(this)">
-                                                                                    <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310994/amtiEcommerce/ojo-gris_wkyoyl.png" alt="Ilustración de color de ojos" class="me-3"/> Gris
-                                                                                </div>
-                                                                                <div class="option-image" data-value="select" onclick="getEyes(this)">
-                                                                                    <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310993/amtiEcommerce/ojo-avellana_slml8k.png" alt="Ilustración de color de ojos" class="me-3"/> Avellana
+                                                                                    <img src="img/black-eye.png" alt="Ilustración de color de ojos" class="me-3" width="45" /> Negro
                                                                                 </div>
                                                                                 <div class="option-image" data-value="custom" onclick="getEyes(this)">
                                                                                     <img src="https://res.cloudinary.com/dhigl3clg/image/upload/v1676310995/amtiEcommerce/ojo-verde_hmbkqc.png" alt="Ilustración de color de ojos" class="me-3"/> Verde

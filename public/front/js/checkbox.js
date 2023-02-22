@@ -10,4 +10,3 @@ const reset_checbox = (selected, className) => {
   let idSelected = '#' + selected.id
   $( idSelected ).prop('checked', true)
 }
-
