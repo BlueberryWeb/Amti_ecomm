@@ -15,7 +15,7 @@
                 <div class="txt-como">
                     <h1 class="bold big">Tu licencia de conducir</h1>
                     <h1 class="bold txt-azul big">internacional AMTI</h1>
-                    <h6 class="parrafos regular">(International Driver’s Permit)</h6>
+                    <h6 class="parrafos regular">(International Driving Permit)</h6>
                 </div>
                 
 
@@ -204,7 +204,7 @@
                                     </div>
                                 </div>
                                 <div class="mt-5">
-                                    <a href="{{ route('procesoCompra') }}" class="btn btn-primary btn-bordes-azul">Tamitar mi licencia</a>
+                                    <a href="{{ route('procesoCompra') }}" class="btn text-light btn-bordes-azul">Tamitar mi licencia</a>
                                 </div>
                             </div>
                             <div class="col-12 col-sm-12 col-md-12 col-lg-5">

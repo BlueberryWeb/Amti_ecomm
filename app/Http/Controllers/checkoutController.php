@@ -7,14 +7,15 @@ use App\Models\Productos;
 use Illuminate\Http\Request;
 use Stripe\Stripe;
 use Stripe\Charge;
+use Stripe\Product;
 
 class checkoutController extends Controller
 {
-    public function __invoke($id){
+    public function __invoke(Productos $producto, Pedidos $pedido){
 
         
         \Stripe\Stripe::setApiKey('sk_test_51Low5nJFjkWFGhqUuXrzObdBtNyb3hL21lv8WKULmm9pzg6RRJU1z2Ooz76E9TpuxYApRRGILvle12tW1Hj1Drp800zvT4vmTy');
-        $pedido = Pedidos::where('id', $id)->first();
+        // $pedido = Pedidos::where('id', $pedido)->first();
         $intent = \Stripe\PaymentIntent::create([
 
             // "amount" => $pedido->total * 100,
@@ -24,8 +25,7 @@ class checkoutController extends Controller
         ]);
         $secret = $intent->client_secret;
 
-
-        return view('Flujo.checkout', compact('secret'));
+        return view('Flujo.checkout', compact('secret', 'producto', 'pedido'));
     }
     public function payT(Request $request)
     {
