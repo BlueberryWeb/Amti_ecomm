@@ -55,6 +55,9 @@
                     <li class="nav-item">
                         <a class="nav-link text-white me-4 top-menu" href="{{ route('contacto') }}">Contacto</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white me-4 top-menu" href="{{ route('blog') }}">Blog</a>
+                    </li>
                
                 </ul>
                 <div class="d-flex">

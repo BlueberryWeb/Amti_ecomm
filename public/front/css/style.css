@@ -487,6 +487,26 @@ CUADROS NUESTRAS SUCURSALES
     width: 13px;
     margin-right: 1rem;
 }
+/*****************************
+CUADROS BLOG
+*****************************/
+.cuadro-blog{
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    position: relative;
+    height: auto;
+}
+.icono-blog{
+    position: absolute;
+    top: -6%;
+    right: 10px;
+    width: 55px;
+}
+.icon-blog{
+    width: 13px;
+    margin-right: 1rem;
+}
 /************************
 FOOTER
 *************************/

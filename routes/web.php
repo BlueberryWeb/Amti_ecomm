@@ -26,6 +26,9 @@ use App\Http\Controllers\ProspectosController;
 use App\Http\Controllers\terminosController;
 use App\Http\Controllers\VendedoresController;
 use App\Http\Controllers\vigenciasController;
+use App\Http\Controllers\blogController;
+use App\Http\Controllers\articuloController;
+
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -108,6 +111,11 @@ Route::get('portal/pedidos', Pedidos_TodosController::class, 'index')->middlewar
 Route::get('portal/pedidos/detalle/{id}', DetallesPedidosController::class, 'index')->middleware(['auth'])->name('portal.pedidos.detalles');
 Route::put('portal/pedidos/detalle/factura/{factura}', [DetallesPedidosController::class, 'factura'])->middleware(['auth'])->name('portal.pedidos.detalles.factura');
 Route::put('portal/pedidos/detalle/{id}/editar/estatus',[DetallesPedidosController::class, 'editarEstatusPedido'])->middleware(['auth'])->name('portal.pedidos.detalles.editar.estatus');
+
+
+//BLOG
+Route::get('blog', blogController::class, 'index')->name('blog');
+Route::get('articulo', articuloController::class, 'index')->name('articulo');
 
 
 require __DIR__.'/auth.php';
